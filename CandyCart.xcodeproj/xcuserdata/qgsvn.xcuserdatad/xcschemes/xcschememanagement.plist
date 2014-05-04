@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>bar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>pub.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>shop.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>tintincafe.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0E62327D1781BEF90053EC31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C22A02151915528900CFD409</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C259730F1913E2A900C78523</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C26EAA0718CF10EA006A24C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2824D92191392D900061E96</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2D4225318F002F200E64028</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2F0930618F2E61500AC2C7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

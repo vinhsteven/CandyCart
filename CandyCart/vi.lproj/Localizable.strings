@@ -1,0 +1,381 @@
+//init
+"back_btn_title" = "Lui";
+"close_btn_title" = "Đóng";
+"sale_badge_title" = "Sales";
+"image_loading_placeholder" = "no_icon.png";
+"image_checkmark" = "37x-Checkmark.png";
+"image_delete_icon" = "deleteIcon.png";
+"group_and_variable_pricing" = "FROM";
+
+//Global
+"general_notification_error_title" = "Lỗi";
+"general_notification_title" = "Thông Báo";
+"general_notification_ok_btn_title" = "Xác nhận";
+"general_notification_cancel_btn_title" = "Huỷ";
+"general_notification_error_loginwaschange" = "Thông tin đăng nhập của bạn đã thay đổi. Xin vui lòng đăng nhập lại.";
+
+"general_notification_error_need_signin_order" = "Vui lòng đăng nhập trước khi xem đơn hàng của bạn.";
+
+"general_no_internet_connectivitiy_desc"="Yêu cầu kết nối Internet";
+"general_no_internet_connectivitiy_btn_lbl"="Thử lại";
+
+//Tabb bar
+"tabb_bar_explore" = "Khám phá";
+"tabb_bar_explore_image" = "featured.png";
+
+"tabb_bar_browse" = "Tìm";
+"tabb_bar_browse_image" = "browse.png";
+
+"tabb_bar_profile" = "Quản lý";
+"tabb_bar_profile_image" = "you.png";
+
+"tabb_bar_cart" = "Giỏ hàng";
+"tabb_bar_cart_image" = "cart.png";
+
+
+//Apns
+"right_bazel_swipe_promotions" = "Khuyến mãi";
+"right_bazel_swipe_notifications" = "Thông báo";
+
+
+
+//Right View Controller
+"apns_title" = "Thông báo";
+"apns_close_btn" = "Đóng";
+"apns_action_btn" = "Xem";
+
+//Explore ViewController
+"explore_view_controller_featured" = "Bán chạy";
+"explore_view_controller_new_items" = "Hàng mới";
+
+//OrderViewController
+"orderViewController_title" = "Đơn hàng của tôi";
+"orderViewController_filter_btn_title" = "Lọc theo";
+"orderViewController_no_order_title" = "Không tìm thấy bất kỳ đơn hàng nào.";
+"orderViewController_order_notes_btn_title" = "Lưu ý";
+
+//OrderNotes View Controller
+"orderNotes_viewController_title" = "Lưu ý đơn hàng";
+"orderNotes_viewController_no_notes" = "Không có bất kỳ lưu ý nào.";
+
+
+//PopOver
+"popover_countries_title" = "Quốc gia";
+
+//ProfileViewController
+
+//-----Tab
+"profile_tab_signin" = "Đăng nhập";
+"profile_tab_signup" = "Đăng ký";
+
+"profile_tab_my_profile" = "Quản lý";
+"profile_tab_my_account" = "Tài khoản";
+"profile_tab_my_order" = "Đơn hàng";
+"profile_tab_logout" = "Đ.Xuất";
+
+
+
+
+
+
+
+//----My Profile
+"profile_myprofile_placeholder_firstname" = "Tên";
+"profile_myprofile_placeholder_lastname" = "Họ";
+"profile_myprofile_placeholder_displayname" = "Tên hiển thị / Nickname";
+"profile_myprofile_placeholder_email" = "Email";
+"profile_myprofile_update_btn_title" = "Cập nhật thông tin";
+
+
+"profile_mygeneral_notification_error_title_firstname_empty" = "Tên của bạn không thể để rỗng.";
+"profile_mygeneral_notification_error_title_lastname_empty" = "Họ của bạn không thể để rỗng.";
+"profile_mygeneral_notification_error_title_displayname_empty" = "Tên hiển thị không thể để rỗng";
+"profile_mygeneral_notification_error_title_email_empty" = "Email không thể để rỗng.";
+"profile_mygeneral_notification_error_title_email_invalid" = "Địa chỉ email không hợp lệ";
+"profile_mygeneral_notification_error_title_email_exist" = "Bạn yêu cầu thay đổi email. Nhưng email này đã tồn tại trong hệ thống của chúng tôi. Vui lòng chọn email khác.";
+"profile_myprofile_successful_msg" = "Thông tin đã được cập nhật";
+
+//-----Billing Profile & use in (My Profile & Checkout Billing)
+
+"profile_billing_lbl" = "Thông tin thanh toán";
+"profile_billing_placeholder_firstname" = "Tên người thanh toán";
+"profile_billing_placeholder_lastname" = "Họ người thanh toán";
+"profile_billing_placeholder_company" = "Công ty thanh toán (tuỳ chọn)";
+"profile_billing_placeholder_addressline1" = "Địa chỉ thanh toán 1";
+"profile_billing_placeholder_addressline2" = "Địa chỉ thanh toán 2";
+"profile_billing_placeholder_poscode" = "Mã bưu điện thanh toán";
+"profile_billing_placeholder_city" = "Thành phố thanh toán";
+"profile_billing_placeholder_country" = "Quốc gia thanh toán";
+"profile_billing_placeholder_state" = "Quận / huyện thanh toán";
+"profile_billing_placeholder_phone" = "Số điện thoại thanh toán";
+"profile_billing_placeholder_email" = "Email thanh toán";
+"profile_billing_update_btn" = "Cập nhật";
+"profile_billing_error_email_not_valid" = "Email không hợp lệ. Vui lòng kiểm tra lại email của bạn.";
+"profile_billing_update_successful_msg" = "Cập nhật thông tin thanh toán";
+
+
+
+
+
+
+
+
+
+
+
+//-----Upload Avatar Action Sheet---
+"profile_upload_avatar_title" = "Tải hình đại diện";
+"profile_upload_avatar_cancel_btn" = "Huỷ";
+"profile_upload_avatar_take_a_photo" = "Chụp hình";
+"profile_upload_avatar_use_gallery" = "Lấy từ thư viện";
+
+//-----Account---
+"profile_account_placeholder_username" = "Tên đăng nhập";
+"profile_account_placeholder_currentpassword" = "Mật khẩu hiện tại";
+"profile_account_placeholder_newpassword" = "Mật khẩu mới";
+"profile_account_placeholder_retypepassword" = "Nhập lại mật khẩu";
+"profile_account_update_btn_title" = "Đổi mật khẩu";
+
+
+"profile_account_error_current_password_empty" = "Mật khẩu hiện tại không thể để rỗng.";
+"profile_account_error_password_empty" = "Mật khẩu không thể để rỗng.";
+"profile_account_error_password_atleast" = "Mật khẩu của bạn phải ít nhất 5 kí tự.";
+"profile_account_error_password_retype" = "Mật khẩu nhập lại không thể để rỗng.";
+"profile_account_error_password_unmatch" = "Mật khẩu và mật khẩu nhập lại không trùng khớp.";
+
+"profile_account_error_current_password_wrong" = "Mật khẩu hiện tại của bạn bị sai.";
+"profile_account_successfull_message" = "Cập nhật mật khẩu.";
+
+//---Logout-----
+"profile_logout_confirmation" = "Bạn có chắc chắn muốn đăng xuất?";
+
+//-----Sign Up---
+"profile_signup_error_username_empty" = "Tên đăng nhập không thể để rỗng";
+"profile_signup_error_email_empty" = "Email không thể để rỗng.";
+"profile_signup_error_email_invalid" = "Email của bạn không hợp lệ.";
+"profile_signup_error_firstname_empty" = "Tên của bạn không thể để rỗng.";
+"profile_signup_error_lastname_empty" = "Họ của bạn không thể để rỗng.";
+"profile_signup_error_password_empty" = "Mật khẩu của bạn không thể để rỗng.";
+"profile_signup_error_password_atleast" = "Mật khẩu của bạn ít nhất phải có 5 kí tự.";
+"profile_signup_error_password_retype" = "Mật khẩu nhập lại không thể để rỗng.";
+"profile_signup_error_password_unmatch" = "Mật khẩu và mật khẩu nhập lại không trùng khớp.";
+"profile_signup_error_username_exist" = "Tên đăng nhập đã tồn tại. Vui lòng chọn lại tên khác.";
+"profile_signup_error_email_exist" = "Email của bạn đã tồn tại. Vui lòng chọn lại email khác.";
+
+"profile_signup_placeholder_username" = "Tên đăng nhập";
+"profile_signup_placeholder_email" = "Email";
+"profile_signup_placeholder_firstname" = "Tên";
+"profile_signup_placeholder_lastname" = "Họ";
+"profile_signup_placeholder_password" = "Mật khẩu";
+"profile_signup_placeholder_repassword" = "Nhập lại mật khẩu";
+"profile_signup_btn" = "Đăng ký";
+
+//-----Sign In---
+"profile_signin_placeholder_usernameoremail" = "Tên đăng nhập or Email";
+"profile_signin_placeholder_password" = "Mật khẩu";
+"profile_signin_btn" = "Đăng nhập";
+"profile_signin_lostpassword" = "Quên mật khẩu";
+"profile_signin_error" = "Tên đăng nhập / email / mật khẩu bị sai.";
+
+
+//Cart
+"cart_error_empty" = "Giỏ hàng rỗng";
+"cart_next_btn_title" = "Tiếp";
+"cart_error_need_login" = "Vui lòng đăng nhập trước khi thanh toán";
+"cart_label_pre_total" = "TỔNG TIỀN";
+
+//-----Checkout
+"checkout_billing_title" = "Thông tin thanh toán";
+"checkout_next_btn_title" = "Tiếp";
+
+"checkout_billing_error_firstname_empty"="Tên bị rỗng";
+"checkout_billing_error_lastname_empty"="Họ bị rỗng";
+"checkout_billing_error_addressline1_empty"="Địa chỉ bị rỗng";
+"checkout_billing_error_poscode_empty"="Mã bưu điện bị rỗng";
+"checkout_billing_error_city_empty"="Thành phố bị rỗng";
+"checkout_billing_error_country_empty"="Quốc gia bị rỗng";
+"checkout_billing_error_state_empty"="Quận / huyện bị rỗng";
+"checkout_billing_error_phone_empty"="Số điện thoại bị rỗng";
+"checkout_billing_error_email_empty"="Email thanh toán bị rỗng";
+"checkout_billing_error_email_invalid"="Email thanh toán không hợp lệ.";
+
+"checkout_shipping_title" = "Thông tin nhận hàng ";
+"checkout_shipping_clear_btn" = "Xoá";
+
+"checkout_shipping_placeholder_firstname" = "Tên người nhận";
+"checkout_shipping_placeholder_lastname" = "Họ người nhận";
+"checkout_shipping_placeholder_company" = "Công ty người nhận (tuỳ chọn)";
+"checkout_shipping_placeholder_addressline1" = "Địa chỉ 1";
+"checkout_shipping_placeholder_addressline2" = "Địa chỉ 2";
+"checkout_shipping_placeholder_poscode" = "Mã bưu điện";
+"checkout_shipping_placeholder_city" = "Thành phố";
+"checkout_shipping_placeholder_country" = "Quốc gia";
+"checkout_shipping_placeholder_state" = "Quận / huyện";
+"checkout_shipping_placeholder_phone" = "Số điện thoại";
+"checkout_shipping_placeholder_email" = "Email";
+
+
+"checkout_shipping_error_firstname_empty"="Tên bị rỗng";
+"checkout_shipping_error_lastname_empty"="Họ bị rỗng";
+"checkout_shipping_error_addressline1_empty"="Địa chỉ bị rỗng";
+"checkout_shipping_error_poscode_empty"="Mã bưu điện bị rỗng";
+"checkout_shipping_error_city_empty"="Thành phố bị rỗng";
+"checkout_shipping_error_country_empty"="Quốc gia bị rỗng";
+"checkout_shipping_error_state_empty"="Quận / huyện bị rỗng";
+
+
+"checkout_shipping_next_btn" = "Tiếp";
+"checkout_shipping_next_same_as_billing_btn" = "Giống địa chỉ thanh toán (Tiếp)";
+"checkout_shipping_note_order" = "Lưu ý về đơn hàng của bạn. Ví dụ hàng dễ vỡ ...";
+
+"checkout_review_title" = "Tóm tắt";
+"checkout_review_order_now_btn_title" = "Đặt hàng";
+"checkout_review_error_payment_method" = "Vui lòng chọn phương thức thanh toán";
+
+"checkout_error_choose_payment_method" = "Chọn phương thức thanh toán của bạn";
+
+//Also use it in OrderViewController....
+"checkout_label_coupon" = "COUPON";
+"checkout_label_subtotal_without_tax" = "TỔNG TIỀN (chưa tính thuế)";
+"checkout_label_subtotal" = "TỔNG TIỀN";
+"checkout_label_shipping_method_and_cost" = "VẬN CHUYỂN";
+"checkout_label_tax" = "THUẾ";
+"checkout_label_discount" = "GIẢM";
+"checkout_label_grand_total" = "TỔNG CỘNG";
+"checkout_label_grand_total_with_include_tax_below_1" = "Bao gồm";
+"checkout_label_grand_total_with_include_tax_below_2" = "Thuế";
+
+
+
+//OrderViewController
+"order_date_label" = "Ngày đặt hàng";
+"order_title_label" = "Đơn hàng của tôi";
+"order_id_label" = "Mã đơn hàng";
+"order_status_label" = "Tình trạng";
+"order_email_label" = "Email";
+"order_phone_label" = "Số điện thoại";
+"order_billing_address_label" = "Địa chỉ thanh toán";
+"order_shipping_address_label" = "Địa chỉ nhận";
+
+"order_close_btn" = "Đóng";
+"order_pay_btn" = "Trả";
+"order_label_payment_method" = "Phương thức thanh toán";
+"order_fail_payment" = "Thay đổi tình trạng thất bại";
+"order_successful_payment" = "Cảm ơn quý khách đã đặt hàng. Chúng tôi đã nhận được đơn hàng của quý khách. Chân thành cảm ơn.";
+
+//PaymentWebViewController
+"payment_cancel_btn_title" = "Đóng";
+
+
+
+
+//Browse View Controller
+"browse_view_search_placeholder" = "Tìm sản phẩm";
+"browse_view_open_camera_btn" = "Quét";
+
+//CameraViewController
+"camera_view_title" = "Quét";
+"camera_cancel_btn" = "Huỷ";
+"camera_unsupport_qrcode_error_msg" = "Chúng tôi không hỗ trợ mã QR này";
+
+//Browse Detail Controller
+"browse_view_select_sub_category" = "Chọn mục con";
+"browse_view_load_more" = "Tải thêm";
+"browse_view_pull_to_refresh" = "Kéo để cập nhật";
+"browse_view_release_to_refresh" = "Thả để cập nhật";
+"browse_view_no_product_found" = "Không tìm thấy sản phẩm bạn yêu cầu.";
+
+//Product Detail View Controller
+"product_detail_view_share_btn" = "Chia sẻ";
+"product_detail_in_stock" = "còn hàng";
+"product_detail_add_to_cart_btn_title" = "Thêm vào giỏ";
+"product_detail_add_to_cart_btn_outofstock_title" = "hết hàng";
+"product_detail_add_to_cart_btn_incart_title"= "Giỏ hàng";
+"product_detail_allowed_backorder"= "backorders allowed";
+"product_detail_read_more_btn_title"= "Đọc thêm";
+"product_detail_reviews_btn_title"= "Nhận xét";
+"product_detail_choose_an_option_if_label_null"= "Chọn";
+"product_detail_may_like"= "Sản phẩm có lẽ bạn thích";
+"product_detail_add_to_cart_error_title" = "Thông báo";
+"product_detail_add_to_cart_error_content" = "Vui lòng chọn kích cỡ / màu sắc";
+"product_detail_add_to_cart_error_btn" = "Xác nhận";
+"product_detail_image_close" = "Hoàn tất";
+"product_detail_add_to_cart_btn_out_of_order" = "Đã hết giờ làm việc. Hẹn gặp lại quý khách lần sau.";
+
+//Product Read More
+"product_detail_read_more_desc"= "Mô tả";
+"product_detail_read_more_additional_inf"= "Bổ sung";
+"product_detail_read_more_has_weight_title"= "Trọng lượng";
+"product_detail_read_more_has_dimension_title"= "Kích thước";
+
+//Product Review
+"product_review_alert_title"= "Thông báo";
+"product_review_alert_error_content"= "Bạn cần đăng ký / đăng nhập để thêm nhận xét.";
+"product_review_alert_ok_button"= "Xác nhận";
+"product_review_compose_btn"= "Thêm";
+"product_review_compose_title"= "Thêm nhận xét";
+"product_review_cancel_btn_title"= "Huỷ";
+"product_review_post_btn_title"= "Đăng";
+"product_review_drag_star_title"= "Rê ngôi sao để cho điểm";
+"product_review_no_comment"= "Trở thành người đầu tiên nhận xét";
+"product_review_replied_lbl"= "Đã phản hồi";
+"product_review_child_view_controller_title"= "Phản hồi";
+"product_review_follow_btn"="THEO DÕI";
+"product_review_unfollow_btn"="HUỶ THEO DÕI";
+
+//Iphone WebView
+"inappwebview_safari_button"= "Dùng Safari";
+"inappwebview_loading"= "Đang tải";
+"inappwebview_done"= "Hoàn tất";
+
+//Post Controller
+"post_controller_no_post_found"= "Không có bài viết nào";
+
+//Instagram
+"instagram_likes" = "Likes";
+"instagram_comments" = "Comments";
+"instagram_open_in_instagram_app" = "Instagram";
+"instagram_total_posts_count" = "Posts";
+"instagram_image_title" = "Image";
+"instagram_video_title" = "Video";
+
+// Pop Over
+"popover_view_title" = "Mục con";
+"popover_view_popover_allitems_btn" = "Tất cả";
+
+"exploreViewController.new_items_title" = "Hàng mới";
+"exploreViewController.featured_items_title" = "Hàng bán chạy";
+"exploreViewController.discount_items_title" = "Hàng giảm giá";
+"exploreViewController.service_title" = "Dịch vụ";
+"exploreViewController.coffee_title" = "Coffee";
+"exploreViewController.other_drink_title" = "Thức uống khác";
+"exploreViewController.favorites_title" = "Ưa thích";
+"exploreViewController.brandy_title" = "Rượu";
+"exploreViewController.soft_food_title" = "Thức ăn nhẹ";
+"exploreViewController.drinks_title" = "Thức uống";
+
+"myCartBox_exclude_tax_title" = "(Chưa thuế)";
+"mycartbox.add-coupon" = "Thêm phiếu giảm giá";
+
+"profileViewController.button-camera" = "Camera";
+"cameraViewController.title" = "Danh sách Camera";
+"cameraVC.could-not-open-file" = "Không thể mở được tập tin";
+"cameraVC.could-not-find-stream" = "Không thể mở luồng dữ liệu. Vui lòng kiểm tra kết nối đến camera";
+
+"status_list.all" = "Tất cả";
+"status_list.pending" = "Chờ xử lý";
+"status_list.failed"  = "Thất bại";
+"status_list.on-hold" = "Chờ chuyển khoản";
+"status_list.processing" = "Đang xử lý";
+"status_list.completed"  = "Hoàn tất";
+"status_list.refunded"   = "Hoàn trả";
+"status_list.cancelled"  = "Huỷ";
+
+"general.warning" = "Cảnh báo!";
+"general.success" = "Thành công";
+"general.fail" = "Thất bại";
+"general.yes"  = "Có";
+"general.no"   = "Không";
+"general.ok" = "OK";
+
+"order.coupon_limit_reached" = "Phiếu giảm giá đã được sử dụng.";

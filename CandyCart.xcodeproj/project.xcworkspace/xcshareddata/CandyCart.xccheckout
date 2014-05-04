@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C7C881FA-8B02-46D0-BCA3-19E4BD49C94E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CandyCart</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D6A021B4-D240-4244-9142-62F092D21DD1</key>
+		<string>https://github.com/vinhsteven/i-cafe.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CandyCart/CandyCart.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D6A021B4-D240-4244-9142-62F092D21DD1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vinhsteven/i-cafe.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D6A021B4-D240-4244-9142-62F092D21DD1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D6A021B4-D240-4244-9142-62F092D21DD1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>i-shop</string>
+		</dict>
+	</array>
+</dict>
+</plist>

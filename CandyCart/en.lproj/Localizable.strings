@@ -1,0 +1,372 @@
+//init
+"back_btn_title" = "Back";
+"close_btn_title" = "Close";
+"sale_badge_title" = "Sales";
+"image_loading_placeholder" = "no_icon.png";
+"image_checkmark" = "37x-Checkmark.png";
+"image_delete_icon" = "deleteIcon.png";
+"group_and_variable_pricing" = "FROM";
+
+//Global
+"general_notification_error_title" = "Error";
+"general_notification_title" = "Notification";
+"general_notification_ok_btn_title" = "OK";
+"general_notification_cancel_btn_title" = "Cancel";
+"general_notification_error_loginwaschange" = "Your login detail was changed. Please login with your new login detail.";
+
+"general_notification_error_need_signin_order" = "Please signin before view your order.";
+
+"general_no_internet_connectivitiy_desc"="Internet connection is required";
+"general_no_internet_connectivitiy_btn_lbl"="Try Again";
+
+//Tabb bar
+"tabb_bar_explore" = "Explore";
+"tabb_bar_explore_image" = "featured.png";
+
+"tabb_bar_browse" = "Browse";
+"tabb_bar_browse_image" = "browse.png";
+
+"tabb_bar_profile" = "Profile";
+"tabb_bar_profile_image" = "you.png";
+
+"tabb_bar_cart" = "Cart";
+"tabb_bar_cart_image" = "cart.png";
+
+
+//Apns
+"right_bazel_swipe_promotions" = "Promotions";
+"right_bazel_swipe_notifications" = "Notifications";
+
+
+
+//Right View Controller
+"apns_title" = "Notifications";
+"apns_close_btn" = "Close";
+"apns_action_btn" = "View";
+
+//Explore ViewController
+"explore_view_controller_featured" = "Featured";
+"explore_view_controller_new_items" = "New Items";
+
+//OrderViewController
+"orderViewController_title" = "My Order";
+"orderViewController_filter_btn_title" = "Filter By";
+"orderViewController_no_order_title" = "Didn't find any order";
+"orderViewController_order_notes_btn_title" = "Notes";
+
+//OrderNotes View Controller
+"orderNotes_viewController_title" = "Order Notes";
+"orderNotes_viewController_no_notes" = "No notes at this momment";
+
+
+//PopOver
+"popover_countries_title" = "Countries";
+
+//ProfileViewController
+
+//-----Tab
+"profile_tab_signin" = "Sign In";
+"profile_tab_signup" = "Sign Up";
+
+"profile_tab_my_profile" = "My Profile";
+"profile_tab_my_account" = "Account";
+"profile_tab_my_order" = "Order";
+"profile_tab_logout" = "Logout";
+
+
+
+
+
+
+
+//----My Profile
+"profile_myprofile_placeholder_firstname" = "Firstname";
+"profile_myprofile_placeholder_lastname" = "Lastname";
+"profile_myprofile_placeholder_displayname" = "Display Name / Nickname";
+"profile_myprofile_placeholder_email" = "Email";
+"profile_myprofile_update_btn_title" = "Update Profile";
+
+
+"profile_mygeneral_notification_error_title_firstname_empty" = "Your First Name cannot be empty.";
+"profile_mygeneral_notification_error_title_lastname_empty" = "Your Last Name cannot be empty.";
+"profile_mygeneral_notification_error_title_displayname_empty" = "Your display name cannot be empty";
+"profile_mygeneral_notification_error_title_email_empty" = "Your Email cannot be empty.";
+"profile_mygeneral_notification_error_title_email_invalid" = "Your Email is not valid";
+"profile_mygeneral_notification_error_title_email_exist" = "You requested to change your email. But your new email was existing in our database. Please choose another email.";
+"profile_myprofile_successful_msg" = "Profile Updated";
+
+//-----Billing Profile & use in (My Profile & Checkout Billing)
+
+"profile_billing_lbl" = "Billing Profile";
+"profile_billing_placeholder_firstname" = "Billing Firstname";
+"profile_billing_placeholder_lastname" = "Billing Lastname";
+"profile_billing_placeholder_company" = "Billing Company (Optional)";
+"profile_billing_placeholder_addressline1" = "Billing Address Line 1";
+"profile_billing_placeholder_addressline2" = "Billing Address Line 2";
+"profile_billing_placeholder_poscode" = "Billing Poscode";
+"profile_billing_placeholder_city" = "Billing City";
+"profile_billing_placeholder_country" = "Billing Country";
+"profile_billing_placeholder_state" = "Billing State";
+"profile_billing_placeholder_phone" = "Billing Phone";
+"profile_billing_placeholder_email" = "Billing Email";
+"profile_billing_update_btn" = "Update Billing";
+"profile_billing_error_email_not_valid" = "Your email is not valid. Please check your email.";
+"profile_billing_update_successful_msg" = "Billing Updated";
+
+
+//-----Upload Avatar Action Sheet---
+"profile_upload_avatar_title" = "Upload Avatar";
+"profile_upload_avatar_cancel_btn" = "Cancel";
+"profile_upload_avatar_take_a_photo" = "Take a Photo";
+"profile_upload_avatar_use_gallery" = "Use Library";
+
+//-----Account---
+"profile_account_placeholder_username" = "Account Username";
+"profile_account_placeholder_currentpassword" = "Current Password";
+"profile_account_placeholder_newpassword" = "New Password";
+"profile_account_placeholder_retypepassword" = "Re-Type Password";
+"profile_account_update_btn_title" = "Change Password";
+
+
+"profile_account_error_current_password_empty" = "Your current password cannot be empty.";
+"profile_account_error_password_empty" = "Your Password cannot be empty.";
+"profile_account_error_password_atleast" = "Your Password must be at least 5 characters";
+"profile_account_error_password_retype" = "Your Re-type Password cannot be empty";
+"profile_account_error_password_unmatch" = "Your Password and Re-type Password is not matched.";
+
+"profile_account_error_current_password_wrong" = "Your current password is wrong.";
+"profile_account_successfull_message" = "Password Updated";
+
+//---Logout-----
+"profile_logout_confirmation" = "Are you sure you want to logout ?";
+
+//-----Sign Up---
+"profile_signup_error_username_empty" = "Your Username cannot be empty";
+"profile_signup_error_email_empty" = "Your Email cannot be empty.";
+"profile_signup_error_email_invalid" = "Your Email is not valid";
+"profile_signup_error_firstname_empty" = "Your First Name cannot be empty.";
+"profile_signup_error_lastname_empty" = "Your Last Name cannot be empty.";
+"profile_signup_error_password_empty" = "Your Password cannot be empty.";
+"profile_signup_error_password_atleast" = "Your Password must be at least 5 characters";
+"profile_signup_error_password_retype" = "Your Re-type Password cannot be empty";
+"profile_signup_error_password_unmatch" = "Your Password and Re-type Password is not matched.";
+"profile_signup_error_username_exist" = "Your choosen username was exist. Please choose diffrent username";
+"profile_signup_error_email_exist" = "Your choosen email was exist. Please choose diffrent email";
+
+"profile_signup_placeholder_username" = "Username";
+"profile_signup_placeholder_email" = "Email";
+"profile_signup_placeholder_firstname" = "Firstname";
+"profile_signup_placeholder_lastname" = "Lastname";
+"profile_signup_placeholder_password" = "Password";
+"profile_signup_placeholder_repassword" = "Retype Password";
+"profile_signup_btn" = "Signup";
+
+//-----Sign In---
+"profile_signin_placeholder_usernameoremail" = "Username or Email";
+"profile_signin_placeholder_password" = "Password";
+"profile_signin_btn" = "Login";
+"profile_signin_lostpassword" = "I Lost My Password";
+"profile_signin_error" = "Your username/email/password was wrong";
+
+
+//Cart
+"cart_error_empty" = "Your cart is empty";
+"cart_next_btn_title" = "Next";
+"cart_error_need_login" = "Please signin before proceed to check out page";
+"cart_label_pre_total" = "PRE TOTAL";
+
+//-----Checkout
+"checkout_billing_title" = "Billing";
+"checkout_next_btn_title" = "Next";
+
+"checkout_billing_error_firstname_empty"="Your first name is empty";
+"checkout_billing_error_lastname_empty"="Your last name is empty";
+"checkout_billing_error_addressline1_empty"="Your Address line 1 is empty";
+"checkout_billing_error_poscode_empty"="Your poscode is empty";
+"checkout_billing_error_city_empty"="Your city is empty";
+"checkout_billing_error_country_empty"="Your country is empty";
+"checkout_billing_error_state_empty"="Your state is empty";
+"checkout_billing_error_phone_empty"="Your billing phone is empty";
+"checkout_billing_error_email_empty"="Your billing email is empty";
+"checkout_billing_error_email_invalid"="Your billing email is invalid";
+
+"checkout_shipping_title" = "Shipping";
+"checkout_shipping_clear_btn" = "Clear";
+
+"checkout_shipping_placeholder_firstname" = "Billing Firstname";
+"checkout_shipping_placeholder_lastname" = "Billing Lastname";
+"checkout_shipping_placeholder_company" = "Billing Company (Optional)";
+"checkout_shipping_placeholder_addressline1" = "Billing Address Line 1";
+"checkout_shipping_placeholder_addressline2" = "Billing Address Line 2";
+"checkout_shipping_placeholder_poscode" = "Billing Poscode";
+"checkout_shipping_placeholder_city" = "Billing City";
+"checkout_shipping_placeholder_country" = "Billing Country";
+"checkout_shipping_placeholder_state" = "Billing State";
+"checkout_shipping_placeholder_phone" = "Billing Phone";
+"checkout_shipping_placeholder_email" = "Billing Email";
+
+
+"checkout_shipping_error_firstname_empty"="Your first name is empty";
+"checkout_shipping_error_lastname_empty"="Your last name is empty";
+"checkout_shipping_error_addressline1_empty"="Your Address line 1 is empty";
+"checkout_shipping_error_poscode_empty"="Your poscode is empty";
+"checkout_shipping_error_city_empty"="Your city is empty";
+"checkout_shipping_error_country_empty"="Your country is empty";
+"checkout_shipping_error_state_empty"="Your state is empty";
+
+
+"checkout_shipping_next_btn" = "Next";
+"checkout_shipping_next_same_as_billing_btn" = "Same as billing (Next)";
+"checkout_shipping_note_order" = "Notes about your order. E.g special note for delivery";
+
+"checkout_review_title" = "Summary";
+"checkout_review_order_now_btn_title" = "Order Now";
+"checkout_review_error_payment_method" = "Please choose your payment method";
+
+"checkout_error_choose_payment_method" = "Choose your payment method";
+
+//Also use it in OrderViewController....
+"checkout_label_coupon" = "COUPON";
+"checkout_label_subtotal_without_tax" = "SUBTOTAL (EX. TAX)";
+"checkout_label_subtotal" = "SUBTOTAL";
+"checkout_label_shipping_method_and_cost" = "SHIPPING";
+"checkout_label_tax" = "TAX";
+"checkout_label_discount" = "DISCOUNT";
+"checkout_label_grand_total" = "TOTAL";
+"checkout_label_grand_total_with_include_tax_below_1" = "Includes";
+"checkout_label_grand_total_with_include_tax_below_2" = "Tax";
+
+
+
+//OrderViewController
+"order_date_label" = "Order Date";
+"order_title_label" = "My Order";
+"order_id_label" = "Order ID";
+"order_status_label" = "Status";
+"order_email_label" = "Email";
+"order_phone_label" = "Phone";
+"order_billing_address_label" = "Billing Address";
+"order_shipping_address_label" = "Shipping Address";
+
+"order_close_btn" = "Close";
+"order_pay_btn" = "Pay";
+"order_label_payment_method" = "Payment Method";
+"order_fail_payment" = "Status was changed to failed";
+"order_successful_payment" = "Thank you for your purchased. Your order was received. We are now processing your order. Thank you.";
+
+//PaymentWebViewController
+"payment_cancel_btn_title" = "Close";
+
+
+
+
+//Browse View Controller
+"browse_view_search_placeholder" = "Search Product";
+"browse_view_open_camera_btn" = "Scanner";
+
+//CameraViewController
+"camera_view_title" = "Scanner";
+"camera_cancel_btn" = "Cancel";
+"camera_unsupport_qrcode_error_msg" = "We are not support this type of QRCode";
+
+//Browse Detail Controller
+"browse_view_select_sub_category" = "Select Sub Category";
+"browse_view_load_more" = "Load More";
+"browse_view_pull_to_refresh" = "Pull to refresh";
+"browse_view_release_to_refresh" = "Release to refresh";
+"browse_view_no_product_found" = "No products found which match your selection";
+
+//Product Detail View Controller
+"product_detail_view_share_btn" = "Share";
+"product_detail_in_stock" = "in stock";
+"product_detail_add_to_cart_btn_title" = "Add to cart";
+"product_detail_add_to_cart_btn_outofstock_title" = "Out Of Stock";
+"product_detail_add_to_cart_btn_incart_title"= "In Cart";
+"product_detail_allowed_backorder"= "backorders allowed";
+"product_detail_read_more_btn_title"= "Read More";
+"product_detail_reviews_btn_title"= "Reviews";
+"product_detail_choose_an_option_if_label_null"= "Choose";
+"product_detail_may_like"= "Product You May Like";
+"product_detail_add_to_cart_error_title" = "Notification";
+"product_detail_add_to_cart_error_content" = "Please choose your variation";
+"product_detail_add_to_cart_error_btn" = "OK";
+"product_detail_image_close" = "Done";
+"product_detail_add_to_cart_btn_out_of_order" = "Out of Order. Please come back later.";
+
+//Product Read More
+"product_detail_read_more_desc"= "Description";
+"product_detail_read_more_additional_inf"= "Additional";
+"product_detail_read_more_has_weight_title"= "Weight";
+"product_detail_read_more_has_dimension_title"= "Dimension";
+
+//Product Review
+"product_review_alert_title"= "Notification";
+"product_review_alert_error_content"= "You need to signin/signup before you can make any comment";
+"product_review_alert_ok_button"= "OK";
+"product_review_compose_btn"= "Add";
+"product_review_compose_title"= "Add Comment";
+"product_review_cancel_btn_title"= "Cancel";
+"product_review_post_btn_title"= "Post";
+"product_review_drag_star_title"= "Drag the star to rate";
+"product_review_no_comment"= "Become First To Comment";
+"product_review_replied_lbl"= "Replied";
+"product_review_child_view_controller_title"= "Reply";
+"product_review_follow_btn"="FOLLOW";
+"product_review_unfollow_btn"="UNFOLLOW";
+
+//Iphone WebView
+"inappwebview_safari_button"= "Use Safari";
+"inappwebview_loading"= "Loading";
+"inappwebview_done"= "Done";
+
+//Post Controller
+"post_controller_no_post_found"= "No Post Found";
+
+//Instagram
+"instagram_likes" = "Likes";
+"instagram_comments" = "Comments";
+"instagram_open_in_instagram_app" = "Instagram";
+"instagram_total_posts_count" = "Posts";
+"instagram_image_title" = "Image";
+"instagram_video_title" = "Video";
+
+// Pop Over
+"popover_view_title" = "Sub";
+"popover_view_popover_allitems_btn" = "All Items";
+
+"exploreViewController.new_items_title" = "New Items";
+"exploreViewController.featured_items_title" = "Featured Items";
+"exploreViewController.discount_items_title" = "Discount Items";
+"exploreViewController.service_title" = "Services"; 
+"exploreViewController.coffee_title" = "Coffee";
+"exploreViewController.other_drink_title" = "Other drink";
+"exploreViewController.favorites_title" = "Favorites";
+"exploreViewController.brandy_title" = "Brandy";
+"exploreViewController.soft_food_title" = "Soft foods";
+"exploreViewController.drinks_title" = "Drinks";
+
+"myCartBox_exclude_tax_title" = "(Exclude Tax)";
+"mycartbox.add-coupon" = "Add Coupon";
+
+"profileViewController.button-camera" = "Camera";
+"cameraViewController.title" = "Camera List";
+"cameraVC.could-not-open-file" = "Couldn't open file";
+"cameraVC.could-not-find-stream" = "Couldn't open the stream. Please check your camera connection";
+
+"status_list.all" = "All";
+"status_list.pending" = "Pending";
+"status_list.failed"  = "Failed";
+"status_list.on-hold" = "On-hold";
+"status_list.processing" = "Processing";
+"status_list.completed"  = "Completed";
+"status_list.refunded"   = "Refunded";
+"status_list.cancelled"  = "Cancelled";
+
+"general.warning" = "Warning!";
+"general.success" = "Successful";
+"general.fail" = "Failed";
+"general.yes"  = "Yes";
+"general.no"   = "No";
+"general.ok" = "OK";
+
+"order.coupon_limit_reached" = "Coupon usage limit has been reached.";

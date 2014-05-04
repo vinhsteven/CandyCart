@@ -1,0 +1,59 @@
+//
+// Prefix header for all source files of the 'Candy Cart' target in the 'Candy Cart' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifndef ANDROID
+    #define ANDROID
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+ 
+#import "TempVariables.h"
+    #import "DefinitionHeader.h"
+    #import "SBJson.h"
+    #import "NUIAppearance.h"
+    #import "UINavigationBar+NUI.h"
+    #import "SimpleNotificationView.h"
+    #import "UIButton+NUI.h"
+    #import "UILabel+NUI.h"
+    #import "UITextField+NUI.h"
+    #import "UIBarButtonItem+NUI.h"
+    #import "DataService.h"
+    #import "SettingDataClass.h"
+    #import "DeviceClass.h"
+    #import "UIImageView+WebCache.h"
+    #import "UITabBarController+HideTabBar.h"
+    #import "ToolClass.h"
+    #import "CartOption.h"
+    #import "TTTAttributedLabel.h"
+    #import "MiscInstances.h"
+    #import "SQLiteManager.h"
+    #import "MBProgressHUD.h"
+    #import "UserAuth.h"
+    #import "FileSaveArrayClass.h"
+    #import "MyCartClass.h"
+    #import "MyOrderClass.h"
+    #import "MainViewClass.h"
+    #import "RXMLElement.h"
+    #import "ODRefreshControl.h"
+    #import "PushedMsgClass.h"
+    #import "ASIHTTPRequest.h"
+    #import "ASIFormDataRequest.h"
+    #import "RNCryptor+Private.h"
+    #import "RNDecryptor.h"
+    #import "RNEncryptor.h"
+    #import <RevMobAds/RevMobAds.h>
+#endif
+
+#define CAMERA_LIST @"CameraList"
+
+#define START_WORK_HOUR @"StartWorkHour"
+#define END_WORK_HOUR   @"EndWorkHour"

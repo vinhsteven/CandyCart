@@ -1,0 +1,3751 @@
+{
+    "assets": [
+        {
+            "asset": "../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist", 
+            "target": "ResourceRules.plist"
+        }, 
+        {
+            "asset": "CandyCart/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/amex2@2x.png", 
+            "target": "amex2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/logo@2x.png", 
+            "target": "logo@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/Classes/IDMPhotoBrowser.bundle", 
+            "target": "IDMPhotoBrowser.bundle"
+        }, 
+        {
+            "asset": "CandyCart/icon80.png", 
+            "target": "icon80.png"
+        }, 
+        {
+            "asset": "CandyCart/CandyTheme_iOS6.NUI.nss", 
+            "target": "CandyTheme_iOS6.NUI.nss"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/amex2.png", 
+            "target": "amex2.png"
+        }, 
+        {
+            "asset": "CandyCart/Default.png", 
+            "target": "Default.png"
+        }, 
+        {
+            "asset": "CandyCart/Default@2x.png", 
+            "target": "Default@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/Default-568h@2x.png", 
+            "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/first.png", 
+            "target": "first.png"
+        }, 
+        {
+            "asset": "CandyCart/Default-568h@2x~iphone.png", 
+            "target": "Default-568h@2x~iphone.png"
+        }, 
+        {
+            "asset": "CandyCart/first@2x.png", 
+            "target": "first@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/second.png", 
+            "target": "second.png"
+        }, 
+        {
+            "asset": "CandyCart/second@2x.png", 
+            "target": "second@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/InfiniteScrollPicker/Set1/s1_0.png", 
+            "target": "s1_0.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/discover2@2x.png", 
+            "target": "discover2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/MGBoxKit/Images/arrow.png", 
+            "target": "arrow.png"
+        }, 
+        {
+            "asset": "CandyCart/InfiniteScrollPicker/Set1/s1_1.png", 
+            "target": "s1_1.png"
+        }, 
+        {
+            "asset": "CandyCart/InfiniteScrollPicker/Set1/s1_2.png", 
+            "target": "s1_2.png"
+        }, 
+        {
+            "asset": "CandyCart/InfiniteScrollPicker/Set1/s1_3.png", 
+            "target": "s1_3.png"
+        }, 
+        {
+            "asset": "CandyCart/InfiniteScrollPicker/Set1/s1_4.png", 
+            "target": "s1_4.png"
+        }, 
+        {
+            "asset": "CandyCart/InfiniteScrollPicker/Set1/s1_5.png", 
+            "target": "s1_5.png"
+        }, 
+        {
+            "asset": "CandyCart/NUI/NUIStyle.nss", 
+            "target": "NUIStyle.nss"
+        }, 
+        {
+            "asset": "CandyCart/Localizable.strings", 
+            "target": "Localizable.strings"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/dinersClub2@2x.png", 
+            "target": "dinersClub2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/star.png", 
+            "target": "star.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/star@2x.png", 
+            "target": "star@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/comodo@2x.png", 
+            "target": "comodo@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/star_highlighted-darker.png", 
+            "target": "star_highlighted-darker.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/star_highlighted-darker@2x.png", 
+            "target": "star_highlighted-darker@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/star_highlighted.png", 
+            "target": "star_highlighted.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/star_highlighted@2x.png", 
+            "target": "star_highlighted@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/icon29.png", 
+            "target": "icon29.png"
+        }, 
+        {
+            "asset": "CandyCart/MGBoxKit/Images/add.png", 
+            "target": "add.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/smallStar.png", 
+            "target": "smallStar.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/smallStar@2x.png", 
+            "target": "smallStar@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/smallStarHigh.png", 
+            "target": "smallStarHigh.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/smallStarHigh@2x.png", 
+            "target": "smallStarHigh@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/verySmallStar.png", 
+            "target": "verySmallStar.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/authorize_net.png", 
+            "target": "authorize_net.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/verySmallStar@2x.png", 
+            "target": "verySmallStar@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/verySmallStarHigh.png", 
+            "target": "verySmallStarHigh.png"
+        }, 
+        {
+            "asset": "CandyCart/DLStarRating/images/verySmallStarHigh@2x.png", 
+            "target": "verySmallStarHigh@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/comodo.png", 
+            "target": "comodo.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/.gitignore", 
+            "target": ".gitignore"
+        }, 
+        {
+            "asset": "CandyCart/icon114.png", 
+            "target": "icon114.png"
+        }, 
+        {
+            "asset": "CandyCart/CandyTheme_iOS7.NUI.nss", 
+            "target": "CandyTheme_iOS7.NUI.nss"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/README.md", 
+            "target": "README.md"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DEAttachmentFrame.png", 
+            "target": "DEAttachmentFrame.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DEAttachmentFrame@2x.png", 
+            "target": "DEAttachmentFrame@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECancelButtonLandscape.png", 
+            "target": "DECancelButtonLandscape.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECancelButtonLandscape@2x.png", 
+            "target": "DECancelButtonLandscape@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECancelButtonPortrait.png", 
+            "target": "DECancelButtonPortrait.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECancelButtonPortrait@2x.png", 
+            "target": "DECancelButtonPortrait@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/icon.png", 
+            "target": "icon.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/amexBack2.png", 
+            "target": "amexBack2.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECardAccountLine.png", 
+            "target": "DECardAccountLine.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/masterCard2.png", 
+            "target": "masterCard2.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECardAccountLine@2x.png", 
+            "target": "DECardAccountLine@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/ssl.png", 
+            "target": "ssl.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECardBackground.png", 
+            "target": "DECardBackground.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECardBackground@2x.png", 
+            "target": "DECardBackground@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECardHeaderLine.png", 
+            "target": "DECardHeaderLine.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/ssl@2x.png", 
+            "target": "ssl@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/discover2.png", 
+            "target": "discover2.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/no_internet.png", 
+            "target": "no_internet.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DECardHeaderLine@2x.png", 
+            "target": "DECardHeaderLine@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DEPaperClip.png", 
+            "target": "DEPaperClip.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DEPaperClip@2x.png", 
+            "target": "DEPaperClip@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DESendButtonLandscape.png", 
+            "target": "DESendButtonLandscape.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DESendButtonLandscape@2x.png", 
+            "target": "DESendButtonLandscape@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/MGBoxKit/Images/arrow@2x.png", 
+            "target": "arrow@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DESendButtonPortrait.png", 
+            "target": "DESendButtonPortrait.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/ccBack2@2x.png", 
+            "target": "ccBack2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/icon57.png", 
+            "target": "icon57.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/visa2.png", 
+            "target": "visa2.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/visa2@2x.png", 
+            "target": "visa2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DESendButtonPortrait@2x.png", 
+            "target": "DESendButtonPortrait@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/Classes/ExternalLibraries/SVProgressHUD/SVProgressHUD.bundle", 
+            "target": "SVProgressHUD.bundle"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DEURLAttachment.png", 
+            "target": "DEURLAttachment.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/DEURLAttachment@2x.png", 
+            "target": "DEURLAttachment@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/location_arrow_off.png", 
+            "target": "location_arrow_off.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/logo.png", 
+            "target": "logo.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/location_arrow_off@2x.png", 
+            "target": "location_arrow_off@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/no_internet@2x.png", 
+            "target": "no_internet@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/location_arrow_on.png", 
+            "target": "location_arrow_on.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/unknownCC2.png", 
+            "target": "unknownCC2.png"
+        }, 
+        {
+            "asset": "CandyCart/DECompose/Resources/location_arrow_on@2x.png", 
+            "target": "location_arrow_on@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/authorize_net@2x.png", 
+            "target": "authorize_net@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/MBProgressHUD/37x-Checkmark.png", 
+            "target": "37x-Checkmark.png"
+        }, 
+        {
+            "asset": "CandyCart/MBProgressHUD/37x-Checkmark@2x.png", 
+            "target": "37x-Checkmark@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/deleteIcon.png", 
+            "target": "deleteIcon.png"
+        }, 
+        {
+            "asset": "CandyCart/countriesstored.dat", 
+            "target": "countriesstored.dat"
+        }, 
+        {
+            "asset": "CandyCart/NUI/Resources/NUIViewBackground.png", 
+            "target": "NUIViewBackground.png"
+        }, 
+        {
+            "asset": "CandyCart/ZBarSDK/Resources/zbar-back.png", 
+            "target": "zbar-back.png"
+        }, 
+        {
+            "asset": "CandyCart/ZBarSDK/Resources/zbar-help.html", 
+            "target": "zbar-help.html"
+        }, 
+        {
+            "asset": "CandyCart/ZBarSDK/Resources/zbar-helpicons.png", 
+            "target": "zbar-helpicons.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/credit_card_icon.png", 
+            "target": "credit_card_icon.png"
+        }, 
+        {
+            "asset": "CandyCart/ZBarSDK/Resources/zbar-samples.png", 
+            "target": "zbar-samples.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/ccBack2.png", 
+            "target": "ccBack2.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/cameralayeri5.png", 
+            "target": "cameralayeri5.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/cameralayeri5@2x.png", 
+            "target": "cameralayeri5@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/js", 
+            "target": "js"
+        }, 
+        {
+            "asset": "CandyCart/asset/commenticon.png", 
+            "target": "commenticon.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/instagram_video_icon.png", 
+            "target": "instagram_video_icon.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/play_btn.png", 
+            "target": "play_btn.png"
+        }, 
+        {
+            "asset": "CandyCart/TimeAgo/NSDateTimeAgo.bundle", 
+            "target": "NSDateTimeAgo.bundle"
+        }, 
+        {
+            "asset": "CandyCart/asset/instagram_flat_icon.png", 
+            "target": "instagram_flat_icon.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/masterCard2@2x.png", 
+            "target": "masterCard2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/instagram_grid_icon.png", 
+            "target": "instagram_grid_icon.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/instagram_list_icon.png", 
+            "target": "instagram_list_icon.png"
+        }, 
+        {
+            "asset": "CandyCart/Default@2x~iphone.png", 
+            "target": "Default@2x~iphone.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/LCD Mono 2.ttf", 
+            "target": "LCD Mono 2.ttf"
+        }, 
+        {
+            "asset": "CandyCart/closeBtn.png", 
+            "target": "closeBtn.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/amexBack2@2x.png", 
+            "target": "amexBack2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/no_icon.png", 
+            "target": "no_icon.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/credit_card_icon@2x.png", 
+            "target": "credit_card_icon@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/browse.png", 
+            "target": "browse.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/browse@2x.png", 
+            "target": "browse@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/cart.png", 
+            "target": "cart.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/cart@2x.png", 
+            "target": "cart@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/dinersClub2.png", 
+            "target": "dinersClub2.png"
+        }, 
+        {
+            "asset": "CandyCart/icon58.png", 
+            "target": "icon58.png"
+        }, 
+        {
+            "asset": "CandyCart/CreditCard/Images/unknownCC2@2x.png", 
+            "target": "unknownCC2@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/featured.png", 
+            "target": "featured.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/featured@2x.png", 
+            "target": "featured@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/ios7back.png", 
+            "target": "ios7back.png"
+        }, 
+        {
+            "asset": "CandyCart/MGBoxKit/Images/add@2x.png", 
+            "target": "add@2x.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/you.png", 
+            "target": "you.png"
+        }, 
+        {
+            "asset": "CandyCart/Default~iphone.png", 
+            "target": "Default~iphone.png"
+        }, 
+        {
+            "asset": "CandyCart/asset/you@2x.png", 
+            "target": "you@2x.png"
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "CandyCart copy", 
+        "APPLICATION_IDENTIFIER": "com.qgs.FAMMS", 
+        "APPLICATION_NAME": "CandyCartcopy", 
+        "LONG_VERSION": "1.0.0", 
+        "SHORT_VERSION": "1.0.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "CandyCart copy"
+        }
+    }, 
+    "defines": {
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 60100
+    }, 
+    "deps": [
+        "UIKit", 
+        "Security", 
+        "Accelerate", 
+        "MediaPlayer", 
+        "MobileCoreServices", 
+        "CoreMedia", 
+        "CoreVideo", 
+        "AVFoundation", 
+        "CoreLocation", 
+        "Social", 
+        "MessageUI", 
+        "MapKit", 
+        "SystemConfiguration", 
+        "ImageIO", 
+        "CoreText", 
+        "QuartzCore", 
+        "CoreImage", 
+        "UIKit", 
+        "Foundation", 
+        "CoreGraphics"
+    ], 
+    "flags": [
+        "-DNS_BLOCK_ASSERTIONS=1", 
+        {
+            "flag": "-DNS_BLOCK_ASSERTIONS=1", 
+            "type": "c++"
+        }, 
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Wno-deprecated-declarations", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "CandyCart copy-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "CandyCart copy-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "CandyCart copy-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "CandyCart copy-project-headers.hmap", 
+            "hmap": {
+                "A3ParallaxScrollView.h": {
+                    "key": "A3ParallaxScrollView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "A3ParallaxScrollView.h"
+                }, 
+                "AFHTTPRequestOperation.h": {
+                    "key": "AFHTTPRequestOperation.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFHTTPRequestOperation.h"
+                }, 
+                "AFHTTPRequestOperationManager.h": {
+                    "key": "AFHTTPRequestOperationManager.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFHTTPRequestOperationManager.h"
+                }, 
+                "AFHTTPSessionManager.h": {
+                    "key": "AFHTTPSessionManager.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFHTTPSessionManager.h"
+                }, 
+                "AFNetworkActivityIndicatorManager.h": {
+                    "key": "AFNetworkActivityIndicatorManager.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "AFNetworkActivityIndicatorManager.h"
+                }, 
+                "AFNetworkReachabilityManager.h": {
+                    "key": "AFNetworkReachabilityManager.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFNetworkReachabilityManager.h"
+                }, 
+                "AFNetworking.h": {
+                    "key": "AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFNetworking.h"
+                }, 
+                "AFSecurityPolicy.h": {
+                    "key": "AFSecurityPolicy.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFSecurityPolicy.h"
+                }, 
+                "AFURLConnectionOperation.h": {
+                    "key": "AFURLConnectionOperation.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFURLConnectionOperation.h"
+                }, 
+                "AFURLRequestSerialization.h": {
+                    "key": "AFURLRequestSerialization.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFURLRequestSerialization.h"
+                }, 
+                "AFURLResponseSerialization.h": {
+                    "key": "AFURLResponseSerialization.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFURLResponseSerialization.h"
+                }, 
+                "AFURLSessionManager.h": {
+                    "key": "AFURLSessionManager.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/", 
+                    "suffix": "AFURLSessionManager.h"
+                }, 
+                "ARCMacros.h": {
+                    "key": "ARCMacros.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ARCMacros.h"
+                }, 
+                "AddToCartQuantity.h": {
+                    "key": "AddToCartQuantity.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "AddToCartQuantity.h"
+                }, 
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "BillingCheckOutViewController.h": {
+                    "key": "BillingCheckOutViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "BillingCheckOutViewController.h"
+                }, 
+                "BrowseDetailViewController.h": {
+                    "key": "BrowseDetailViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "BrowseDetailViewController.h"
+                }, 
+                "BrowseViewController.h": {
+                    "key": "BrowseViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "BrowseViewController.h"
+                }, 
+                "CameraViewController.h": {
+                    "key": "CameraViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "CameraViewController.h"
+                }, 
+                "CandyCart-Prefix.pch": {
+                    "key": "CandyCart-Prefix.pch", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "CandyCart-Prefix.pch"
+                }, 
+                "CartOption.h": {
+                    "key": "CartOption.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "CartOption.h"
+                }, 
+                "CartViewController.h": {
+                    "key": "CartViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "CartViewController.h"
+                }, 
+                "ChildCommentViewController.h": {
+                    "key": "ChildCommentViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ChildCommentViewController.h"
+                }, 
+                "ChooseCreditCardController.h": {
+                    "key": "ChooseCreditCardController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ChooseCreditCardController.h"
+                }, 
+                "ChooseSubCategoryController.h": {
+                    "key": "ChooseSubCategoryController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ChooseSubCategoryController.h"
+                }, 
+                "CommentViewController.h": {
+                    "key": "CommentViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "CommentViewController.h"
+                }, 
+                "ContactUsViewController.h": {
+                    "key": "ContactUsViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ContactUsViewController.h"
+                }, 
+                "CountriesMenuViewController.h": {
+                    "key": "CountriesMenuViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "CountriesMenuViewController.h"
+                }, 
+                "CreditCard.h": {
+                    "key": "CreditCard.h", 
+                    "prefix": "CandyCart/CreditCard/", 
+                    "suffix": "CreditCard.h"
+                }, 
+                "CreditCardController.h": {
+                    "key": "CreditCardController.h", 
+                    "prefix": "CandyCart/CreditCard/", 
+                    "suffix": "CreditCardController.h"
+                }, 
+                "DACircularProgressView.h": {
+                    "key": "DACircularProgressView.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/DACircularProgress/", 
+                    "suffix": "DACircularProgressView.h"
+                }, 
+                "DCCrossHairView.h": {
+                    "key": "DCCrossHairView.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/DCIntrospect/", 
+                    "suffix": "DCCrossHairView.h"
+                }, 
+                "DCFrameView.h": {
+                    "key": "DCFrameView.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/DCIntrospect/", 
+                    "suffix": "DCFrameView.h"
+                }, 
+                "DCIntrospect.h": {
+                    "key": "DCIntrospect.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/DCIntrospect/", 
+                    "suffix": "DCIntrospect.h"
+                }, 
+                "DCIntrospectSettings.h": {
+                    "key": "DCIntrospectSettings.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/DCIntrospect/", 
+                    "suffix": "DCIntrospectSettings.h"
+                }, 
+                "DCStatusBarOverlay.h": {
+                    "key": "DCStatusBarOverlay.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/DCIntrospect/", 
+                    "suffix": "DCStatusBarOverlay.h"
+                }, 
+                "DEComposeViewController.h": {
+                    "key": "DEComposeViewController.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "DEComposeViewController.h"
+                }, 
+                "DEEmbossedLabel.h": {
+                    "key": "DEEmbossedLabel.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "DEEmbossedLabel.h"
+                }, 
+                "DEGradientView.h": {
+                    "key": "DEGradientView.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "DEGradientView.h"
+                }, 
+                "DERuledView.h": {
+                    "key": "DERuledView.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "DERuledView.h"
+                }, 
+                "DESheetCardView.h": {
+                    "key": "DESheetCardView.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "DESheetCardView.h"
+                }, 
+                "DETextView.h": {
+                    "key": "DETextView.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "DETextView.h"
+                }, 
+                "DLStarRatingControl.h": {
+                    "key": "DLStarRatingControl.h", 
+                    "prefix": "CandyCart/DLStarRating/", 
+                    "suffix": "DLStarRatingControl.h"
+                }, 
+                "DLStarView.h": {
+                    "key": "DLStarView.h", 
+                    "prefix": "CandyCart/DLStarRating/", 
+                    "suffix": "DLStarView.h"
+                }, 
+                "DataService.h": {
+                    "key": "DataService.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "DataService.h"
+                }, 
+                "Decoder.h": {
+                    "key": "Decoder.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Decoder.h"
+                }, 
+                "DefinitionHeader.h": {
+                    "key": "DefinitionHeader.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "DefinitionHeader.h"
+                }, 
+                "DetailViewController.h": {
+                    "key": "DetailViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "DetailViewController.h"
+                }, 
+                "DeviceClass.h": {
+                    "key": "DeviceClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "DeviceClass.h"
+                }, 
+                "DynamicTableViewController.h": {
+                    "key": "DynamicTableViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "DynamicTableViewController.h"
+                }, 
+                "Exception.h": {
+                    "key": "Exception.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Exception.h"
+                }, 
+                "ExploreViewController.h": {
+                    "key": "ExploreViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ExploreViewController.h"
+                }, 
+                "FPPopoverController.h": {
+                    "key": "FPPopoverController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "FPPopoverController.h"
+                }, 
+                "FPPopoverView.h": {
+                    "key": "FPPopoverView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "FPPopoverView.h"
+                }, 
+                "FPTouchView.h": {
+                    "key": "FPTouchView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "FPTouchView.h"
+                }, 
+                "FXBlurView.h": {
+                    "key": "FXBlurView.h", 
+                    "prefix": "CandyCart/FXBlurView/", 
+                    "suffix": "FXBlurView.h"
+                }, 
+                "FileSaveArrayClass.h": {
+                    "key": "FileSaveArrayClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "FileSaveArrayClass.h"
+                }, 
+                "GKLParallaxPicturesViewController.h": {
+                    "key": "GKLParallaxPicturesViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "GKLParallaxPicturesViewController.h"
+                }, 
+                "GeneralPopTableView.h": {
+                    "key": "GeneralPopTableView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "GeneralPopTableView.h"
+                }, 
+                "GradientScrollView.h": {
+                    "key": "GradientScrollView.h", 
+                    "prefix": "CandyCart/CreditCard/", 
+                    "suffix": "GradientScrollView.h"
+                }, 
+                "HZActivityIndicatorView.h": {
+                    "key": "HZActivityIndicatorView.h", 
+                    "prefix": "CandyCart/HZActivityIndicator/", 
+                    "suffix": "HZActivityIndicatorView.h"
+                }, 
+                "IDMCaptionView.h": {
+                    "key": "IDMCaptionView.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMCaptionView.h"
+                }, 
+                "IDMPBConstants.h": {
+                    "key": "IDMPBConstants.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMPBConstants.h"
+                }, 
+                "IDMPhoto.h": {
+                    "key": "IDMPhoto.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMPhoto.h"
+                }, 
+                "IDMPhotoBrowser.h": {
+                    "key": "IDMPhotoBrowser.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMPhotoBrowser.h"
+                }, 
+                "IDMPhotoProtocol.h": {
+                    "key": "IDMPhotoProtocol.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMPhotoProtocol.h"
+                }, 
+                "IDMTapDetectingImageView.h": {
+                    "key": "IDMTapDetectingImageView.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMTapDetectingImageView.h"
+                }, 
+                "IDMTapDetectingView.h": {
+                    "key": "IDMTapDetectingView.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMTapDetectingView.h"
+                }, 
+                "IDMZoomingScrollView.h": {
+                    "key": "IDMZoomingScrollView.h", 
+                    "prefix": "CandyCart/Classes/", 
+                    "suffix": "IDMZoomingScrollView.h"
+                }, 
+                "Image.h": {
+                    "key": "Image.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Image.h"
+                }, 
+                "ImageGalleryBox.h": {
+                    "key": "ImageGalleryBox.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ImageGalleryBox.h"
+                }, 
+                "ImageGalleryThumbController.h": {
+                    "key": "ImageGalleryThumbController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ImageGalleryThumbController.h"
+                }, 
+                "ImageScanner.h": {
+                    "key": "ImageScanner.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "ImageScanner.h"
+                }, 
+                "InfiniTabBar.h": {
+                    "key": "InfiniTabBar.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "InfiniTabBar.h"
+                }, 
+                "InfiniteScrollPicker.h": {
+                    "key": "InfiniteScrollPicker.h", 
+                    "prefix": "CandyCart/InfiniteScrollPicker/", 
+                    "suffix": "InfiniteScrollPicker.h"
+                }, 
+                "InstagramBox.h": {
+                    "key": "InstagramBox.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "InstagramBox.h"
+                }, 
+                "InstagramDetailWebView.h": {
+                    "key": "InstagramDetailWebView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "InstagramDetailWebView.h"
+                }, 
+                "InstagramNativeDetailViewController.h": {
+                    "key": "InstagramNativeDetailViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "InstagramNativeDetailViewController.h"
+                }, 
+                "InstagramViewController.h": {
+                    "key": "InstagramViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "InstagramViewController.h"
+                }, 
+                "LaunchViewController.h": {
+                    "key": "LaunchViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "LaunchViewController.h"
+                }, 
+                "LeftViewController.h": {
+                    "key": "LeftViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "LeftViewController.h"
+                }, 
+                "Library-Prefix.pch": {
+                    "key": "Library-Prefix.pch", 
+                    "prefix": "CandyCart/XMLLib/", 
+                    "suffix": "Library-Prefix.pch"
+                }, 
+                "MBProgressHUD.h": {
+                    "key": "MBProgressHUD.h", 
+                    "prefix": "CandyCart/MBProgressHUD/", 
+                    "suffix": "MBProgressHUD.h"
+                }, 
+                "MDCParallaxView.h": {
+                    "key": "MDCParallaxView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MDCParallaxView.h"
+                }, 
+                "MGBase.h": {
+                    "key": "MGBase.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGBase.h"
+                }, 
+                "MGBlockWrapper.h": {
+                    "key": "MGBlockWrapper.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGBlockWrapper.h"
+                }, 
+                "MGBox.h": {
+                    "key": "MGBox.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGBox.h"
+                }, 
+                "MGBoxKit-Prefix.pch": {
+                    "key": "MGBoxKit-Prefix.pch", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGBoxKit-Prefix.pch"
+                }, 
+                "MGBoxProvider.h": {
+                    "key": "MGBoxProvider.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGBoxProvider.h"
+                }, 
+                "MGButton.h": {
+                    "key": "MGButton.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGButton.h"
+                }, 
+                "MGLayoutBox.h": {
+                    "key": "MGLayoutBox.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGLayoutBox.h"
+                }, 
+                "MGLayoutManager.h": {
+                    "key": "MGLayoutManager.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGLayoutManager.h"
+                }, 
+                "MGLine.h": {
+                    "key": "MGLine.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGLine.h"
+                }, 
+                "MGLineStyled.h": {
+                    "key": "MGLineStyled.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGLineStyled.h"
+                }, 
+                "MGMushParser.h": {
+                    "key": "MGMushParser.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGMushParser.h"
+                }, 
+                "MGScrollView.h": {
+                    "key": "MGScrollView.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGScrollView.h"
+                }, 
+                "MGTableBox.h": {
+                    "key": "MGTableBox.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGTableBox.h"
+                }, 
+                "MGTableBoxStyled.h": {
+                    "key": "MGTableBoxStyled.h", 
+                    "prefix": "CandyCart/MGBoxKit/", 
+                    "suffix": "MGTableBoxStyled.h"
+                }, 
+                "MKAnnotationView+WebCache.h": {
+                    "key": "MKAnnotationView+WebCache.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "MKAnnotationView+WebCache.h"
+                }, 
+                "MPAnimation.h": {
+                    "key": "MPAnimation.h", 
+                    "prefix": "CandyCart/MPFoldTransition/", 
+                    "suffix": "MPAnimation.h"
+                }, 
+                "MPFlipEnumerations.h": {
+                    "key": "MPFlipEnumerations.h", 
+                    "prefix": "CandyCart/MPFoldTransition/", 
+                    "suffix": "MPFlipEnumerations.h"
+                }, 
+                "MPFlipSegue.h": {
+                    "key": "MPFlipSegue.h", 
+                    "prefix": "CandyCart/MPFoldTransition/Segues/", 
+                    "suffix": "MPFlipSegue.h"
+                }, 
+                "MPFlipTransition.h": {
+                    "key": "MPFlipTransition.h", 
+                    "prefix": "CandyCart/MPFoldTransition/", 
+                    "suffix": "MPFlipTransition.h"
+                }, 
+                "MPFoldEnumerations.h": {
+                    "key": "MPFoldEnumerations.h", 
+                    "prefix": "CandyCart/MPFoldTransition/", 
+                    "suffix": "MPFoldEnumerations.h"
+                }, 
+                "MPFoldModalSegue.h": {
+                    "key": "MPFoldModalSegue.h", 
+                    "prefix": "CandyCart/MPFoldTransition/Segues/", 
+                    "suffix": "MPFoldModalSegue.h"
+                }, 
+                "MPFoldNavPopSegue.h": {
+                    "key": "MPFoldNavPopSegue.h", 
+                    "prefix": "CandyCart/MPFoldTransition/Segues/", 
+                    "suffix": "MPFoldNavPopSegue.h"
+                }, 
+                "MPFoldNavPushSegue.h": {
+                    "key": "MPFoldNavPushSegue.h", 
+                    "prefix": "CandyCart/MPFoldTransition/Segues/", 
+                    "suffix": "MPFoldNavPushSegue.h"
+                }, 
+                "MPFoldSegue.h": {
+                    "key": "MPFoldSegue.h", 
+                    "prefix": "CandyCart/MPFoldTransition/Segues/", 
+                    "suffix": "MPFoldSegue.h"
+                }, 
+                "MPFoldTransition.h": {
+                    "key": "MPFoldTransition.h", 
+                    "prefix": "CandyCart/MPFoldTransition/", 
+                    "suffix": "MPFoldTransition.h"
+                }, 
+                "MPTransition.h": {
+                    "key": "MPTransition.h", 
+                    "prefix": "CandyCart/MPFoldTransition/", 
+                    "suffix": "MPTransition.h"
+                }, 
+                "MPTransitionEnumerations.h": {
+                    "key": "MPTransitionEnumerations.h", 
+                    "prefix": "CandyCart/MPFoldTransition/", 
+                    "suffix": "MPTransitionEnumerations.h"
+                }, 
+                "MZTimerLabel.h": {
+                    "key": "MZTimerLabel.h", 
+                    "prefix": "CandyCart/MZTimerLabel/", 
+                    "suffix": "MZTimerLabel.h"
+                }, 
+                "MainViewClass.h": {
+                    "key": "MainViewClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MainViewClass.h"
+                }, 
+                "MapViewAnnotation.h": {
+                    "key": "MapViewAnnotation.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MapViewAnnotation.h"
+                }, 
+                "MenuViewController.h": {
+                    "key": "MenuViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MenuViewController.h"
+                }, 
+                "MiscInstances.h": {
+                    "key": "MiscInstances.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MiscInstances.h"
+                }, 
+                "MyCartBox.h": {
+                    "key": "MyCartBox.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MyCartBox.h"
+                }, 
+                "MyCartClass.h": {
+                    "key": "MyCartClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MyCartClass.h"
+                }, 
+                "MyOrderClass.h": {
+                    "key": "MyOrderClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MyOrderClass.h"
+                }, 
+                "MyOrderViewController.h": {
+                    "key": "MyOrderViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MyOrderViewController.h"
+                }, 
+                "MyPlace.h": {
+                    "key": "MyPlace.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "MyPlace.h"
+                }, 
+                "NSAttributedString+MGTrim.h": {
+                    "key": "NSAttributedString+MGTrim.h", 
+                    "prefix": "CandyCart/MGBoxKit/Categories/", 
+                    "suffix": "NSAttributedString+MGTrim.h"
+                }, 
+                "NSData+GIF.h": {
+                    "key": "NSData+GIF.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "NSData+GIF.h"
+                }, 
+                "NSDataAdditions.h": {
+                    "key": "NSDataAdditions.h", 
+                    "prefix": "CandyCart/XMLLib/", 
+                    "suffix": "NSDataAdditions.h"
+                }, 
+                "NSDate+TimeAgo.h": {
+                    "key": "NSDate+TimeAgo.h", 
+                    "prefix": "CandyCart/TimeAgo/", 
+                    "suffix": "NSDate+TimeAgo.h"
+                }, 
+                "NSObject+MGEvents.h": {
+                    "key": "NSObject+MGEvents.h", 
+                    "prefix": "CandyCart/MGBoxKit/Categories/", 
+                    "suffix": "NSObject+MGEvents.h"
+                }, 
+                "NSObject+SBJson.h": {
+                    "key": "NSObject+SBJson.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "NSObject+SBJson.h"
+                }, 
+                "NUIAppearance.h": {
+                    "key": "NUIAppearance.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUIAppearance.h"
+                }, 
+                "NUIBarButtonItemRenderer.h": {
+                    "key": "NUIBarButtonItemRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUIBarButtonItemRenderer.h"
+                }, 
+                "NUIButtonRenderer.h": {
+                    "key": "NUIButtonRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUIButtonRenderer.h"
+                }, 
+                "NUIControlRenderer.h": {
+                    "key": "NUIControlRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUIControlRenderer.h"
+                }, 
+                "NUIConverter.h": {
+                    "key": "NUIConverter.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUIConverter.h"
+                }, 
+                "NUIFileMonitor.h": {
+                    "key": "NUIFileMonitor.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUIFileMonitor.h"
+                }, 
+                "NUIGraphics.h": {
+                    "key": "NUIGraphics.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUIGraphics.h"
+                }, 
+                "NUILabelRenderer.h": {
+                    "key": "NUILabelRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUILabelRenderer.h"
+                }, 
+                "NUINavigationBarRenderer.h": {
+                    "key": "NUINavigationBarRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUINavigationBarRenderer.h"
+                }, 
+                "NUINavigationItemRenderer.h": {
+                    "key": "NUINavigationItemRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUINavigationItemRenderer.h"
+                }, 
+                "NUIProgressViewRenderer.h": {
+                    "key": "NUIProgressViewRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUIProgressViewRenderer.h"
+                }, 
+                "NUIRenderer.h": {
+                    "key": "NUIRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUIRenderer.h"
+                }, 
+                "NUISearchBarRenderer.h": {
+                    "key": "NUISearchBarRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUISearchBarRenderer.h"
+                }, 
+                "NUISegmentedControlRenderer.h": {
+                    "key": "NUISegmentedControlRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUISegmentedControlRenderer.h"
+                }, 
+                "NUISettings.h": {
+                    "key": "NUISettings.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUISettings.h"
+                }, 
+                "NUISliderRenderer.h": {
+                    "key": "NUISliderRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUISliderRenderer.h"
+                }, 
+                "NUIStyleParser.h": {
+                    "key": "NUIStyleParser.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUIStyleParser.h"
+                }, 
+                "NUISwitchRenderer.h": {
+                    "key": "NUISwitchRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUISwitchRenderer.h"
+                }, 
+                "NUISwizzler.h": {
+                    "key": "NUISwizzler.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUISwizzler.h"
+                }, 
+                "NUITabBarItemRenderer.h": {
+                    "key": "NUITabBarItemRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUITabBarItemRenderer.h"
+                }, 
+                "NUITabBarRenderer.h": {
+                    "key": "NUITabBarRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUITabBarRenderer.h"
+                }, 
+                "NUITableViewCellRenderer.h": {
+                    "key": "NUITableViewCellRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUITableViewCellRenderer.h"
+                }, 
+                "NUITableViewRenderer.h": {
+                    "key": "NUITableViewRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUITableViewRenderer.h"
+                }, 
+                "NUITextFieldRenderer.h": {
+                    "key": "NUITextFieldRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUITextFieldRenderer.h"
+                }, 
+                "NUIToolbarRenderer.h": {
+                    "key": "NUIToolbarRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUIToolbarRenderer.h"
+                }, 
+                "NUIUtilities.h": {
+                    "key": "NUIUtilities.h", 
+                    "prefix": "CandyCart/NUI/Core/", 
+                    "suffix": "NUIUtilities.h"
+                }, 
+                "NUIViewRenderer.h": {
+                    "key": "NUIViewRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUIViewRenderer.h"
+                }, 
+                "NUIWindowRenderer.h": {
+                    "key": "NUIWindowRenderer.h", 
+                    "prefix": "CandyCart/NUI/Core/Renderers/", 
+                    "suffix": "NUIWindowRenderer.h"
+                }, 
+                "NoInternetViewController.h": {
+                    "key": "NoInternetViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "NoInternetViewController.h"
+                }, 
+                "ODRefreshControl.h": {
+                    "key": "ODRefreshControl.h", 
+                    "prefix": "CandyCart/ODRefreshControl/", 
+                    "suffix": "ODRefreshControl.h"
+                }, 
+                "OrderNotesViewController.h": {
+                    "key": "OrderNotesViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "OrderNotesViewController.h"
+                }, 
+                "OrderViewController.h": {
+                    "key": "OrderViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "OrderViewController.h"
+                }, 
+                "PPRevealSideViewController.h": {
+                    "key": "PPRevealSideViewController.h", 
+                    "prefix": "CandyCart/PPRevealSideviewController/", 
+                    "suffix": "PPRevealSideViewController.h"
+                }, 
+                "PaymentWebViewController.h": {
+                    "key": "PaymentWebViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "PaymentWebViewController.h"
+                }, 
+                "PhotoBox.h": {
+                    "key": "PhotoBox.h", 
+                    "prefix": "CandyCart/MGBox/", 
+                    "suffix": "PhotoBox.h"
+                }, 
+                "PlaceHolderTextView.h": {
+                    "key": "PlaceHolderTextView.h", 
+                    "prefix": "CandyCart/CreditCard/", 
+                    "suffix": "PlaceHolderTextView.h"
+                }, 
+                "PlainPostDetailViewController.h": {
+                    "key": "PlainPostDetailViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "PlainPostDetailViewController.h"
+                }, 
+                "PostByCategoryViewController.h": {
+                    "key": "PostByCategoryViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "PostByCategoryViewController.h"
+                }, 
+                "PostDetailViewController.h": {
+                    "key": "PostDetailViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "PostDetailViewController.h"
+                }, 
+                "Processor.h": {
+                    "key": "Processor.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Processor.h"
+                }, 
+                "ProductDetailBox.h": {
+                    "key": "ProductDetailBox.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ProductDetailBox.h"
+                }, 
+                "ProfileViewController.h": {
+                    "key": "ProfileViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ProfileViewController.h"
+                }, 
+                "PushedMsgClass.h": {
+                    "key": "PushedMsgClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "PushedMsgClass.h"
+                }, 
+                "RSSFeedControllerViewController.h": {
+                    "key": "RSSFeedControllerViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "RSSFeedControllerViewController.h"
+                }, 
+                "RXMLElement.h": {
+                    "key": "RXMLElement.h", 
+                    "prefix": "CandyCart/XMLLib/", 
+                    "suffix": "RXMLElement.h"
+                }, 
+                "Reachability.h": {
+                    "key": "Reachability.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "Reachability.h"
+                }, 
+                "ReadMoreViewController.h": {
+                    "key": "ReadMoreViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ReadMoreViewController.h"
+                }, 
+                "ReviewCheckOutViewController.h": {
+                    "key": "ReviewCheckOutViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ReviewCheckOutViewController.h"
+                }, 
+                "RightViewController.h": {
+                    "key": "RightViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "RightViewController.h"
+                }, 
+                "SBJson.h": {
+                    "key": "SBJson.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJson.h"
+                }, 
+                "SBJsonParser.h": {
+                    "key": "SBJsonParser.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonParser.h"
+                }, 
+                "SBJsonStreamParser.h": {
+                    "key": "SBJsonStreamParser.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonStreamParser.h"
+                }, 
+                "SBJsonStreamParserAccumulator.h": {
+                    "key": "SBJsonStreamParserAccumulator.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonStreamParserAccumulator.h"
+                }, 
+                "SBJsonStreamParserAdapter.h": {
+                    "key": "SBJsonStreamParserAdapter.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonStreamParserAdapter.h"
+                }, 
+                "SBJsonStreamParserState.h": {
+                    "key": "SBJsonStreamParserState.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonStreamParserState.h"
+                }, 
+                "SBJsonStreamWriter.h": {
+                    "key": "SBJsonStreamWriter.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonStreamWriter.h"
+                }, 
+                "SBJsonStreamWriterAccumulator.h": {
+                    "key": "SBJsonStreamWriterAccumulator.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonStreamWriterAccumulator.h"
+                }, 
+                "SBJsonStreamWriterState.h": {
+                    "key": "SBJsonStreamWriterState.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonStreamWriterState.h"
+                }, 
+                "SBJsonTokeniser.h": {
+                    "key": "SBJsonTokeniser.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonTokeniser.h"
+                }, 
+                "SBJsonUTF8Stream.h": {
+                    "key": "SBJsonUTF8Stream.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonUTF8Stream.h"
+                }, 
+                "SBJsonWriter.h": {
+                    "key": "SBJsonWriter.h", 
+                    "prefix": "CandyCart/JSON/", 
+                    "suffix": "SBJsonWriter.h"
+                }, 
+                "SDImageCache.h": {
+                    "key": "SDImageCache.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDImageCache.h"
+                }, 
+                "SDSegmentedControl.h": {
+                    "key": "SDSegmentedControl.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "SDSegmentedControl.h"
+                }, 
+                "SDWebImageCompat.h": {
+                    "key": "SDWebImageCompat.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDWebImageCompat.h"
+                }, 
+                "SDWebImageDecoder.h": {
+                    "key": "SDWebImageDecoder.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDWebImageDecoder.h"
+                }, 
+                "SDWebImageDownloader.h": {
+                    "key": "SDWebImageDownloader.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDWebImageDownloader.h"
+                }, 
+                "SDWebImageDownloaderOperation.h": {
+                    "key": "SDWebImageDownloaderOperation.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDWebImageDownloaderOperation.h"
+                }, 
+                "SDWebImageManager.h": {
+                    "key": "SDWebImageManager.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDWebImageManager.h"
+                }, 
+                "SDWebImageOperation.h": {
+                    "key": "SDWebImageOperation.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDWebImageOperation.h"
+                }, 
+                "SDWebImagePrefetcher.h": {
+                    "key": "SDWebImagePrefetcher.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "SDWebImagePrefetcher.h"
+                }, 
+                "SQLiteManager.h": {
+                    "key": "SQLiteManager.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "SQLiteManager.h"
+                }, 
+                "SVProgressHUD.h": {
+                    "key": "SVProgressHUD.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/SVProgressHUD/", 
+                    "suffix": "SVProgressHUD.h"
+                }, 
+                "SZTextView.h": {
+                    "key": "SZTextView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "SZTextView.h"
+                }, 
+                "Scanner.h": {
+                    "key": "Scanner.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Scanner.h"
+                }, 
+                "SettingDataClass.h": {
+                    "key": "SettingDataClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "SettingDataClass.h"
+                }, 
+                "ShippingCheckOutViewController.h": {
+                    "key": "ShippingCheckOutViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ShippingCheckOutViewController.h"
+                }, 
+                "SimpleNotificationView.h": {
+                    "key": "SimpleNotificationView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "SimpleNotificationView.h"
+                }, 
+                "Symbol.h": {
+                    "key": "Symbol.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Symbol.h"
+                }, 
+                "TBXML.h": {
+                    "key": "TBXML.h", 
+                    "prefix": "CandyCart/XMLLib/", 
+                    "suffix": "TBXML.h"
+                }, 
+                "TTTAttributedLabel.h": {
+                    "key": "TTTAttributedLabel.h", 
+                    "prefix": "CandyCart/TTTAttributedLabel/", 
+                    "suffix": "TTTAttributedLabel.h"
+                }, 
+                "TempVariables.h": {
+                    "key": "TempVariables.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "TempVariables.h"
+                }, 
+                "ToolClass.h": {
+                    "key": "ToolClass.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "ToolClass.h"
+                }, 
+                "TriangleDropDown.h": {
+                    "key": "TriangleDropDown.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "TriangleDropDown.h"
+                }, 
+                "UIActivityIndicatorView+AFNetworking.h": {
+                    "key": "UIActivityIndicatorView+AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "UIActivityIndicatorView+AFNetworking.h"
+                }, 
+                "UIAlertView+AFNetworking.h": {
+                    "key": "UIAlertView+AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "UIAlertView+AFNetworking.h"
+                }, 
+                "UIApplication+DEComposeViewController.h": {
+                    "key": "UIApplication+DEComposeViewController.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "UIApplication+DEComposeViewController.h"
+                }, 
+                "UIBarButtonItem+NUI.h": {
+                    "key": "UIBarButtonItem+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UIBarButtonItem+NUI.h"
+                }, 
+                "UIButton+AFNetworking.h": {
+                    "key": "UIButton+AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "UIButton+AFNetworking.h"
+                }, 
+                "UIButton+NUI.h": {
+                    "key": "UIButton+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UIButton+NUI.h"
+                }, 
+                "UIButton+WebCache.h": {
+                    "key": "UIButton+WebCache.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "UIButton+WebCache.h"
+                }, 
+                "UIColor+MGExpanded.h": {
+                    "key": "UIColor+MGExpanded.h", 
+                    "prefix": "CandyCart/MGBoxKit/Categories/", 
+                    "suffix": "UIColor+MGExpanded.h"
+                }, 
+                "UIControl+MGEvents.h": {
+                    "key": "UIControl+MGEvents.h", 
+                    "prefix": "CandyCart/MGBoxKit/Categories/", 
+                    "suffix": "UIControl+MGEvents.h"
+                }, 
+                "UIControl+NUI.h": {
+                    "key": "UIControl+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UIControl+NUI.h"
+                }, 
+                "UIDevice+DEComposeViewController.h": {
+                    "key": "UIDevice+DEComposeViewController.h", 
+                    "prefix": "CandyCart/DECompose/", 
+                    "suffix": "UIDevice+DEComposeViewController.h"
+                }, 
+                "UIImage+GIF.h": {
+                    "key": "UIImage+GIF.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "UIImage+GIF.h"
+                }, 
+                "UIImage+MultiFormat.h": {
+                    "key": "UIImage+MultiFormat.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "UIImage+MultiFormat.h"
+                }, 
+                "UIImage+StackBlur.h": {
+                    "key": "UIImage+StackBlur.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "UIImage+StackBlur.h"
+                }, 
+                "UIImage+WebP.h": {
+                    "key": "UIImage+WebP.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "UIImage+WebP.h"
+                }, 
+                "UIImageView+AFNetworking.h": {
+                    "key": "UIImageView+AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "UIImageView+AFNetworking.h"
+                }, 
+                "UIImageView+WebCache.h": {
+                    "key": "UIImageView+WebCache.h", 
+                    "prefix": "CandyCart/SDWebImage/", 
+                    "suffix": "UIImageView+WebCache.h"
+                }, 
+                "UIKit+AFNetworking.h": {
+                    "key": "UIKit+AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "UIKit+AFNetworking.h"
+                }, 
+                "UILabel+NUI.h": {
+                    "key": "UILabel+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UILabel+NUI.h"
+                }, 
+                "UINavigationBar+NUI.h": {
+                    "key": "UINavigationBar+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UINavigationBar+NUI.h"
+                }, 
+                "UINavigationItem+NUI.h": {
+                    "key": "UINavigationItem+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UINavigationItem+NUI.h"
+                }, 
+                "UIProgressView+AFNetworking.h": {
+                    "key": "UIProgressView+AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "UIProgressView+AFNetworking.h"
+                }, 
+                "UIProgressView+NUI.h": {
+                    "key": "UIProgressView+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UIProgressView+NUI.h"
+                }, 
+                "UIResponder+FirstResponder.h": {
+                    "key": "UIResponder+FirstResponder.h", 
+                    "prefix": "CandyCart/MGBoxKit/Categories/", 
+                    "suffix": "UIResponder+FirstResponder.h"
+                }, 
+                "UISearchBar+NUI.h": {
+                    "key": "UISearchBar+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UISearchBar+NUI.h"
+                }, 
+                "UISegmentedControl+NUI.h": {
+                    "key": "UISegmentedControl+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UISegmentedControl+NUI.h"
+                }, 
+                "UISlider+NUI.h": {
+                    "key": "UISlider+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UISlider+NUI.h"
+                }, 
+                "UISwitch+NUI.h": {
+                    "key": "UISwitch+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UISwitch+NUI.h"
+                }, 
+                "UITabBar+NUI.h": {
+                    "key": "UITabBar+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UITabBar+NUI.h"
+                }, 
+                "UITabBarController+HideTabBar.h": {
+                    "key": "UITabBarController+HideTabBar.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "UITabBarController+HideTabBar.h"
+                }, 
+                "UITabBarItem+NUI.h": {
+                    "key": "UITabBarItem+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UITabBarItem+NUI.h"
+                }, 
+                "UITableView+NUI.h": {
+                    "key": "UITableView+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UITableView+NUI.h"
+                }, 
+                "UITableViewCell+NUI.h": {
+                    "key": "UITableViewCell+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UITableViewCell+NUI.h"
+                }, 
+                "UITextField+NUI.h": {
+                    "key": "UITextField+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UITextField+NUI.h"
+                }, 
+                "UIToolbar+NUI.h": {
+                    "key": "UIToolbar+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UIToolbar+NUI.h"
+                }, 
+                "UIView+Genie.h": {
+                    "key": "UIView+Genie.h", 
+                    "prefix": "CandyCart/GenieEffect/", 
+                    "suffix": "UIView+Genie.h"
+                }, 
+                "UIView+MGEasyFrame.h": {
+                    "key": "UIView+MGEasyFrame.h", 
+                    "prefix": "CandyCart/MGBoxKit/Categories/", 
+                    "suffix": "UIView+MGEasyFrame.h"
+                }, 
+                "UIView+NUI.h": {
+                    "key": "UIView+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UIView+NUI.h"
+                }, 
+                "UIView+Subviews.h": {
+                    "key": "UIView+Subviews.h", 
+                    "prefix": "CandyCart/DLStarRating/", 
+                    "suffix": "UIView+Subviews.h"
+                }, 
+                "UIView+viewController.h": {
+                    "key": "UIView+viewController.h", 
+                    "prefix": "CandyCart/InfiniteScrollPicker/", 
+                    "suffix": "UIView+viewController.h"
+                }, 
+                "UIWebView+AFNetworking.h": {
+                    "key": "UIWebView+AFNetworking.h", 
+                    "prefix": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/", 
+                    "suffix": "UIWebView+AFNetworking.h"
+                }, 
+                "UIWindow+NUI.h": {
+                    "key": "UIWindow+NUI.h", 
+                    "prefix": "CandyCart/NUI/UI/", 
+                    "suffix": "UIWindow+NUI.h"
+                }, 
+                "UserAuth.h": {
+                    "key": "UserAuth.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "UserAuth.h"
+                }, 
+                "UserDataTapGestureRecognizer.h": {
+                    "key": "UserDataTapGestureRecognizer.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "UserDataTapGestureRecognizer.h"
+                }, 
+                "UserDetailViewController.h": {
+                    "key": "UserDetailViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "UserDetailViewController.h"
+                }, 
+                "Video.h": {
+                    "key": "Video.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Video.h"
+                }, 
+                "Window.h": {
+                    "key": "Window.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/zbar/", 
+                    "suffix": "Window.h"
+                }, 
+                "WpPostBox.h": {
+                    "key": "WpPostBox.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "WpPostBox.h"
+                }, 
+                "ZBarCameraSimulator.h": {
+                    "key": "ZBarCameraSimulator.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarCameraSimulator.h"
+                }, 
+                "ZBarCaptureReader.h": {
+                    "key": "ZBarCaptureReader.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarCaptureReader.h"
+                }, 
+                "ZBarHelpController.h": {
+                    "key": "ZBarHelpController.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarHelpController.h"
+                }, 
+                "ZBarImage.h": {
+                    "key": "ZBarImage.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarImage.h"
+                }, 
+                "ZBarImageScanner.h": {
+                    "key": "ZBarImageScanner.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarImageScanner.h"
+                }, 
+                "ZBarReaderController.h": {
+                    "key": "ZBarReaderController.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarReaderController.h"
+                }, 
+                "ZBarReaderView.h": {
+                    "key": "ZBarReaderView.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarReaderView.h"
+                }, 
+                "ZBarReaderViewController.h": {
+                    "key": "ZBarReaderViewController.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarReaderViewController.h"
+                }, 
+                "ZBarSDK.h": {
+                    "key": "ZBarSDK.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarSDK.h"
+                }, 
+                "ZBarSymbol.h": {
+                    "key": "ZBarSymbol.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "ZBarSymbol.h"
+                }, 
+                "iPhoneWebView.h": {
+                    "key": "iPhoneWebView.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "iPhoneWebView.h"
+                }, 
+                "mapViewViewController.h": {
+                    "key": "mapViewViewController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "mapViewViewController.h"
+                }, 
+                "socialMediaController.h": {
+                    "key": "socialMediaController.h", 
+                    "prefix": "CandyCart/", 
+                    "suffix": "socialMediaController.h"
+                }, 
+                "zbar.h": {
+                    "key": "zbar.h", 
+                    "prefix": "CandyCart/ZBarSDK/Headers/ZBarSDK/", 
+                    "suffix": "zbar.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "/var/folders/2n/hg8ywk9139nc63ll3cxwk9b40000gp/T/tmpKxWjxX/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/2n/hg8ywk9139nc63ll3cxwk9b40000gp/T/tmpKxWjxX/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/2n/hg8ywk9139nc63ll3cxwk9b40000gp/T/tmpKxWjxX/DERIVED_FILE_DIR", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./CandyCart copy-Info.plist"
+    ], 
+    "libs": [
+        "z.1.2.5", 
+        "z", 
+        "iconv", 
+        "sqlite3", 
+        "zbar"
+    ], 
+    "modules": [], 
+    "pchs": [
+        "./CandyCart/CandyCart-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/A3ParallaxScrollView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/AddToCartQuantity.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/AppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/BillingCheckOutViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/BrowseDetailViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/BrowseViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CameraViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CartOption.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CartViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ChildCommentViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ChooseCreditCardController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ChooseSubCategoryController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFHTTPRequestOperation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFHTTPSessionManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFSecurityPolicy.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFURLConnectionOperation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFURLRequestSerialization.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFURLResponseSerialization.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/AFNetworking/AFURLSessionManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/DACircularProgress/DACircularProgressView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/DCIntrospect/DCCrossHairView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/DCIntrospect/DCFrameView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/DCIntrospect/DCIntrospect.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/DCIntrospect/DCStatusBarOverlay.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/ExternalLibraries/SVProgressHUD/SVProgressHUD.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/IDMCaptionView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/IDMPhoto.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/IDMPhotoBrowser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/IDMTapDetectingImageView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/IDMTapDetectingView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Classes/IDMZoomingScrollView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CommentViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ContactUsViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CountriesMenuViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CreditCard/CreditCard.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CreditCard/CreditCardController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CreditCard/GradientScrollView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/CreditCard/PlaceHolderTextView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/DEComposeViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/DEEmbossedLabel.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/DEGradientView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/DERuledView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/DESheetCardView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/DETextView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/UIApplication+DEComposeViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DECompose/UIDevice+DEComposeViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DLStarRating/DLStarRatingControl.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DLStarRating/DLStarView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DLStarRating/UIView+Subviews.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DataService.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DetailViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DeviceClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/DynamicTableViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ExploreViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/FPPopoverController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/FPPopoverView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/FPTouchView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/FXBlurView/FXBlurView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/FileSaveArrayClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/GKLParallaxPicturesViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/GeneralPopTableView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/GenieEffect/UIView+Genie.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/HZActivityIndicator/HZActivityIndicatorView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ImageGalleryBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ImageGalleryThumbController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/InfiniTabBar.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/InfiniteScrollPicker/InfiniteScrollPicker.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/InfiniteScrollPicker/UIView+viewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/InstagramBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/InstagramDetailWebView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/InstagramNativeDetailViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/InstagramViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/NSObject+SBJson.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonParser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonStreamParser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonStreamParserAccumulator.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonStreamParserAdapter.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonStreamParserState.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonStreamWriter.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonStreamWriterAccumulator.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonStreamWriterState.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonTokeniser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonUTF8Stream.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/JSON/SBJsonWriter.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/LaunchViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/LeftViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MBProgressHUD/MBProgressHUD.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MDCParallaxView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBox/PhotoBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/Categories/NSAttributedString+MGTrim.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/Categories/NSObject+MGEvents.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/Categories/UIColor+MGExpanded.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/Categories/UIControl+MGEvents.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/Categories/UIResponder+FirstResponder.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/Categories/UIView+MGEasyFrame.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGBlockWrapper.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGBoxProvider.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGButton.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGLayoutManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGLine.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGLineStyled.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGMushParser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGScrollView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGTableBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MGBoxKit/MGTableBoxStyled.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/MPAnimation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/MPFlipTransition.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/MPFoldTransition.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/MPTransition.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/Segues/MPFlipSegue.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/Segues/MPFoldModalSegue.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/Segues/MPFoldNavPopSegue.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/Segues/MPFoldNavPushSegue.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MPFoldTransition/Segues/MPFoldSegue.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MZTimerLabel/MZTimerLabel.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MainViewClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MapViewAnnotation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MenuViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MiscInstances.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MyCartBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MyCartClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MyOrderClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MyOrderViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/MyPlace.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUIAppearance.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUIConverter.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUIFileMonitor.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUIGraphics.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUIRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUISettings.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUIStyleParser.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUISwizzler.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/NUIUtilities.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUIBarButtonItemRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUIButtonRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUIControlRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUILabelRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUINavigationBarRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUINavigationItemRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUIProgressViewRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUISearchBarRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUISegmentedControlRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUISliderRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUISwitchRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUITabBarItemRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUITabBarRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUITableViewCellRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUITableViewRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUITextFieldRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUIToolbarRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUIViewRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/Core/Renderers/NUIWindowRenderer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UIBarButtonItem+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UIButton+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UIControl+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UILabel+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UINavigationBar+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UINavigationItem+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UIProgressView+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UISearchBar+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UISegmentedControl+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UISlider+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UISwitch+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UITabBar+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UITabBarItem+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UITableView+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UITableViewCell+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UITextField+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UIToolbar+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UIView+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NUI/UI/UIWindow+NUI.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/NoInternetViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ODRefreshControl/ODRefreshControl.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/OrderNotesViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/OrderViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/PPRevealSideviewController/PPRevealSideViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/PaymentWebViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/PlainPostDetailViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/PostByCategoryViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/PostDetailViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ProductDetailBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ProfileViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/PushedMsgClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/RSSFeedControllerViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/Reachability.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ReadMoreViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ReviewCheckOutViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/RightViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDSegmentedControl.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/MKAnnotationView+WebCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/NSData+GIF.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/SDImageCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/SDWebImageCompat.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/SDWebImageDecoder.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/SDWebImageDownloader.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/SDWebImageDownloaderOperation.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/SDWebImageManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/SDWebImagePrefetcher.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/UIButton+WebCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/UIImage+GIF.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/UIImage+MultiFormat.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/UIImage+WebP.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SDWebImage/UIImageView+WebCache.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SQLiteManager.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SZTextView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SettingDataClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ShippingCheckOutViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/SimpleNotificationView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/TTTAttributedLabel/TTTAttributedLabel.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/TempVariables.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/TimeAgo/NSDate+TimeAgo.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/ToolClass.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/TriangleDropDown.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/UIImage+StackBlur.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/UITabBarController+HideTabBar.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/UserAuth.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/UserDataTapGestureRecognizer.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/UserDetailViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/WpPostBox.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/XMLLib/NSDataAdditions.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/XMLLib/RXMLElement.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [
+                "-fno-objc-arc"
+            ], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/XMLLib/TBXML.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/iPhoneWebView.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/main.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/mapViewViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CandyCart/socialMediaController.m"
+        }
+    ], 
+    "storyboards": [], 
+    "type": "app", 
+    "version": "3", 
+    "xcode_project": "CandyCart.xcodeproj", 
+    "xibs": [
+        {
+            "target": null, 
+            "xib": "CandyCart/CameraViewController.xib"
+        }, 
+        {
+            "target": null, 
+            "xib": "CandyCart/NoInternetViewController.xib"
+        }, 
+        {
+            "target": null, 
+            "xib": "CandyCart/DECompose/DEComposeView.xib"
+        }, 
+        {
+            "target": null, 
+            "xib": "CandyCart/UserDetailViewController.xib"
+        }, 
+        {
+            "target": null, 
+            "xib": "CandyCart/LaunchViewController.xib"
+        }, 
+        {
+            "target": null, 
+            "xib": "CandyCart/mapViewViewController.xib"
+        }, 
+        {
+            "target": null, 
+            "xib": "CandyCart/CreditCard/CreditCardController.xib"
+        }, 
+        {
+            "target": null, 
+            "xib": "CandyCart/ContactUsViewController.xib"
+        }
+    ]
+}
