@@ -292,6 +292,7 @@
 "product_detail_add_to_cart_error_btn" = "OK";
 "product_detail_image_close" = "Done";
 "product_detail_add_to_cart_btn_out_of_order" = "Out of Order. Please come back later.";
+"product_detail_singer_welcome_title" = "Enjoy your wonderful night with us";
 
 //Product Read More
 "product_detail_read_more_desc"= "Description";
@@ -370,3 +371,5 @@
 "general.ok" = "OK";
 
 "order.coupon_limit_reached" = "Coupon usage limit has been reached.";
+"cart_review_buy_as_guest" = "Buy as Guest";
+"cart_review_buy_as_user"  = "Buy as User";

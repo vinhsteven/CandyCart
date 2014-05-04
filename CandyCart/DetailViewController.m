@@ -89,11 +89,28 @@
 //    int endMin  = [[nse nextObject] intValue];
     
     //check validate open hour of merchant
+#ifdef ibar
+    endHour += 24; //doi voi bar thi +24h de chuyen wa ngay moi
+#endif
     if (currentHour < startHour || currentHour >= endHour) {
         //out of order
         addToCartBox.addToCartLbl.text = NSLocalizedString(@"product_detail_add_to_cart_btn_out_of_order", nil);
 
         isOutOfOrder = YES;
+    }
+    
+    //kiem tra va ko cho order neu la` muc slug = ca-si
+    NSArray *categories = [productInfo objectForKey:@"categories"];
+    if ([categories count] > 0) {
+        for (int i=0;i < [categories count];i++) {
+            NSString *slug = [[categories objectAtIndex:i] objectForKey:@"slug"];
+            if ([slug isEqualToString:@"ca-si"]) {
+                addToCartBox.addToCartLbl.text = NSLocalizedString(@"product_detail_singer_welcome_title", nil);
+                
+                isOutOfOrder = YES;
+                break;
+            }
+        }
     }
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -363,15 +380,86 @@
     
     [he addSubview:tryDulu];
     
-    //Top View Product Simple
-    if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"simple"] || [[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"external"])
-    {
-        NSNumber *boolean = (NSNumber *)[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"is_on_sale"];
-        if([boolean boolValue] == FALSE)
+    BOOL isDisplayPrice = YES;
+    //kiem tra va ko cho order neu la` muc slug = ca-si
+    NSArray *categories = [productInfo objectForKey:@"categories"];
+    if ([categories count] > 0) {
+        for (int i=0;i < [categories count];i++) {
+            NSString *slug = [[categories objectAtIndex:i] objectForKey:@"slug"];
+            if ([slug isEqualToString:@"ca-si"]) {
+                isDisplayPrice = NO;
+                
+                break;
+            }
+        }
+    }
+    if (isDisplayPrice) {
+        //Top View Product Simple
+        if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"simple"] || [[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"external"])
         {
-            UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake(205, 200, 120, 40)];
+            NSNumber *boolean = (NSNumber *)[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"is_on_sale"];
+            if([boolean boolValue] == FALSE)
+            {
+                UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake(205, 200, 120, 40)];
+                price.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
+                price.text = [NSString stringWithFormat:@"%@ %@", [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]]];
+                price.layer.cornerRadius = 3;
+                price.layer.masksToBounds = YES;
+                price.textAlignment = NSTextAlignmentCenter;
+                price.textColor = [UIColor whiteColor];
+                [he addSubview:price];
+                
+            }
+            else
+            {
+                TTTAttributedLabel *price = [[TTTAttributedLabel alloc] initWithFrame:CGRectMake(105, 200, 220, 40)];
+                
+                price.textAlignment = NSTextAlignmentCenter;
+                price.font = [UIFont fontWithName:PRIMARYFONT size:14];
+                price.textColor = [UIColor whiteColor];
+                price.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+                price.layer.cornerRadius = 3;
+                [he addSubview:price];
+                
+                NSString *regular = [NSString stringWithFormat:@"%@ %@", [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]]];
+                
+                NSString *sale_price = [NSString stringWithFormat:@"%@ %@", [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"sale_price"]]];
+                
+                NSString *text = [NSString stringWithFormat:@"%@ %@",regular,sale_price];
+                [price setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^ NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
+                    NSRange boldRange = [[mutableAttributedString string] rangeOfString:sale_price options:NSCaseInsensitiveSearch];
+                    NSRange strikeRange = [[mutableAttributedString string] rangeOfString:regular options:NSCaseInsensitiveSearch];
+                    
+                    // Core Text APIs use C functions without a direct bridge to UIFont. See Apple's "Core Text Programming Guide" to learn how to configure string attributes.
+                    UIFont *boldSystemFont = [UIFont fontWithName:BOLDFONT size:14];
+                    CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)boldSystemFont.fontName, boldSystemFont.pointSize, NULL);
+                    if (font) {
+                        [mutableAttributedString addAttribute:(NSString *)kCTFontAttributeName value:(__bridge id)font range:boldRange];
+                        [mutableAttributedString addAttribute:kTTTStrikeOutAttributeName value:[NSNumber numberWithBool:YES] range:strikeRange];
+                        CFRelease(font);
+                    }
+                    
+                    return mutableAttributedString;
+                }];
+                
+                UILabel *onSaleBadge = [[UILabel alloc] initWithFrame:CGRectMake(10, 195, 50, 50)];
+                onSaleBadge.text = NSLocalizedString(@"sale_badge_title", nil);
+                [onSaleBadge setNuiClass:@"OnSaleBadge"];
+                onSaleBadge.textAlignment = NSTextAlignmentCenter;
+                onSaleBadge.layer.cornerRadius = 25;
+                
+                onSaleBadge.layer.masksToBounds = YES;
+                
+                [he addSubview:onSaleBadge];
+            }
+            //End of Top View Product Simple
+            
+        }
+        else if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"grouped"]){
+            
+            UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake(105, 200, 220, 40)];
             price.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
-            price.text = [NSString stringWithFormat:@"%@ %@", [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]]];
+            price.text = [NSString stringWithFormat:@"%@ %@ %@",NSLocalizedString(@"group_and_variable_pricing", nil), [[SettingDataClass instance] getCurrencySymbol],[[[productInfo objectForKey:@"if_group"] objectForKey:@"min_price"] objectForKey:@"price"]];
             price.layer.cornerRadius = 3;
             price.layer.masksToBounds = YES;
             price.textAlignment = NSTextAlignmentCenter;
@@ -379,89 +467,31 @@
             [he addSubview:price];
             
         }
-        else
-        {
-            TTTAttributedLabel *price = [[TTTAttributedLabel alloc] initWithFrame:CGRectMake(105, 200, 220, 40)];
+        else if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"variable"]){
+            variablePrice = [[TTTAttributedLabel alloc] initWithFrame:CGRectMake(105, 200, 220, 40)];
             
-            price.textAlignment = NSTextAlignmentCenter;
-            price.font = [UIFont fontWithName:PRIMARYFONT size:14];
-            price.textColor = [UIColor whiteColor];
-            price.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-            price.layer.cornerRadius = 3;
-            [he addSubview:price];
+            variablePrice.textAlignment = NSTextAlignmentCenter;
+            variablePrice.font = [UIFont fontWithName:PRIMARYFONT size:14];
+            variablePrice.textColor = [UIColor whiteColor];
+            variablePrice.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+            variablePrice.layer.cornerRadius = 3;
+            [he addSubview:variablePrice];
             
-            NSString *regular = [NSString stringWithFormat:@"%@ %@", [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]]];
+            NSString *text = [NSString stringWithFormat:@"%@ %@ %@",NSLocalizedString(@"group_and_variable_pricing", nil), [[SettingDataClass instance] getCurrencySymbol],[[[productInfo objectForKey:@"if_variants"] objectForKey:@"min_price"] objectForKey:@"price"]];
+            [variablePrice setText:text];
             
-            NSString *sale_price = [NSString stringWithFormat:@"%@ %@", [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"sale_price"]]];
+            onSaleBadgeVariable = [[UILabel alloc] initWithFrame:CGRectMake(10, 195, 50, 50)];
+            onSaleBadgeVariable.text = NSLocalizedString(@"sale_badge_title", nil);
+            [onSaleBadgeVariable setNuiClass:@"OnSaleBadge"];
+            onSaleBadgeVariable.textAlignment = NSTextAlignmentCenter;
+            onSaleBadgeVariable.layer.cornerRadius = 25;
             
-            NSString *text = [NSString stringWithFormat:@"%@ %@",regular,sale_price];
-            [price setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^ NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
-                NSRange boldRange = [[mutableAttributedString string] rangeOfString:sale_price options:NSCaseInsensitiveSearch];
-                NSRange strikeRange = [[mutableAttributedString string] rangeOfString:regular options:NSCaseInsensitiveSearch];
-                
-                // Core Text APIs use C functions without a direct bridge to UIFont. See Apple's "Core Text Programming Guide" to learn how to configure string attributes.
-                UIFont *boldSystemFont = [UIFont fontWithName:BOLDFONT size:14];
-                CTFontRef font = CTFontCreateWithName((__bridge CFStringRef)boldSystemFont.fontName, boldSystemFont.pointSize, NULL);
-                if (font) {
-                    [mutableAttributedString addAttribute:(NSString *)kCTFontAttributeName value:(__bridge id)font range:boldRange];
-                    [mutableAttributedString addAttribute:kTTTStrikeOutAttributeName value:[NSNumber numberWithBool:YES] range:strikeRange];
-                    CFRelease(font);
-                }
-                
-                return mutableAttributedString;
-            }];
-            
-            UILabel *onSaleBadge = [[UILabel alloc] initWithFrame:CGRectMake(10, 195, 50, 50)];
-            onSaleBadge.text = NSLocalizedString(@"sale_badge_title", nil);
-            [onSaleBadge setNuiClass:@"OnSaleBadge"];
-            onSaleBadge.textAlignment = NSTextAlignmentCenter;
-            onSaleBadge.layer.cornerRadius = 25;
-            
-            onSaleBadge.layer.masksToBounds = YES;
-            
-            [he addSubview:onSaleBadge];
-            
-            
+            onSaleBadgeVariable.layer.masksToBounds = YES;
+            onSaleBadgeVariable.hidden = YES;
+            [he addSubview:onSaleBadgeVariable];
             
         }
-        //End of Top View Product Simple
-        
-    }else if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"grouped"]){
-        
-        UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake(105, 200, 220, 40)];
-        price.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
-        price.text = [NSString stringWithFormat:@"%@ %@ %@",NSLocalizedString(@"group_and_variable_pricing", nil), [[SettingDataClass instance] getCurrencySymbol],[[[productInfo objectForKey:@"if_group"] objectForKey:@"min_price"] objectForKey:@"price"]];
-        price.layer.cornerRadius = 3;
-        price.layer.masksToBounds = YES;
-        price.textAlignment = NSTextAlignmentCenter;
-        price.textColor = [UIColor whiteColor];
-        [he addSubview:price];
-        
-    }else if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"variable"]){
-        variablePrice = [[TTTAttributedLabel alloc] initWithFrame:CGRectMake(105, 200, 220, 40)];
-        
-        variablePrice.textAlignment = NSTextAlignmentCenter;
-        variablePrice.font = [UIFont fontWithName:PRIMARYFONT size:14];
-        variablePrice.textColor = [UIColor whiteColor];
-        variablePrice.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-        variablePrice.layer.cornerRadius = 3;
-        [he addSubview:variablePrice];
-        
-        NSString *text = [NSString stringWithFormat:@"%@ %@ %@",NSLocalizedString(@"group_and_variable_pricing", nil), [[SettingDataClass instance] getCurrencySymbol],[[[productInfo objectForKey:@"if_variants"] objectForKey:@"min_price"] objectForKey:@"price"]];
-        [variablePrice setText:text];
-        
-        onSaleBadgeVariable = [[UILabel alloc] initWithFrame:CGRectMake(10, 195, 50, 50)];
-        onSaleBadgeVariable.text = NSLocalizedString(@"sale_badge_title", nil);
-        [onSaleBadgeVariable setNuiClass:@"OnSaleBadge"];
-        onSaleBadgeVariable.textAlignment = NSTextAlignmentCenter;
-        onSaleBadgeVariable.layer.cornerRadius = 25;
-        
-        onSaleBadgeVariable.layer.masksToBounds = YES;
-        onSaleBadgeVariable.hidden = YES;
-        [he addSubview:onSaleBadgeVariable];
-        
     }
-    
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     [topView addGestureRecognizer:tapGesture];
 }

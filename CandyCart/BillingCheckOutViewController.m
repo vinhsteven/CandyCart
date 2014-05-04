@@ -170,7 +170,7 @@
         billing_state.enabled = true;
     }
     
-        billing_phone = [[UITextField alloc] initWithFrame:CGRectMake(10, 360, 145, 40)];
+    billing_phone = [[UITextField alloc] initWithFrame:CGRectMake(10, 360, 145, 40)];
     billing_phone.placeholder = NSLocalizedString(@"profile_billing_placeholder_phone", nil);
     billing_phone.delegate = self;
     [billing_phone setKeyboardType:UIKeyboardTypePhonePad];
@@ -184,21 +184,22 @@
     billing_email.text = [[userData objectForKey:@"billing_address"] objectForKey:@"billing_email"];
     [scrollView addSubview:billing_email];
     
-    billing_update = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [billing_update addTarget:self
-                       action:@selector(updateBillingAction)
-             forControlEvents:UIControlEventTouchDown];
-    [billing_update setNuiClass:@"LargeButton"];
-    [billing_update setTitle:NSLocalizedString(@"checkout_next_btn_title", nil) forState:UIControlStateNormal];
-    billing_update.frame = CGRectMake(10, 410, 300, 40.0);
-    [scrollView addSubview:billing_update];
-    
+//    billing_update = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    [billing_update addTarget:self
+//                       action:@selector(updateBillingAction)
+//             forControlEvents:UIControlEventTouchDown];
+//    [billing_update setNuiClass:@"LargeButton"];
+//    [billing_update setTitle:NSLocalizedString(@"checkout_next_btn_title", nil) forState:UIControlStateNormal];
+//    billing_update.frame = CGRectMake(10, 410, 50, 40.0);
+//    [scrollView addSubview:billing_update];
+//    UIBarButtonItem *btnNext = [[UIBarButtonItem alloc] initWithCustomView:billing_update];
+    UIBarButtonItem *btnNext = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"checkout_next_btn_title", nil) style:UIBarButtonItemStylePlain target:self action:@selector(updateBillingAction)];
+    self.navigationItem.rightBarButtonItem = btnNext;
 }
 
 
 -(void)updateBillingAction
 {
-    
     if([billing_firstname.text length] == 0)
     {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_title", nil)
@@ -353,17 +354,15 @@
     [dic setValue:billing_phone.text forKey:@"billing_phone"];
     [dic setValue:billing_email.text forKey:@"billing_email"];
     
-    NSDictionary *status = [[DataService instance] billing_update:[UserAuth instance].username password:[UserAuth instance].password arg:dic];
+    NSDictionary *status;
     
-    if([[status objectForKey:@"status"] intValue] == 0)
-    {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([[userDefaults objectForKey:BUY_METHOD] isEqualToString:@"guest"]) {
+        status = [[DataService instance] billing_update:GUEST_USER password:GUEST_PASS arg:dic];
         //Successful
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
         
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            
-            
-            
             NSDictionary *newUserData = [[status objectForKey:@"new_user_data"] objectForKey:@"user"];
             NSMutableDictionary *dic = [newUserData copy];
             [[UserAuth instance] setUserData:dic];
@@ -375,25 +374,44 @@
             [self.navigationController pushViewController:shipController animated:YES];
             
         });
-      
     }
-    else
-    {
-        //Session Expired or Username & password wrong
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    else {
+        status = [[DataService instance] billing_update:[UserAuth instance].username password:[UserAuth instance].password arg:dic];
+        if([[status objectForKey:@"status"] intValue] == 0)
+        {
+            //Successful
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
             
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_title", nil)
-
-                                                           message: NSLocalizedString(@"general_notification_error_loginwaschange", nil)
-                                                          delegate: nil
-                                                 cancelButtonTitle:nil
-                                                 otherButtonTitles:NSLocalizedString(@"general_notification_ok_btn_title", nil),nil];
-            
-            
-            [alert show];
-            
-        });
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                NSDictionary *newUserData = [[status objectForKey:@"new_user_data"] objectForKey:@"user"];
+                NSMutableDictionary *dic = [newUserData copy];
+                [[UserAuth instance] setUserData:dic];
+                userData = [[UserAuth instance] userData];
+                
+                self.title = @"Back";
+                
+                ShippingCheckOutViewController *shipController = [[ShippingCheckOutViewController alloc] init];
+                [self.navigationController pushViewController:shipController animated:YES];
+                
+            });
+        }
+        else
+        {
+            //Session Expired or Username & password wrong
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_title", nil)
+                                      
+                                                               message: NSLocalizedString(@"general_notification_error_loginwaschange", nil)
+                                                              delegate: nil
+                                                     cancelButtonTitle:nil
+                                                     otherButtonTitles:NSLocalizedString(@"general_notification_ok_btn_title", nil),nil];
+                
+                [alert show];
+                
+            });
+        }
     }
 }
 

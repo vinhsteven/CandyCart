@@ -51,7 +51,7 @@
     [clearForm setTitle:NSLocalizedString(@"checkout_shipping_clear_btn", nil) forState:UIControlStateNormal];
     [clearForm addTarget:self
              action:@selector(clearForm)
-   forControlEvents:UIControlEventTouchDown];
+        forControlEvents:UIControlEventTouchDown];
     
     [clearForm setNuiClass:@"UiBarButtonItem"];
     [clearForm.layer setBorderColor:[[UIColor whiteColor] CGColor]];
@@ -63,7 +63,11 @@
     
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     [self.view addGestureRecognizer:singleTap];
-    
+ 
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([[userDefaults objectForKey:BUY_METHOD] isEqualToString:@"guest"]) {
+        [self clearForm];
+    }
 }
 
 -(void)clearForm{
@@ -256,23 +260,20 @@
     [dic setValue:[[userData objectForKey:@"billing_address"] objectForKey:@"billing_country_code"] forKey:@"shipping_country"];
     
     
-    NSDictionary *status = [[DataService instance] shipping_update:[UserAuth instance].username password:[UserAuth instance].password arg:dic];
+    NSDictionary *status;
+    NSDictionary *reviewData;
     
-    
-    NSDictionary *reviewData = [[DataService instance] reviewCartWithCoupon:[UserAuth instance].username password:[UserAuth instance].password productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString]];
-    
-    
-    [[MyCartClass instance] setServerCart:reviewData];
-    
-    if([[status objectForKey:@"status"] intValue] == 0)
-    {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([[userDefaults objectForKey:BUY_METHOD] isEqualToString:@"guest"]) {
+        status = [[DataService instance] shipping_update:GUEST_USER password:GUEST_PASS arg:dic];
+        reviewData = [[DataService instance] reviewCartWithCoupon:GUEST_USER password:GUEST_PASS productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString]];
+        
+        [[MyCartClass instance] setServerCart:reviewData];
+        
         //Successful
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
         
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            
-            
-            
             NSDictionary *newUserData = [[status objectForKey:@"new_user_data"] objectForKey:@"user"];
             NSMutableDictionary *dic = [newUserData copy];
             [[UserAuth instance] setUserData:dic];
@@ -282,25 +283,46 @@
             [self.navigationController pushViewController:review animated:YES];
             
         });
-        
     }
-    else
-    {
-        //Session Expired or Username & password wrong
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    else {
+        status = [[DataService instance] shipping_update:[UserAuth instance].username password:[UserAuth instance].password arg:dic];
+        reviewData = [[DataService instance] reviewCartWithCoupon:[UserAuth instance].username password:[UserAuth instance].password productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString]];
+        
+        [[MyCartClass instance] setServerCart:reviewData];
+        
+        if([[status objectForKey:@"status"] intValue] == 0)
+        {
+            //Successful
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
             
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_title", nil)
-                                                           message: NSLocalizedString(@"general_notification_error_loginwaschange", nil)
-                                                          delegate: nil
-                                                 cancelButtonTitle:nil
-                                                 otherButtonTitles:NSLocalizedString(@"general_notification_ok_btn_title", nil)
-,nil];
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                NSDictionary *newUserData = [[status objectForKey:@"new_user_data"] objectForKey:@"user"];
+                NSMutableDictionary *dic = [newUserData copy];
+                [[UserAuth instance] setUserData:dic];
+                userData = [[UserAuth instance] userData];
+                
+                ReviewCheckOutViewController *review = [[ReviewCheckOutViewController alloc] init];
+                [self.navigationController pushViewController:review animated:YES];
+                
+            });
             
-            
-            [alert show];
-            
-        });
+        }
+        else
+        {
+            //Session Expired or Username & password wrong
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_title", nil)
+                                                               message: NSLocalizedString(@"general_notification_error_loginwaschange", nil)
+                                                              delegate: nil
+                                                     cancelButtonTitle:nil
+                                                     otherButtonTitles:NSLocalizedString(@"general_notification_ok_btn_title", nil)
+                                      ,nil];
+                [alert show];
+                
+            });
+        }
     }
 }
 

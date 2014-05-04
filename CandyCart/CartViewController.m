@@ -7,6 +7,7 @@
 //
 
 #import "CartViewController.h"
+#import "ListBuyMethod.h"
 
 @interface CartViewController ()
 
@@ -45,25 +46,61 @@
     [self.view addSubview:scroller];
     
     
-    UIButton *next = [UIButton buttonWithType:UIButtonTypeCustom];
-    next.frame = CGRectMake(self.view.frame.size.width - 69, 8, 63, 30);
-    next.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
-    [next setTitle:NSLocalizedString(@"cart_next_btn_title", nil) forState:UIControlStateNormal];
-    [next addTarget:self
+    btnNext = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnNext.frame = CGRectMake(self.view.frame.size.width - 69, 8, 63, 30);
+    btnNext.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
+    [btnNext setTitle:NSLocalizedString(@"cart_next_btn_title", nil) forState:UIControlStateNormal];
+    [btnNext addTarget:self
              action:@selector(nextBtnAction)
-   forControlEvents:UIControlEventTouchDown];
+    forControlEvents:UIControlEventTouchDown];
     
-    [next setNuiClass:@"UiBarButtonItem"];
-    [next.layer setBorderColor:[[UIColor whiteColor] CGColor]];
+    [btnNext setNuiClass:@"UiBarButtonItem"];
+    [btnNext.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     
     UIBarButtonItem *button = [[UIBarButtonItem alloc]
-                               initWithCustomView:next];
+                               initWithCustomView:btnNext];
     self.navigationItem.rightBarButtonItem = button;
     
+    //add popover when tap Next
+    ListBuyMethod *controller = [[ListBuyMethod alloc] init];
+    controller.parent = self;
+    
+    popover = [[FPPopoverController alloc] initWithViewController:controller];
+    
+    popover.border = NO;
+    popover.delegate = self;
+    popover.contentSize = CGSizeMake(200,160);
+    [popover.view setNuiClass:@"DropDownView"];
+    [popover disableDismissOutside:YES];
+    
+    [popover presentPopoverFromView:btnNext];
+    popover.view.hidden = YES;
 }
 
 -(void)nextBtnAction{
+    if([[MyCartClass instance] countProduct] > 0) {
+        
+        if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
+        {
+            BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
+            [self.navigationController pushViewController:billing animated:YES];
+        }
+        else {
+            popover.view.hidden = NO;
+        }
+    }
+    else {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_error_title", nil)
+                              
+                                                       message: NSLocalizedString(@"cart_error_empty", nil)
+                                                      delegate: nil
+                                             cancelButtonTitle:nil
+                                             otherButtonTitles:NSLocalizedString(@"general_notification_ok_btn_title", nil),nil];
+        
+        [alert show];
+    }
     
+    /*
     if([[MyCartClass instance] countProduct] > 0)
     {
         if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
@@ -87,6 +124,7 @@
         
         [alert show];
     }
+     */
 }
 
 
@@ -371,10 +409,44 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark FPPopoverControllerDelegate
+- (void)popoverControllerDidDismissPopover:(FPPopoverController *)popoverController {
+    
+}
+
+- (void) didSelectBuyMethod:(NSString*)type {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:type forKey:BUY_METHOD];
+    if ([type isEqualToString:@"guest"]) {
+        NSLog(@"guest");
+        [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        dispatch_queue_t queue = dispatch_queue_create("com.nhuanquang.autoLoginExe", NULL);
+        dispatch_async(queue, ^(void) {
+            NSDictionary * user_data = [[DataService instance] user_login:GUEST_USER password:GUEST_PASS];
+            
+            dispatch_async(dispatch_get_main_queue(), ^(void) {
+                if([[user_data objectForKey:@"status"] intValue] == 0)
+                {
+                    //Successful Logged
+//                    [[UserAuth instance] setUserDatas:[user_data objectForKey:@"user"]];
+                    [[UserAuth instance] setUserDatas:nil];
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+                    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                        BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
+                        [self.navigationController pushViewController:billing animated:YES];
+                    });
+                }
+                
+                [MBProgressHUD hideAllHUDsForView:self.navigationController.view animated:YES];
+                popover.view.hidden = YES;
+            });
+        });
+
+    }
+    else {
+        //buy as user
+        NSLog(@"user");
+    }
 }
 
 @end

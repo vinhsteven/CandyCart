@@ -13,10 +13,15 @@
 #import "MyCartBox.h"
 #import "DetailViewController.h"
 #import "BillingCheckOutViewController.h"
-@interface CartViewController : UIViewController<UIScrollViewDelegate,MBProgressHUDDelegate>
+@interface CartViewController : UIViewController<UIScrollViewDelegate,MBProgressHUDDelegate,FPPopoverControllerDelegate>
 {
     MGScrollView *scroller;
     MBProgressHUD *HUD;
     CGPoint initialContentOffset;
+    FPPopoverController *popover;
+    UIButton *btnNext;
 }
+
+- (void) didSelectBuyMethod:(NSString*)type;
+
 @end

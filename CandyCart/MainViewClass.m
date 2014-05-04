@@ -180,9 +180,6 @@
             HUD.delegate = self;
             HUD.labelText = @"Processing";
             [HUD showWhileExecuting:@selector(processAutPayment) onTarget:self withObject:nil animated:YES];
-            
-            
-            
         }];
     }
     else

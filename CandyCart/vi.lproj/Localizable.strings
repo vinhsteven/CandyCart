@@ -301,6 +301,7 @@
 "product_detail_add_to_cart_error_btn" = "Xác nhận";
 "product_detail_image_close" = "Hoàn tất";
 "product_detail_add_to_cart_btn_out_of_order" = "Đã hết giờ làm việc. Hẹn gặp lại quý khách lần sau.";
+"product_detail_singer_welcome_title" = "Hãy tận hưởng buổi tối tuyệt vời cùng chúng tôi.";
 
 //Product Read More
 "product_detail_read_more_desc"= "Mô tả";
@@ -379,3 +380,5 @@
 "general.ok" = "OK";
 
 "order.coupon_limit_reached" = "Phiếu giảm giá đã được sử dụng.";
+"cart_review_buy_as_guest" = "Mua bởi Khách";
+"cart_review_buy_as_user"  = "Mua bởi Tài khoản";

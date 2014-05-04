@@ -102,8 +102,18 @@
 }
 
 -(void)placeAnOrderExe{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    NSDictionary *orderStatus = [[DataService instance] placeAnOrder:[UserAuth instance].username password:[UserAuth instance].password productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString] paymentMethodID:paymentMethodID orderNotes:[[MyCartClass instance] getOrderNotes]];
+    NSDictionary *orderStatus;
+    NSLog(@"Order Notes : %@",[[MyCartClass instance] getOrderNotes]);
+    
+    if ([[userDefaults objectForKey:BUY_METHOD] isEqualToString:@"guest"]) {
+        orderStatus = [[DataService instance] placeAnOrder:GUEST_USER password:GUEST_PASS productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString] paymentMethodID:paymentMethodID orderNotes:[[MyCartClass instance] getOrderNotes]];
+    }
+    else {
+        orderStatus = [[DataService instance] placeAnOrder:[UserAuth instance].username password:[UserAuth instance].password productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString] paymentMethodID:paymentMethodID orderNotes:[[MyCartClass instance] getOrderNotes]];
+    }
+
     NSLog(@"Order Notes : %@",[[MyCartClass instance] getOrderNotes]);
     
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);

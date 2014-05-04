@@ -263,10 +263,7 @@
             [self loggout];
             
         });
-        
-        
     }
-
 }
 
 -(void)loginBtnActionExe

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C205D1F9191627A400DC8C17 /* ListBuyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C205D1F8191627A400DC8C17 /* ListBuyMethod.m */; };
+		C205D1FA191627A400DC8C17 /* ListBuyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C205D1F8191627A400DC8C17 /* ListBuyMethod.m */; };
+		C205D1FB191627A400DC8C17 /* ListBuyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C205D1F8191627A400DC8C17 /* ListBuyMethod.m */; };
+		C205D1FC191627A400DC8C17 /* ListBuyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C205D1F8191627A400DC8C17 /* ListBuyMethod.m */; };
 		C222893118F9730700447226 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C222892D18F9730600447226 /* RevMobAds.framework */; };
 		C222893318F9749B00447226 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C222893218F9749B00447226 /* AdSupport.framework */; };
 		C222893C18F9856400447226 /* icon-camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C222893818F9856400447226 /* icon-camera@2x.png */; };
@@ -2423,6 +2427,8 @@
 		0EFE9E3617F63E1900B53412 /* ios7back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios7back.png; sourceTree = "<group>"; };
 		C203C75B18DD6C5800306090 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C203C76818DD80DC00306090 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C205D1F7191627A400DC8C17 /* ListBuyMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListBuyMethod.h; sourceTree = "<group>"; };
+		C205D1F8191627A400DC8C17 /* ListBuyMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListBuyMethod.m; sourceTree = "<group>"; };
 		C207613618EBC9C3002B6867 /* AddNewCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewCameraViewController.h; sourceTree = "<group>"; };
 		C207613718EBC9C3002B6867 /* AddNewCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewCameraViewController.m; sourceTree = "<group>"; };
 		C207613818EBC9C3002B6867 /* AddNewCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewCameraViewController.xib; sourceTree = "<group>"; };
@@ -3168,6 +3174,8 @@
 				0E37A23817BAB28200D27399 /* PaymentWebViewController.m */,
 				0E076D9E18983DA00061E577 /* ChooseCreditCardController.h */,
 				0E076D9F18983DA00061E577 /* ChooseCreditCardController.m */,
+				C205D1F7191627A400DC8C17 /* ListBuyMethod.h */,
+				C205D1F8191627A400DC8C17 /* ListBuyMethod.m */,
 			);
 			name = CheckOutController;
 			sourceTree = "<group>";
@@ -5227,6 +5235,7 @@
 				C22A02221915528900CFD409 /* RNEncryptor.m in Sources */,
 				C22A02231915528900CFD409 /* BrowseViewController.m in Sources */,
 				C22A02241915528900CFD409 /* NSObject+SBJson.m in Sources */,
+				C205D1FC191627A400DC8C17 /* ListBuyMethod.m in Sources */,
 				C22A02251915528900CFD409 /* SBJsonParser.m in Sources */,
 				C22A02261915528900CFD409 /* MGTableBox.m in Sources */,
 				C22A02271915528900CFD409 /* SBJsonStreamParser.m in Sources */,
@@ -5496,6 +5505,7 @@
 				C259731C1913E2A900C78523 /* RNEncryptor.m in Sources */,
 				C259731D1913E2A900C78523 /* BrowseViewController.m in Sources */,
 				C259731E1913E2A900C78523 /* NSObject+SBJson.m in Sources */,
+				C205D1FB191627A400DC8C17 /* ListBuyMethod.m in Sources */,
 				C259731F1913E2A900C78523 /* SBJsonParser.m in Sources */,
 				C25973201913E2A900C78523 /* MGTableBox.m in Sources */,
 				C25973211913E2A900C78523 /* SBJsonStreamParser.m in Sources */,
@@ -5765,6 +5775,7 @@
 				C2824D9F191392D900061E96 /* RNEncryptor.m in Sources */,
 				C2824DA0191392D900061E96 /* BrowseViewController.m in Sources */,
 				C2824DA1191392D900061E96 /* NSObject+SBJson.m in Sources */,
+				C205D1FA191627A400DC8C17 /* ListBuyMethod.m in Sources */,
 				C2824DA2191392D900061E96 /* SBJsonParser.m in Sources */,
 				C2824DA3191392D900061E96 /* MGTableBox.m in Sources */,
 				C2824DA4191392D900061E96 /* SBJsonStreamParser.m in Sources */,
@@ -6034,6 +6045,7 @@
 				C2F0931318F2E61500AC2C7A /* RNEncryptor.m in Sources */,
 				C2F0931418F2E61500AC2C7A /* BrowseViewController.m in Sources */,
 				C2F0931518F2E61500AC2C7A /* NSObject+SBJson.m in Sources */,
+				C205D1F9191627A400DC8C17 /* ListBuyMethod.m in Sources */,
 				C2F0931618F2E61500AC2C7A /* SBJsonParser.m in Sources */,
 				C2F0931718F2E61500AC2C7A /* MGTableBox.m in Sources */,
 				C2F0931818F2E61500AC2C7A /* SBJsonStreamParser.m in Sources */,

@@ -36,6 +36,11 @@
 //#define MAIN_URL @"http://nhuanquang.com/traphuson"
 //#define ROOT_ACCOUNT @"vinhsteven" //root account for this database
 
+#define GUEST_USER  @"guest"
+#define GUEST_PASS  @"abc123"
+
+#define BUY_METHOD @"BuyMethod" //buy as user / guest
+
 #define MAIN_URL_HTTPS @"" //Leave empty if you didn't install any SSL in your server e.g https://candycart.appress.me/
 
 //GLOBAL FONT
