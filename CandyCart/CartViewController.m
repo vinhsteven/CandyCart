@@ -8,6 +8,7 @@
 
 #import "CartViewController.h"
 #import "ListBuyMethod.h"
+#import "ListTableViewController.h"
 
 @interface CartViewController ()
 
@@ -69,7 +70,7 @@
     
     popover.border = NO;
     popover.delegate = self;
-    popover.contentSize = CGSizeMake(200,160);
+    popover.contentSize = CGSizeMake(200,240);
     [popover.view setNuiClass:@"DropDownView"];
     [popover disableDismissOutside:YES];
     
@@ -78,10 +79,13 @@
 }
 
 -(void)nextBtnAction{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if([[MyCartClass instance] countProduct] > 0) {
         
         if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
         {
+            [userDefaults setObject:@"user" forKey:BUY_METHOD];
+            
             BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
             [self.navigationController pushViewController:billing animated:YES];
         }
@@ -414,9 +418,76 @@
     
 }
 
-- (void) didSelectBuyMethod:(NSString*)type {
+- (void) didSelectBuyMethod:(NSString*)type andType:(int)_howType {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:type forKey:BUY_METHOD];
+    
+#ifdef TEST
+    //kiem tra Neu mua Tai Cho thi list table,
+    //nguoc lai thi hien thi de nhap dia chi giao hang
+    if (_howType == 1) {
+        //Take away
+        if ([type isEqualToString:@"guest"]) {
+            NSLog(@"guest");
+            [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+            dispatch_queue_t queue = dispatch_queue_create("com.nhuanquang.autoLoginExe", NULL);
+            dispatch_async(queue, ^(void) {
+                NSDictionary * user_data = [[DataService instance] user_login:GUEST_USER password:GUEST_PASS];
+                
+                dispatch_async(dispatch_get_main_queue(), ^(void) {
+                    if([[user_data objectForKey:@"status"] intValue] == 0)
+                    {
+                        //Successful Logged
+                        [[UserAuth instance] setUserDatas:nil];
+                        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+                        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                            BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
+                            [self.navigationController pushViewController:billing animated:YES];
+                        });
+                    }
+                    
+                    [MBProgressHUD hideAllHUDsForView:self.navigationController.view animated:YES];
+                    popover.view.hidden = YES;
+                });
+            });
+            
+        }
+        else {
+            //buy as user
+            NSLog(@"user");
+            if([[MyCartClass instance] countProduct] > 0)
+            {
+                if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
+                {
+                    BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
+                    [self.navigationController pushViewController:billing animated:YES];
+                }
+                else
+                {
+                    [self autoLogin];
+                }
+            }
+            else
+            {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_error_title", nil)
+                                      
+                                                               message: NSLocalizedString(@"cart_error_empty", nil)
+                                                              delegate: nil
+                                                     cancelButtonTitle:nil
+                                                     otherButtonTitles:NSLocalizedString(@"general_notification_ok_btn_title", nil),nil];
+                
+                [alert show];
+            }
+        }
+    }
+    else {
+        popover.view.hidden = YES;
+        
+        ListTableViewController *controller = [[ListTableViewController alloc] init];
+        controller.buyMethod = type;
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+#else
     if ([type isEqualToString:@"guest"]) {
         NSLog(@"guest");
         [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
@@ -428,7 +499,6 @@
                 if([[user_data objectForKey:@"status"] intValue] == 0)
                 {
                     //Successful Logged
-//                    [[UserAuth instance] setUserDatas:[user_data objectForKey:@"user"]];
                     [[UserAuth instance] setUserDatas:nil];
                     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
                     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
@@ -441,12 +511,36 @@
                 popover.view.hidden = YES;
             });
         });
-
+        
     }
     else {
         //buy as user
         NSLog(@"user");
+        if([[MyCartClass instance] countProduct] > 0)
+        {
+            if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
+            {
+                BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
+                [self.navigationController pushViewController:billing animated:YES];
+            }
+            else
+            {
+                [self autoLogin];
+            }
+        }
+        else
+        {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_error_title", nil)
+                                  
+                                                           message: NSLocalizedString(@"cart_error_empty", nil)
+                                                          delegate: nil
+                                                 cancelButtonTitle:nil
+                                                 otherButtonTitles:NSLocalizedString(@"general_notification_ok_btn_title", nil),nil];
+            
+            [alert show];
+        }
     }
+#endif
 }
 
 @end

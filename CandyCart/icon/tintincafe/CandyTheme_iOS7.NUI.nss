@@ -6,8 +6,8 @@
 @BOLDFONT: Helvetica;
 
 //PRIMARY APP COLOR
-@PRIMARYCOLOR:#68450e; //Effect Navigation Bar & Button Color & TableViewSelected 
-@PRIMARYCOLOR_BOLD:#53370c; //E.g On selected segment
+@PRIMARYCOLOR:#4f1816; //Effect Navigation Bar & Button Color & TableViewSelected
+@PRIMARYCOLOR_BOLD:#2e1211; //E.g On selected segment
 @OTHER_COLOR:#ffffff;
 @OTHER_COLOR_2:#cccccc; //Use in search background
 

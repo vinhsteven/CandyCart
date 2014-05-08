@@ -32,12 +32,9 @@
     
     NSMutableDictionary *saveTemp =[[NSMutableDictionary alloc] init];
     
-    
     [saveTemp setValue:username forKey:@"username"];
     [saveTemp setValue:password forKey:@"password"];
     [self saveUserLogged:saveTemp];
-    
-  
 }
 
 
@@ -78,7 +75,6 @@
 
 
 -(BOOL)checkUserAlreadyLogged{
-    
     NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString* foofile = [documentsPath stringByAppendingPathComponent:@"userAuth.dat"];
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:foofile];
@@ -93,32 +89,24 @@
     }
     else
     {
-       
         return NO;
     }
-    
-    
 }
 
 -(void)setAlreadyLoggedIn:(BOOL)status{
-    
     alreadyLogged = status;
-    
 }
 
 -(BOOL)checkUserIfAlreadyLoggedInMobile{
-    
-   if( alreadyLogged == YES)
-   {
-       return true;
-       
-   }
+    if( alreadyLogged == YES)
+    {
+        return true;
+        
+    }
     else
     {
         return false;
     }
-    
-    
 }
 
 @end

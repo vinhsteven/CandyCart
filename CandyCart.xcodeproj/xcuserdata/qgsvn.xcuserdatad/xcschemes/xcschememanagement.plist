@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>highlandcafe.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>khobom.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>pub.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>saigoncafe.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>shop.xcscheme</key>
 		<dict>
@@ -37,6 +52,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C250A6C41917F21F00061CA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C259730F1913E2A900C78523</key>
 		<dict>
 			<key>primary</key>
@@ -52,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C2A9C211191A78F000032CB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C2D4225318F002F200E64028</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2E8A2B01919D47400BB5AAC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

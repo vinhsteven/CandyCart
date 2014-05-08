@@ -210,7 +210,8 @@
         
         
         [alert show];
-    }else if([billing_lastname.text length] == 0)
+    }
+    else if([billing_lastname.text length] == 0)
     {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_title", nil)
                                                        message: NSLocalizedString(@"checkout_billing_error_lastname_empty", nil)

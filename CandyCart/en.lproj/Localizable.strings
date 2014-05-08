@@ -373,3 +373,6 @@
 "order.coupon_limit_reached" = "Coupon usage limit has been reached.";
 "cart_review_buy_as_guest" = "Buy as Guest";
 "cart_review_buy_as_user"  = "Buy as User";
+"cart_review_buy_at_shop" = "At shop";
+"cart_review_take_away" = "Take away";
+"cart_review_free_shipping" = "Free Shipping";

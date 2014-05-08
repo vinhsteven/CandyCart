@@ -105,7 +105,31 @@
         }
 #endif
         
-
+#ifdef khobom
+        if(result.height == 1136) {
+            myActivity.frame = CGRectMake(150, 379+50, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351+60, 150, 2);
+        }
+        else {
+            myActivity.frame = CGRectMake(150, 379+20, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351+40, 150, 2);
+        }
+#endif
+        
+#ifdef highlandcafe
+        if(result.height == 1136) {
+            myActivity.frame = CGRectMake(150, 379-120, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-120, 150, 2);
+        }
+        else {
+            myActivity.frame = CGRectMake(150, 379-150, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-150, 150, 2);
+        }
+#endif
         [self.view addSubview:bgImgView];
     }
     
@@ -206,7 +230,6 @@
                 }
             }];
         });
-        
     });
 }
 - (void)pprevealSideViewController:(PPRevealSideViewController *)controller didPopToController:(UIViewController *)centerController {

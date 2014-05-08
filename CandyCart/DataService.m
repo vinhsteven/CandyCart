@@ -740,7 +740,6 @@
     NSDictionary *user_data = [rawJson JSONValue];
     
     return user_data;
-    
 }
 
 

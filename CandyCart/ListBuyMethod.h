@@ -13,5 +13,6 @@
 }
 
 @property (unsafe_unretained) id parent;
+@property (strong,nonatomic) UISegmentedControl *mainSegment;
 
 @end

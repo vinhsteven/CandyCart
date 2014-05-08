@@ -382,3 +382,6 @@
 "order.coupon_limit_reached" = "Phiếu giảm giá đã được sử dụng.";
 "cart_review_buy_as_guest" = "Mua bởi Khách";
 "cart_review_buy_as_user"  = "Mua bởi Tài khoản";
+"cart_review_buy_at_shop" = "Tại chỗ";
+"cart_review_take_away" = "Mang đi";
+"cart_review_free_shipping" = "Miễn phí vận chuyển";

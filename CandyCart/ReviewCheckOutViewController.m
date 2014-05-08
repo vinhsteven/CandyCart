@@ -260,9 +260,14 @@
     [section.topLines addObject:cutSubTotal];
     
     
-    MGLineStyled
-    *shipping = [MGLineStyled lineWithLeft:[NSString stringWithFormat:@"%@",NSLocalizedString(@"checkout_label_shipping_method_and_cost", nil)]
-                                     right:[NSString stringWithFormat:@"%@ : %@ %@",[[MyCartClass instance] getServerCartValueByObjectKey:@"shipping-method"], [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[NSString stringWithFormat:@"%f",[[[MyCartClass instance] getServerCartValueByObjectKey:@"shipping-cost"] floatValue]]]] size:CGSizeMake(300, 29)];
+    //get shipping method
+    NSString *shippingMethod = [[MyCartClass instance] getServerCartValueByObjectKey:@"shipping-method"];
+    if ([shippingMethod isEqualToString:@"Free Shipping"]) {
+        shippingMethod = NSLocalizedString(@"cart_review_free_shipping", nil);
+    }
+    
+    MGLineStyled *shipping = [MGLineStyled lineWithLeft:[NSString stringWithFormat:@"%@",NSLocalizedString(@"checkout_label_shipping_method_and_cost", nil)]
+                                     right:[NSString stringWithFormat:@"%@ : %@ %@",shippingMethod, [[SettingDataClass instance] getCurrencySymbol],[[AppDelegate instance] convertToThousandSeparator:[NSString stringWithFormat:@"%f",[[[MyCartClass instance] getServerCartValueByObjectKey:@"shipping-cost"] floatValue]]]] size:CGSizeMake(300, 29)];
     shipping.font = [UIFont fontWithName:PRIMARYFONT size:12];
     [section.topLines addObject:shipping];
     

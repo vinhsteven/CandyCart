@@ -22,6 +22,6 @@
     UIButton *btnNext;
 }
 
-- (void) didSelectBuyMethod:(NSString*)type;
+- (void) didSelectBuyMethod:(NSString*)type andType:(int)_howType;
 
 @end

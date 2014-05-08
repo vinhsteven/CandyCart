@@ -15,6 +15,7 @@
 
 @implementation ListBuyMethod
 @synthesize parent;
+@synthesize mainSegment;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -49,6 +50,15 @@
         NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:titleStr[i],@"title",typeStr[i],@"type", nil];
         [mainArray addObject:dict];
     }
+    
+    NSArray *segmentItems = [NSArray arrayWithObjects:NSLocalizedString(@"cart_review_buy_at_shop", nil),NSLocalizedString(@"cart_review_take_away", nil), nil];
+    mainSegment = [[UISegmentedControl alloc] initWithItems:segmentItems];
+    mainSegment.frame = CGRectMake(0, 0, 200, 40);
+    mainSegment.selectedSegmentIndex = 0;
+    
+#ifdef TEST
+    [mainArray insertObject:mainSegment atIndex:0];
+#endif
 }
 
 #pragma mark - Table view data source
@@ -70,16 +80,36 @@
     static NSString *cellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     
+#ifndef TEST
     NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
     // Configure the cell...
     cell.textLabel.text = [dict objectForKey:@"title"];
-    
+#else
+    if (indexPath.row != 0) {
+        NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
+        // Configure the cell...
+        cell.textLabel.text = [dict objectForKey:@"title"];
+    }
+    else {
+        [cell.contentView addSubview:mainSegment];
+    }
+#endif
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+#ifdef TEST
+    if (indexPath.row != 0) {
+        NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
+        [(CartViewController*)parent didSelectBuyMethod:[dict objectForKey:@"type"] andType:mainSegment.selectedSegmentIndex];
+    }
+    else {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+#else
     NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
-    [(CartViewController*)parent didSelectBuyMethod:[dict objectForKey:@"type"]];
+    [(CartViewController*)parent didSelectBuyMethod:[dict objectForKey:@"type"] andType:mainSegment.selectedSegmentIndex];
+#endif
 }
 
 @end

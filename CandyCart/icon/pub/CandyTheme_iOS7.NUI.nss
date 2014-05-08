@@ -6,10 +6,9 @@
 @BOLDFONT: Helvetica;
 
 //PRIMARY APP COLOR
-@PRIMARYCOLOR:#ffcf11; //Effect Navigation Bar & Button Color & TableViewSelected //saigon cafeda
-@PRIMARYCOLOR_BOLD:#cfae28; //E.g On selected segment
-//@PRIMARYCOLOR:#233519; //Effect Navigation Bar & Button Color & TableViewSelected //tra phu son
-//@PRIMARYCOLOR_BOLD:#151c10; //E.g On selected segment
+@PRIMARYCOLOR:#f0b20b; //Effect Navigation Bar & Button Color & TableViewSelected //saigon cafeda
+@PRIMARYCOLOR_BOLD:#be931e; //E.g On selected segment
+
 @OTHER_COLOR:#ffffff;
 @OTHER_COLOR_2:#cccccc; //Use in search background
 
