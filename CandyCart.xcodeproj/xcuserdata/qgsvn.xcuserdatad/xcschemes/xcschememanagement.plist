@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>mollycafe.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>pub.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -83,6 +88,11 @@
 			<true/>
 		</dict>
 		<key>C2E8A2B01919D47400BB5AAC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2EDC2A5191D21EF00D8EA96</key>
 		<dict>
 			<key>primary</key>
 			<true/>

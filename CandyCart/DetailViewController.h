@@ -51,6 +51,7 @@
     UIWebView *webViewSe;
     ProductDetailBox *boxWeb;
     BOOL isOutOfOrder;
+    FPPopoverController *popover;
 }
 -(void)setProductInfo:(NSDictionary*)product;
 

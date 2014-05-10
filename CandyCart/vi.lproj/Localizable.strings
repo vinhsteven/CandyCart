@@ -303,6 +303,11 @@
 "product_detail_add_to_cart_btn_out_of_order" = "Đã hết giờ làm việc. Hẹn gặp lại quý khách lần sau.";
 "product_detail_singer_welcome_title" = "Hãy tận hưởng buổi tối tuyệt vời cùng chúng tôi.";
 
+"detail_product_type_normal" = "Bình thường";
+"detail_product_type_large"  = "Lớn";
+"detail_product_place_da_nang" = "Đà Nẵng";
+"detail_product_place_ha_noi"  = "Hà Nội";
+
 //Product Read More
 "product_detail_read_more_desc"= "Mô tả";
 "product_detail_read_more_additional_inf"= "Bổ sung";
@@ -354,6 +359,7 @@
 "exploreViewController.brandy_title" = "Rượu";
 "exploreViewController.soft_food_title" = "Thức ăn nhẹ";
 "exploreViewController.drinks_title" = "Thức uống";
+"exploreViewController.foods_title" = "Thức ăn";
 
 "myCartBox_exclude_tax_title" = "(Chưa thuế)";
 "mycartbox.add-coupon" = "Thêm phiếu giảm giá";

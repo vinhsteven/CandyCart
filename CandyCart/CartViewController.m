@@ -81,7 +81,9 @@
 -(void)nextBtnAction{
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if([[MyCartClass instance] countProduct] > 0) {
-        
+#ifdef AT_SHOP
+        popover.view.hidden = NO;
+#else
         if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
         {
             [userDefaults setObject:@"user" forKey:BUY_METHOD];
@@ -92,6 +94,7 @@
         else {
             popover.view.hidden = NO;
         }
+#endif
     }
     else {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_error_title", nil)
@@ -259,14 +262,14 @@
                     featuredImage = [productInfo objectForKey:@"featured_images"];
                 }
                 
-                NSNumber *boolean = (NSNumber *)[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"is_on_sale"];
+                NSNumber *boolean = (NSNumber *)[[productInfo objectForKey:@"pricing"] objectForKey:@"is_on_sale"];
                 if([boolean boolValue] == FALSE)
                 {
                     [self
                      cartItem:featuredImage
                      productTitle:[[parentInfo objectForKey:@"general"] objectForKey:@"title"]
                      currency: [[SettingDataClass instance] getCurrencySymbol]
-                     price:[[[productInfo objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]
+                     price:[[productInfo objectForKey:@"pricing"] objectForKey:@"regular_price"]
                      quantity:[[incart objectAtIndex:i] objectAtIndex:2]
                      productID:[productInfo objectForKey:@"product_ID"]
                      ];
@@ -422,7 +425,7 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:type forKey:BUY_METHOD];
     
-#ifdef TEST
+#ifdef AT_SHOP
     //kiem tra Neu mua Tai Cho thi list table,
     //nguoc lai thi hien thi de nhap dia chi giao hang
     if (_howType == 1) {
@@ -455,6 +458,7 @@
         else {
             //buy as user
             NSLog(@"user");
+            popover.view.hidden = YES;
             if([[MyCartClass instance] countProduct] > 0)
             {
                 if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
@@ -511,7 +515,6 @@
                 popover.view.hidden = YES;
             });
         });
-        
     }
     else {
         //buy as user

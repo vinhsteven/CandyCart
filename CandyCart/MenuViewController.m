@@ -87,9 +87,17 @@
         
     }
 
-    
+    NSString *name = [[menuItems objectAtIndex:indexPath.row] objectForKey:termName];
+    if ([name isEqualToString:@"binh-thuong"])
+        name = NSLocalizedString(@"detail_product_type_normal", nil);
+    else if ([name isEqualToString:@"lon"])
+        name = NSLocalizedString(@"detail_product_type_large", nil);
+    else if ([name isEqualToString:@"da-nang"])
+        name = NSLocalizedString(@"detail_product_place_da_nang", nil);
+    else if ([name isEqualToString:@"ha-noi"])
+        name = NSLocalizedString(@"detail_product_place_ha_noi", nil);
     // Configure the cell...
-    cell.textLabel.text = [[menuItems objectAtIndex:indexPath.row] objectForKey:termName];
+    cell.textLabel.text = name;
     
     return cell;
 }
@@ -144,8 +152,18 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    NSString *name = [[menuItems objectAtIndex:indexPath.row] objectForKey:termName];
+    if ([name isEqualToString:@"binh-thuong"])
+        name = NSLocalizedString(@"detail_product_type_normal", nil);
+    else if ([name isEqualToString:@"lon"])
+        name = NSLocalizedString(@"detail_product_type_large", nil);
+    else if ([name isEqualToString:@"da-nang"])
+        name = NSLocalizedString(@"detail_product_place_da_nang", nil);
+    else if ([name isEqualToString:@"ha-noi"])
+        name = NSLocalizedString(@"detail_product_place_ha_noi", nil);
     
-    lblToSend.text = [[menuItems objectAtIndex:indexPath.row] objectForKey:termName];
+//    lblToSend.text = [[menuItems objectAtIndex:indexPath.row] objectForKey:termName];
+    lblToSend.text = name;
     
     [det setAttributeQuery:[[menuItems objectAtIndex:indexPath.row] objectForKey:termName] key:termName];
 

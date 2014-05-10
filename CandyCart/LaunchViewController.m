@@ -130,6 +130,19 @@
             myProgressView.frame = CGRectMake(85, 351-150, 150, 2);
         }
 #endif
+        
+#ifdef mollycafe
+        if(result.height == 1136) {
+            myActivity.frame = CGRectMake(150, 379-120, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-120, 150, 2);
+        }
+        else {
+            myActivity.frame = CGRectMake(150, 379-150, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-150, 150, 2);
+        }
+#endif
         [self.view addSubview:bgImgView];
     }
     
@@ -151,8 +164,10 @@
     lbPoweredBy.textColor = [UIColor whiteColor];
 #endif
     lbPoweredBy.font = [UIFont systemFontOfSize:14];
-    [self.view addSubview:lbPoweredBy];
     
+#ifndef mollycafe
+    [self.view addSubview:lbPoweredBy];
+#endif
     [[TempVariables instance] setOnLounchProgress:myProgressView];
     
     [self initApplication];

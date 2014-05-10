@@ -294,6 +294,11 @@
 "product_detail_add_to_cart_btn_out_of_order" = "Out of Order. Please come back later.";
 "product_detail_singer_welcome_title" = "Enjoy your wonderful night with us";
 
+"detail_product_type_normal" = "Normal";
+"detail_product_type_large"  = "Large";
+"detail_product_place_da_nang" = "Da Nang";
+"detail_product_place_ha_noi"  = "Ha Noi";
+
 //Product Read More
 "product_detail_read_more_desc"= "Description";
 "product_detail_read_more_additional_inf"= "Additional";
@@ -345,6 +350,7 @@
 "exploreViewController.brandy_title" = "Brandy";
 "exploreViewController.soft_food_title" = "Soft foods";
 "exploreViewController.drinks_title" = "Drinks";
+"exploreViewController.foods_title" = "Foods";
 
 "myCartBox_exclude_tax_title" = "(Exclude Tax)";
 "mycartbox.add-coupon" = "Add Coupon";

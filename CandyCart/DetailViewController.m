@@ -818,7 +818,7 @@
         [menu setLabelToSend:lbl];
         [menu setDetailController:self];
         
-        FPPopoverController *popover = [[FPPopoverController alloc] initWithViewController:menu];
+        popover = [[FPPopoverController alloc] initWithViewController:menu];
         popover.tint = FPPopoverWhiteTint;
         
         popover.border = NO;
@@ -829,11 +829,7 @@
     };
     
     [section.boxes addObject:box];
-    
-    
 }
-
-
 
 -(void)inventory:(NSString*)stock allowedBackOrder:(BOOL)backorder allowedBackOrderNotification:(BOOL)backorderNoti
 {
@@ -1146,8 +1142,6 @@
     NSMutableArray *temp_attr2 = [[NSMutableArray alloc] init];
     if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"variable"])
     {
-        
-        
         NSArray *ary  = [[productInfo objectForKey:@"attributes"] objectForKey:@"attributes"];
         
         int cou = 0;
@@ -1166,8 +1160,6 @@
                 [attributeQuery setValue:@""  forKey:[NSString stringWithFormat:@"attribute_%@",[dic objectForKey:@"name"]]];
                 
             }
-            
-            
         }
     }
     
@@ -1176,11 +1168,8 @@
     //then we add into the view
     
     
-    
     if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"variable"])
     {
-        
-        
         NSArray *ary  = [[productInfo objectForKey:@"attributes"] objectForKey:@"attributes"];
         
         
@@ -1239,11 +1228,8 @@
         {
             NSDictionary *atr = [product_attr objectAtIndex:x];
             [dbManager doQuery:[NSString stringWithFormat:@"UPDATE product_variable SET %@='%@' WHERE product_ID='%@'",[atr objectForKey:@"key"],[atr objectForKey:@"value"],[dic objectForKey:@"product_ID"]]];
-            
-            
         }
     }
-    
     
     NSArray *testAry = [self test];
     NSLog(@"Variable Product : %@",testAry);
@@ -1252,8 +1238,6 @@
 
 -(NSArray*)test{
     
-    
-    
     NSArray * ma = [dbManager getRowsForQuery:[NSString stringWithFormat:@"SELECT * FROM product_variable"]];
     
     return ma;
@@ -1261,9 +1245,6 @@
 
 
 -(NSArray*)find_available_attribute:(NSString*)collum_name{
-    
-    
-    
     NSArray * ma = [dbManager getRowsForQuery:[NSString stringWithFormat:@"SELECT DISTINCT %@ FROM product_variable",collum_name]];
     
     return ma;
@@ -1307,22 +1288,13 @@
         [photos addObject:[IDMPhoto photoWithURL:[NSURL URLWithString:newFeaturedImage]]];
     }
     
-    
-    
-    
-    
-    
     IDMPhotoBrowser *browser = [[IDMPhotoBrowser alloc] initWithPhotos:photos];
     
     browser.delegate = self;
     [browser setInitialPageIndex:current_product_image_index];
     
-    
     // Show
     [self presentViewController:browser animated:YES completion:nil];
-    
-    
-    
 }
 
 - (void)photoBrowser:(IDMPhotoBrowser *)photoBrowser didDismissAtPageIndex:(NSUInteger)index
@@ -1342,6 +1314,9 @@
 -(void)setAttributeQuery:(NSString*)value key:(NSString*)key
 {
     
+    //hide popover
+    [popover dismissPopoverAnimated:YES];
+    
     [attributeQuery setValue:value forKey:key];
     
     NSArray *ary  = [[productInfo objectForKey:@"attributes"] objectForKey:@"attributes"];
@@ -1358,13 +1333,8 @@
             
             [temp_attr addObject:[NSString stringWithFormat:@"attribute_%@ = '%@'",[dic objectForKey:@"name"],keyValue]];
             
-            
-            
         }
-        
-        
     }
-    
     
     NSArray * ma = [dbManager getRowsForQuery:[NSString stringWithFormat:@"SELECT * FROM product_variable WHERE %@",[temp_attr componentsJoinedByString:@" AND "]]];
     
@@ -1372,17 +1342,13 @@
     {
         NSDictionary *var_info = [ma objectAtIndex:0];
         
-        
-        
         //Now We can Retrive it from JSON Back to get Variable Info
         NSArray *product_variable_arrays = [[productInfo objectForKey:@"if_variants"] objectForKey:@"variables"];
         
         NSDictionary *product_variable = [product_variable_arrays objectAtIndex:[[var_info objectForKey:@"index_key"] intValue]];
         product_variable_copy = product_variable;
-        NSLog(@"%@",product_variable);
+//        NSLog(@"%@",product_variable);
         [copyOfimgScrollView removeFromSuperview];
-        
-        
         
         //Check Product Variable Type if insdie the Cart...If Yes we change it
         
@@ -1417,24 +1383,17 @@
             //Once We Got The Variable In Dictionary. We update the TopView->imgScrollView & TopView->price
             
             //We Copy First for Backup
-            
-            
-            
+        
             //The We Add With New Image From Variable Product
             NSMutableArray *colors = [[NSMutableArray alloc] init];
             //Get Variable Featured Image
             [colors addObject:[product_variable objectForKey:@"featured_images"]];
             
-            
-            
             UIImageView *myImgViewsse;
-            
-            
             
             for (int i = 0; i < colors.count; i++) {
                 CGRect frame;
-                
-                
+                    
                 frame.origin.x = copyOfimgScrollView.frame.size.width * i;
                 frame.origin.y = 0;
                 frame.size = copyOfimgScrollView.frame.size;
@@ -1466,9 +1425,7 @@
                 
                 [subview addSubview:backSleek];
                 
-                [copyOfimgScrollView addSubview:subview];
-                
-                
+                [copyOfimgScrollView addSubview:subview];   
             }
             imgScrollView.userInteractionEnabled = NO;
             [imgScrollView setContentOffset:CGPointZero animated:YES];
@@ -1507,16 +1464,17 @@
                     
                     return mutableAttributedString;
                 }];
-                
-                
             }
             else
             {
                 onSaleBadgeVariable.hidden = YES;
+                
+                NSString *regularPrice = [[product_variable objectForKey:@"pricing"] objectForKey:@"regular_price"];
+                
                 [variablePrice setText:[NSString stringWithFormat:@"%@ %@",
                                         [[SettingDataClass instance] getCurrencySymbol],
-                                        [[[product_variable objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]]];
-//                                        [[AppDelegate instance] convertToThousandSeparator:[[[product_variable objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]]]];
+//                                        [[[product_variable objectForKey:@"general"] objectForKey:@"pricing"] objectForKey:@"regular_price"]]];
+                                        regularPrice]];
             }
             
             if([[[product_variable objectForKey:@"inventory"] objectForKey:@"quantity"] isEqualToString:@""])
@@ -1530,17 +1488,9 @@
                 [addToCartBox addToCartBtnIfVariableQuantityAppear:[[product_variable objectForKey:@"inventory"] objectForKey:@"quantity"]];
                 
             }
-            
-            
-            
-            
         }
     }
 }
-
-
-
-
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {

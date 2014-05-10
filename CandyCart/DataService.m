@@ -185,6 +185,8 @@
             [dict setObject:NSLocalizedString(@"exploreViewController.soft_food_title", nil) forKey:@"title"];
         else if ([title isEqualToString:@"Drinks"])
             [dict setObject:NSLocalizedString(@"exploreViewController.drinks_title", nil) forKey:@"title"];
+        else if ([title isEqualToString:@"Foods"])
+            [dict setObject:NSLocalizedString(@"exploreViewController.foods_title", nil) forKey:@"title"];
     }
     
     home_page_api = value;
@@ -687,7 +689,6 @@
 }
 
 //Post & GET Service
-
 
 
 -(NSDictionary*)get_my_order:(NSString*)username password:(NSString*)password filter:(NSString*)filter{

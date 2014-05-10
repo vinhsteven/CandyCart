@@ -56,7 +56,7 @@
     mainSegment.frame = CGRectMake(0, 0, 200, 40);
     mainSegment.selectedSegmentIndex = 0;
     
-#ifdef TEST
+#ifdef AT_SHOP
     [mainArray insertObject:mainSegment atIndex:0];
 #endif
 }
@@ -80,11 +80,7 @@
     static NSString *cellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     
-#ifndef TEST
-    NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
-    // Configure the cell...
-    cell.textLabel.text = [dict objectForKey:@"title"];
-#else
+#ifdef AT_SHOP
     if (indexPath.row != 0) {
         NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
         // Configure the cell...
@@ -93,12 +89,16 @@
     else {
         [cell.contentView addSubview:mainSegment];
     }
+#else
+    NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
+    // Configure the cell...
+    cell.textLabel.text = [dict objectForKey:@"title"];
 #endif
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-#ifdef TEST
+#ifdef AT_SHOP
     if (indexPath.row != 0) {
         NSDictionary *dict = [mainArray objectAtIndex:indexPath.row];
         [(CartViewController*)parent didSelectBuyMethod:[dict objectForKey:@"type"] andType:mainSegment.selectedSegmentIndex];

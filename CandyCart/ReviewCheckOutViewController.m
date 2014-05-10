@@ -262,6 +262,8 @@
     
     //get shipping method
     NSString *shippingMethod = [[MyCartClass instance] getServerCartValueByObjectKey:@"shipping-method"];
+    if ([shippingMethod isKindOfClass:[NSNull class]] )
+        shippingMethod = @"Free Shipping";
     if ([shippingMethod isEqualToString:@"Free Shipping"]) {
         shippingMethod = NSLocalizedString(@"cart_review_free_shipping", nil);
     }
@@ -386,7 +388,6 @@
 {
     if(already_choose_payment_method == NO)
     {
-        
         [self shortDesc:[info objectForKey:@"Description"]];
         [scroller layoutWithSpeed:0.3 completion:nil];
         already_choose_payment_method = YES;

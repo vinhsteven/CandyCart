@@ -6,16 +6,17 @@
 //  Copyright (c) 2013 Nhuan Quang. All rights reserved.
 //
 
-//#define TEST
+#define AT_SHOP //chi danh cho cac loai hinh cho phep dat ban tai cho nhu: cafe, nha hang...
 
 //#define BG_WHITE
 //#define ishop
 //#define ibar
 //#define ipub
-#define tintincafe
+//#define tintincafe
 //#define khobom
 //#define saigoncafe
 //#define highlandcafe
+#define mollycafe
 
 //Your Wordpress URL Should Be Here
 
@@ -53,6 +54,12 @@
 #define MAIN_URL @"http://customer.nhuanquang.com/highlandcafe"
 #define ROOT_ACCOUNT @"highland.cafe" //root account for this database
 #endif
+
+#ifdef mollycafe
+#define MAIN_URL @"http://customer.nhuanquang.com/mollycafe"
+#define ROOT_ACCOUNT @"molly.cafe" //root account for this database
+#endif
+
 //#define MAIN_URL @"http://nhuanquang.com/traphuson"
 //#define ROOT_ACCOUNT @"vinhsteven" //root account for this database
 
