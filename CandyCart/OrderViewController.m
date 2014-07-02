@@ -247,52 +247,64 @@
     
     NSArray *incart = [[[MyOrderClass instance] getMyOrder] objectForKey:@"items"];
     
-    
-    
     for(int i=0;i<[incart count];i++)
     {
         NSDictionary *product = [incart objectAtIndex:i];
-        NSString *productPrice;
-        NSString *totalPrice;
-        BOOL hasTax;
-        if([[order objectForKey:@"tax_total"] floatValue] > 0)
-        {
-            if([[order objectForKey:@"display-price-during-cart-checkout"] isEqualToString:@"incl"])
+        __block NSString *productPrice;
+        __block NSString *totalPrice;
+        __block BOOL hasTax;
+        
+        //kiem tra co phai la item co' attribute hay ko? Neu phai, thi hien thi them ten attribute trong title
+        
+        NSString *variationId = [product objectForKey:@"variation_id"];
+        if (variationId != nil) {
+            NSString *attributeValue = @"";
+            NSArray *attributeInfo = [product objectForKey:@"product_attribute"];
+            
+            if (attributeInfo != nil) {
+                for (int i=0;i < [attributeInfo count];i++) {
+                    NSDictionary *attributeDict = [attributeInfo objectAtIndex:i];
+                    attributeValue = [attributeValue stringByAppendingFormat:@"%@,",[attributeDict objectForKey:@"value"]];
+                }
+                attributeValue = [attributeValue substringToIndex:attributeValue.length-1];
+            }
+            
+            if([[order objectForKey:@"tax_total"] floatValue] > 0)
             {
-                productPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"product_price"] floatValue]];
-                
-                totalPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"total_price"] floatValue]];
-                hasTax = NO;
+                if([[order objectForKey:@"display-price-during-cart-checkout"] isEqualToString:@"incl"])
+                {
+                    productPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"product_price"] floatValue]];
+                    
+                    totalPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"total_price"] floatValue]];
+                    hasTax = NO;
+                }
+                else
+                {
+                    productPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"product_price_ex_tax"] floatValue]];
+                    
+                    totalPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"total_price_ex_tax"] floatValue]];
+                    hasTax = YES;
+                    
+                }
             }
             else
             {
-                productPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"product_price_ex_tax"] floatValue]];
-                
-                totalPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"total_price_ex_tax"] floatValue]];
-                hasTax = YES;
-                
+                productPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"product_price"] floatValue]];
+                totalPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"total_price"] floatValue]];
+                hasTax = NO;
             }
+            
+            [self
+             cartItem:[[product objectForKey:@"product_info"] objectForKey:@"featuredImages"]
+             productTitle:[NSString stringWithFormat:@"(%@) %@",attributeValue,[[product objectForKey:@"product_info"] objectForKey:@"productName"]]
+             currency: [[SettingDataClass instance] getCurrencySymbol]
+             price:productPrice
+             quantity:[product objectForKey:@"quantity"]
+             totalPrice:totalPrice
+             has_tax:hasTax
+             productID:[product objectForKey:@"product_id"]
+             ];
         }
-        else
-        {
-            productPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"product_price"] floatValue]];
-            totalPrice = [NSString stringWithFormat:@"%.2f",[[product objectForKey:@"total_price"] floatValue]];
-            hasTax = NO;
-        }
-        [self
-         cartItem:[[product objectForKey:@"product_info"] objectForKey:@"featuredImages"]
-         productTitle:[[product objectForKey:@"product_info"] objectForKey:@"productName"]
-         currency: [[SettingDataClass instance] getCurrencySymbol]
-         price:productPrice
-         quantity:[product objectForKey:@"quantity"]
-         totalPrice:totalPrice
-         has_tax:hasTax
-         productID:[product objectForKey:@"product_id"]
-         ];
-        
-        
-        
-        
     }
     
     NSArray *couponArray = [[[MyOrderClass instance] getMyOrder] objectForKey:@"used_coupon"];
@@ -303,7 +315,6 @@
         
         [self coupon:[NSString stringWithFormat:@"%@",ser]];
     }
-    
 }
 
 
@@ -325,28 +336,23 @@
     {
         if([[order objectForKey:@"display-price-during-cart-checkout"] isEqualToString:@"incl"])
         {
-            
             hasTax = NO;
             lineWithLeft = NSLocalizedString(@"checkout_label_subtotal", nil);
             subtotal = [order objectForKey:@"subtotalWithTax"];
         }
         else
-        {
-            
+        {   
             hasTax = YES;
             lineWithLeft = NSLocalizedString(@"checkout_label_subtotal_without_tax", nil);
             subtotal = [order objectForKey:@"subtotalExTax"];
-            
         }
     }
     else
     {
-        
         hasTax = NO;
         lineWithLeft = NSLocalizedString(@"checkout_label_subtotal", nil);
         subtotal = [order objectForKey:@"subtotalWithTax"];
     }
-    
     
     cutSubTotal = [MGLineStyled lineWithLeft:lineWithLeft
                                        right:[NSString stringWithFormat:@"%@ %@",currency,[[AppDelegate instance] convertToThousandSeparator:[NSString stringWithFormat:@"%f",[subtotal floatValue]]]] size:CGSizeMake(300, 29)];

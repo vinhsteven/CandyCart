@@ -319,10 +319,6 @@ static UILabel *lbl;
     [ind hidesWhenStopped];
     [box addSubview:ind];
     
-    
-    
-    
-    
     return box;
 }
 

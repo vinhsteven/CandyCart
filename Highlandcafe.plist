@@ -32,13 +32,17 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>1.2.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.2.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MainUrl</key>
+	<string>http://customer.nhuanquang.com/highlandcafe</string>
+	<key>RootAccount</key>
+	<string>highland.cafe</string>
 	<key>UILaunchImageFile</key>
 	<string>Default</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -53,5 +57,17 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>isAtShop</key>
+	<true/>
+	<key>isBGWhite</key>
+	<false/>
+	<key>IP5ActivityFrame</key>
+	<string>150,259,20,20</string>
+	<key>IP4ActivityFrame</key>
+	<string>150,229,20,20</string>
+	<key>IP5ProgressBarFrame</key>
+	<string>85,231,150,2</string>
+	<key>IP4ProgressBarFrame</key>
+	<string>85,201,150,2</string>
 </dict>
 </plist>

@@ -51,9 +51,17 @@
     #import "RNDecryptor.h"
     #import "RNEncryptor.h"
     #import <RevMobAds/RevMobAds.h>
+    #import "APPViewController.h"
 #endif
 
 #define CAMERA_LIST @"CameraList"
 
 #define START_WORK_HOUR @"StartWorkHour"
 #define END_WORK_HOUR   @"EndWorkHour"
+
+#define PROMOTION   @"Promotion"
+
+#define NEW_VERSION @"NewVersion"
+#define APP_VERSION				[[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleVersionKey]
+#define APP_ID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"AppId"]
+#define APP_NAME [[[NSBundle mainBundle] infoDictionary] objectForKey:@"AppName"]

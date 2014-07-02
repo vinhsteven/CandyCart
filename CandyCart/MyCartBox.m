@@ -152,9 +152,9 @@
     
     [box addSubview:imgView];
     
-    UILabel *productTitle = [[UILabel alloc] initWithFrame:CGRectMake(60, 8, 130, 20)];
+    UILabel *productTitle = [[UILabel alloc] initWithFrame:CGRectMake(60, 8, 170, 20)];
     productTitle.text = title;
-    productTitle.font = [UIFont fontWithName:PRIMARYFONT size:14];
+    productTitle.font = [UIFont fontWithName:PRIMARYFONT size:13];
     productTitle.backgroundColor = [UIColor clearColor];
     [box addSubview:productTitle];
     
@@ -199,9 +199,9 @@
     
     [box addSubview:imgView];
     
-    UILabel *productTitle = [[UILabel alloc] initWithFrame:CGRectMake(60, 8, 130, 20)];
+    UILabel *productTitle = [[UILabel alloc] initWithFrame:CGRectMake(60, 8, 170, 20)];
     productTitle.text = title;
-    productTitle.font = [UIFont fontWithName:PRIMARYFONT size:14];
+    productTitle.font = [UIFont fontWithName:PRIMARYFONT size:13];
     productTitle.backgroundColor = [UIColor clearColor];
     [box addSubview:productTitle];
     

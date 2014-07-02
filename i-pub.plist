@@ -53,5 +53,9 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>MainUrl</key>
+	<string>http://nhuanquang.com/i-pub</string>
+	<key>RootAccount</key>
+	<string>steven.pub</string>
 </dict>
 </plist>

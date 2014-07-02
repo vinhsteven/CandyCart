@@ -1,4 +1,9 @@
 //init
+"update-new-version-title" = "New Version Available";
+"update-new-version-message" = "New version is available. Do you want to update it?";
+"yes-btn-title" = "Yes";
+"no-btn-title"  = "No";
+
 "back_btn_title" = "Back";
 "close_btn_title" = "Close";
 "sale_badge_title" = "Sales";
@@ -294,6 +299,7 @@
 "product_detail_add_to_cart_btn_out_of_order" = "Out of Order. Please come back later.";
 "product_detail_singer_welcome_title" = "Enjoy your wonderful night with us";
 
+"detail_product_type_small"  = "Small";
 "detail_product_type_normal" = "Normal";
 "detail_product_type_large"  = "Large";
 "detail_product_place_da_nang" = "Da Nang";
@@ -351,6 +357,8 @@
 "exploreViewController.soft_food_title" = "Soft foods";
 "exploreViewController.drinks_title" = "Drinks";
 "exploreViewController.foods_title" = "Foods";
+"exploreViewController.services_n_consultants_title" = "Services & Consultants";
+"exploreViewController.cosmetics_title" = "Cosmetics";
 
 "myCartBox_exclude_tax_title" = "(Exclude Tax)";
 "mycartbox.add-coupon" = "Add Coupon";
@@ -382,3 +390,5 @@
 "cart_review_buy_at_shop" = "At shop";
 "cart_review_take_away" = "Take away";
 "cart_review_free_shipping" = "Free Shipping";
+"cart_review_cash_on_delivery_title" = "Cash";
+"cart_review_cash_on_delivery_message" = "Cash on delivery";

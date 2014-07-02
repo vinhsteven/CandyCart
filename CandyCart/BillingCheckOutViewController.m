@@ -120,9 +120,6 @@
     billing_city.text = [[userData objectForKey:@"billing_address"] objectForKey:@"billing_city"];
     [scrollView addSubview:billing_city];
     
-    
-    
-    
     billing_country = [[UITextField alloc] initWithFrame:CGRectMake(10, 260, 300, 40)];
     billing_country.placeholder = NSLocalizedString(@"profile_billing_placeholder_country", nil);
     
@@ -144,10 +141,6 @@
     
     UITapGestureRecognizer *transparentCountryTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(transparentCountryTapAction:)];
     [transparentCountry addGestureRecognizer:transparentCountryTap];
-    
-    
-    
-    
     
     billing_state = [[UITextField alloc] initWithFrame:CGRectMake(10, 310, 300, 40)];
     billing_state.placeholder = NSLocalizedString(@"profile_billing_placeholder_state", nil);

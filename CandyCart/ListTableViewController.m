@@ -35,21 +35,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     mainArray = [NSMutableArray arrayWithCapacity:1];
     
-//    NSString *tableTitle[] = {
-//        @"Bàn 1",
-//        @"Bàn 2",
-//        @"Bàn 3"
-//    };
-//    NSString *tableSlug[] = {
-//        @"table-1",
-//        @"table-2",
-//        @"table-3"
-//    };
-//    for (int i=0;i < sizeof(tableTitle)/sizeof(tableTitle[0]);i++) {
-//        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:tableTitle[i],@"tableTitle",tableSlug[i],@"slug", nil];
-//        [mainArray addObject:dict];
-//    }
-    
     [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
     [self listAllTables];
     
@@ -129,6 +114,7 @@
     if ([[userDefaults objectForKey:BUY_METHOD] isEqualToString:@"guest"]) {
         dispatch_queue_t myQueue = dispatch_queue_create("com.nhuanquang.shipping_update", NULL);
         dispatch_async(myQueue, ^(void) {
+            [[DataService instance] billing_update:GUEST_USER password:GUEST_PASS arg:dic];
             NSDictionary *status = [[DataService instance] shipping_update:GUEST_USER password:GUEST_PASS arg:dic];
             NSDictionary *reviewData = [[DataService instance] reviewCartWithCoupon:GUEST_USER password:GUEST_PASS productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString]];
             
@@ -152,6 +138,7 @@
     else {
         dispatch_queue_t myQueue = dispatch_queue_create("com.nhuanquang.shipping_update", NULL);
         dispatch_async(myQueue, ^(void) {
+//            NSDictionary *status = [[DataService instance] billing_update:[UserAuth instance].username password:[UserAuth instance].password arg:userData];
             NSDictionary *status = [[DataService instance] shipping_update:[UserAuth instance].username password:[UserAuth instance].password arg:dic];
             NSDictionary *reviewData = [[DataService instance] reviewCartWithCoupon:[UserAuth instance].username password:[UserAuth instance].password productInJsonString:[[MyCartClass instance] productIDToJsonString] coupon:[[MyCartClass instance] couponToJsonString]];
             
@@ -164,10 +151,10 @@
                 {
                     //Successful
                     
-                    NSDictionary *newUserData = [[status objectForKey:@"new_user_data"] objectForKey:@"user"];
-                    NSMutableDictionary *dic = [newUserData copy];
-                    [[UserAuth instance] setUserData:dic];
-                    userData = [[UserAuth instance] userData];
+//                    NSDictionary *newUserData = [[status objectForKey:@"new_user_data"] objectForKey:@"user"];
+//                    NSMutableDictionary *dic = [newUserData copy];
+//                    [[UserAuth instance] setUserData:dic];
+//                    userData = [[UserAuth instance] userData];
                     
                     ReviewCheckOutViewController *review = [[ReviewCheckOutViewController alloc] init];
                     [self.navigationController pushViewController:review animated:YES];
@@ -175,8 +162,6 @@
                 else
                 {
                     //Session Expired or Username & password wrong
-                    
-                    
                     
                     UIAlertView *alert = [[UIAlertView alloc]initWithTitle: NSLocalizedString(@"general_notification_title", nil)
                                                                    message: NSLocalizedString(@"general_notification_error_loginwaschange", nil)

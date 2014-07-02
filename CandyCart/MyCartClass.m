@@ -341,7 +341,16 @@
     NSString *value;
     if([[serverCart objectForKey:@"has_tax"] isEqualToString:@"no"])
     {
-        value = [[[serverCart objectForKey:@"cart"] objectAtIndex:[self getServerCartIndex:productID]] objectForKey:@"total-price"];
+        float val = 0;
+        
+        @try {
+            val = [[[[serverCart objectForKey:@"cart"] objectAtIndex:[self getServerCartIndex:productID]] objectForKey:@"total-price"] floatValue];
+        }
+        @catch (NSException *exception) {
+            val = 0;
+        }
+    
+        value = [NSString stringWithFormat:@"%.2f",val];
     }
     else
     {
@@ -366,7 +375,16 @@
     NSString *value;
     if([[serverCart objectForKey:@"has_tax"] isEqualToString:@"no"])
     {
-        value = [[[serverCart objectForKey:@"cart"] objectAtIndex:[self getServerCartIndex:productID]] objectForKey:@"product-price"];
+        float val = 0;
+    
+        @try {
+            val = [[[[serverCart objectForKey:@"cart"] objectAtIndex:[self getServerCartIndex:productID]] objectForKey:@"product-price"] floatValue];
+        }
+        @catch (NSException *exception) {
+            
+        }
+        
+        value = [NSString stringWithFormat:@"%.2f",val];
     }
     else
     {

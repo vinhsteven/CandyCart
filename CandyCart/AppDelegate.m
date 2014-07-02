@@ -48,7 +48,7 @@
 
 @implementation AppDelegate
 
-static NSString *url = MAIN_URL;
+//static NSString *url = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"MainUrl"];
 static NSString *couchDBURL = @"http://128.199.195.111";
 static NSString *usernameAuthorizeCouchDB = nil;
 static NSString *passwordAuthorizeCouchDB = nil;
@@ -64,7 +64,7 @@ static NSString *passwordAuthorizeCouchDB = nil;
 }
 
 -(NSString*)getUrl{
-    return url;
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"MainUrl"];
 }
 
 + (NSString*) getUsernameAuthorizeCouchDB {

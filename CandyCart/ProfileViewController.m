@@ -87,7 +87,7 @@
         request.username = decryptedUsername;
         request.password = decryptedPassword;
         
-        [request addPostValue:ROOT_ACCOUNT forKey:@"username"];
+        [request addPostValue:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"RootAccount"] forKey:@"username"];
         
         [request startSynchronous];
         

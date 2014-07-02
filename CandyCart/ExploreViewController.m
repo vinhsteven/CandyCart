@@ -166,9 +166,37 @@
 
         [self valueChanged];
     }
+    
+    [self performSelector:@selector(displayPromotion) withObject:nil afterDelay:1];
 }
 
+#pragma mark UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1){
+        NSString *url = [NSString stringWithFormat:@"itms://itunes.apple.com/us/app/%@/id%@?ls=1&mt=8",APP_NAME,APP_ID];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
+}
 
+- (void) displayPromotion {
+    //check shop has promotion or not to pop up the promotion banner.
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *newVersion = [userDefaults objectForKey:NEW_VERSION];
+    if (newVersion != nil) {
+        if (![newVersion isEqualToString:APP_VERSION]) {
+            UIAlertView *dialog = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"update-new-version-title", nil) message:NSLocalizedString(@"update-new-version-message", nil) delegate:self cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"no-btn-title", nil),NSLocalizedString(@"yes-btn-title", nil), nil];
+            [dialog show];
+        }
+    }
+    
+    NSArray *promotionArray = [userDefaults objectForKey:PROMOTION];
+    if (promotionArray != nil && [promotionArray count] > 0) {
+        APPViewController *controller = [[APPViewController alloc] init];
+        controller.mainArray = promotionArray;
+        [self.navigationController presentViewController:controller animated:YES completion:nil];
+    }
+}
 
 -(void)valueChanged
 {
@@ -337,7 +365,6 @@
         }
         else if([[[productInfo objectForKey:@"general"] objectForKey:@"product_type"] isEqualToString:@"variable"])
         {
-            
             [self fullImageBox:[[productInfo objectForKey:@"product_gallery"] objectForKey:@"featured_images"]
                          title:[[productInfo objectForKey:@"general"] objectForKey:@"title"]
                       currency: [[SettingDataClass instance] getCurrencySymbol]
@@ -353,8 +380,6 @@
     [scroller layoutWithSpeed:0.3 completion:nil];
     
 }
-
-
 
 -(void)setRandomProductsView{
     

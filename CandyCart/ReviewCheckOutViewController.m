@@ -179,6 +179,17 @@
             NSDictionary *productInfo = [[incart objectAtIndex:i] objectAtIndex:3];
             NSDictionary *parentInfo = [[incart objectAtIndex:i] objectAtIndex:5];
             
+            //kiem tra co phai la item co' attribute hay ko? Neu phai, thi hien thi them ten attribute trong title
+            NSArray *attributeInfo = [productInfo objectForKey:@"product_attribute"];
+            NSString *attributeValue = @"";
+            if (attributeInfo != nil) {
+                for (int i=0;i < [attributeInfo count];i++) {
+                    NSDictionary *attributeDict = [attributeInfo objectAtIndex:i];
+                    attributeValue = [attributeValue stringByAppendingFormat:@"%@,",[attributeDict objectForKey:@"value"]];
+                }
+                attributeValue = [attributeValue substringToIndex:attributeValue.length-1];
+            }
+            
             //Check Variable Featured Image. If not available use parent featured image
             NSString *featuredImage;
             if([[productInfo objectForKey:@"featured_images"] isEqualToString:@"0"])
@@ -196,7 +207,7 @@
             {
                 [self
                  cartItem:featuredImage
-                 productTitle:[[parentInfo objectForKey:@"general"] objectForKey:@"title"]
+                 productTitle:[NSString stringWithFormat:@"(%@) %@",attributeValue,[[parentInfo objectForKey:@"general"] objectForKey:@"title"]]
                  currency: [[SettingDataClass instance] getCurrencySymbol]
                  price:[[MyCartClass instance] getProductCartInServerPrice:[productInfo objectForKey:@"product_ID"]]
                  quantity:[[incart objectAtIndex:i] objectAtIndex:2]
@@ -210,7 +221,7 @@
             {
                 [self
                  cartItem:featuredImage
-                 productTitle:[[parentInfo objectForKey:@"general"] objectForKey:@"title"]
+                 productTitle:[NSString stringWithFormat:@"(%@) %@",attributeValue,[[parentInfo objectForKey:@"general"] objectForKey:@"title"]]
                  currency: [[SettingDataClass instance] getCurrencySymbol]
                  price:[[MyCartClass instance] getProductCartInServerPrice:[productInfo objectForKey:@"product_ID"]]
                  quantity:[[incart objectAtIndex:i] objectAtIndex:2]
@@ -220,9 +231,7 @@
                 
                 thisMethodCurrency =  [[SettingDataClass instance] getCurrencySymbol];
             }
-            
         }
-        
     }
     
     NSMutableArray *couponArray = [[MyCartClass instance] getCouponCode];
@@ -233,7 +242,6 @@
         
         [self coupon:[NSString stringWithFormat:@"%@",ser]];
     }
-    
 }
 
 
@@ -327,7 +335,13 @@
     
     NSDictionary *reviewData = [[MyCartClass instance] getServerCart];
     
-    NSArray *paymentMethod = [reviewData objectForKey:@"payment-method"];
+    NSMutableArray *paymentMethod = [[reviewData objectForKey:@"payment-method"] mutableCopy];
+    
+    if ([paymentMethod count] == 0 || paymentMethod == nil) {
+        NSDictionary *metaDict = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:0],@"hideit",[NSNumber numberWithInt:0],@"safari", nil];
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:NSLocalizedString(@"cart_review_cash_on_delivery_message",nil),@"Description",@"cod",@"id",metaDict,@"meta_key",NSLocalizedString(@"cart_review_cash_on_delivery_title",nil),@"title", nil];
+        [paymentMethod addObject:dict];
+    }
     
     NSMutableArray *arrayNew = [[NSMutableArray alloc] init];
     
@@ -338,7 +352,6 @@
         {
             [arrayNew addObject:[paymentMethod objectAtIndex:i]];
         }
-        
     }
     
     NSArray *paymentMethodNew = [arrayNew copy];
@@ -346,7 +359,6 @@
     MGTableBoxStyled *section = MGTableBoxStyled.box;
     section.margin = UIEdgeInsetsMake(10.0, 10.0, 0.0, 0.0);
     [scroller.boxes addObject:section];
-    
     
     MyCartBox *box = [MyCartBox paymentMethod:CGSizeMake(300, 34)];
     UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, box.size.width, box.size.height)];
@@ -360,9 +372,6 @@
     paymentMethodLabel = lbl;
     
     box.onTap = ^{
-        
-        
-        
         MenuViewController *menu = [[MenuViewController alloc] init];
         [menu setArray:paymentMethodNew];
         [menu setTermNa:@"title"];
@@ -380,8 +389,6 @@
     };
     
     [section.topLines addObject:box];
-    
-    
 }
 
 -(void)choosePaymentMethodOnChoose:(NSDictionary*)info
@@ -521,9 +528,7 @@
     MyCartBox *box = [MyCartBox cartItemServer:featuredImage productTitle:title currency:currency price:price quantity:quantity totalPrice:totalPrice has_tax:has_tax];
     
     
-    
     [section.topLines addObject:box];
-    
     
     
     UIImageView *deleteIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:NSLocalizedString(@"image_delete_icon", nil)]];
@@ -531,8 +536,6 @@
     deleteIcon.hidden = YES;
     deleteIcon.userInteractionEnabled = YES;
     [section addSubview:deleteIcon];
-    
-    
     
     UserDataTapGestureRecognizer *singleTap = [[UserDataTapGestureRecognizer alloc] initWithTarget:self action:@selector(deleteExe:)];
     singleTap.userData = productID;
@@ -565,9 +568,6 @@
                  
              }];
         }
-        
-        
-        
     };
     
     box.onTap = ^{
@@ -590,7 +590,6 @@
         [self.navigationController pushViewController:detail animated:YES];
         
     };
-    
 }
 
 -(void)deleteExe:(UserDataTapGestureRecognizer*)tap{

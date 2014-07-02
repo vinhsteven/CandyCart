@@ -4,97 +4,9 @@
 <array>
 	<dict>
 		<key>code</key>
-		<string>AX</string>
-		<key>country</key>
-		<string>&amp;#197;land Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AF</string>
-		<key>country</key>
-		<string>Afghanistan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AL</string>
-		<key>country</key>
-		<string>Albania</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>DZ</string>
-		<key>country</key>
-		<string>Algeria</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AD</string>
-		<key>country</key>
-		<string>Andorra</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AO</string>
-		<key>country</key>
-		<string>Angola</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AI</string>
-		<key>country</key>
-		<string>Anguilla</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AQ</string>
-		<key>country</key>
-		<string>Antarctica</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AG</string>
-		<key>country</key>
-		<string>Antigua and Barbuda</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>AR</string>
 		<key>country</key>
 		<string>Argentina</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AM</string>
-		<key>country</key>
-		<string>Armenia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AW</string>
-		<key>country</key>
-		<string>Aruba</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -229,73 +141,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>BZ</string>
-		<key>country</key>
-		<string>Belize</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BJ</string>
-		<key>country</key>
-		<string>Benin</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BM</string>
-		<key>country</key>
-		<string>Bermuda</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BT</string>
-		<key>country</key>
-		<string>Bhutan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>BO</string>
 		<key>country</key>
 		<string>Bolivia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BQ</string>
-		<key>country</key>
-		<string>Bonaire, Saint Eustatius and Saba</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BA</string>
-		<key>country</key>
-		<string>Bosnia and Herzegovina</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BW</string>
-		<key>country</key>
-		<string>Botswana</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BV</string>
-		<key>country</key>
-		<string>Bouvet Island</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -504,14 +352,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>BF</string>
-		<key>country</key>
-		<string>Burkina Faso</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>BI</string>
 		<key>country</key>
 		<string>Burundi</string>
@@ -620,38 +460,6 @@
 				<string>YT</string>
 			</dict>
 		</array>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>CV</string>
-		<key>country</key>
-		<string>Cape Verde</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>KY</string>
-		<key>country</key>
-		<string>Cayman Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>CF</string>
-		<key>country</key>
-		<string>Central African Republic</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TD</string>
-		<key>country</key>
-		<string>Chad</string>
-		<key>states</key>
-		<array/>
 	</dict>
 	<dict>
 		<key>code</key>
@@ -888,38 +696,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>KM</string>
-		<key>country</key>
-		<string>Comoros</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>CG</string>
-		<key>country</key>
-		<string>Congo (Brazzaville)</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>CD</string>
-		<key>country</key>
-		<string>Congo (Kinshasa)</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>CK</string>
-		<key>country</key>
-		<string>Cook Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>CR</string>
 		<key>country</key>
 		<string>Costa Rica</string>
@@ -939,14 +715,6 @@
 		<string>CU</string>
 		<key>country</key>
 		<string>Cuba</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>CW</string>
-		<key>country</key>
-		<string>Cura&amp;Ccedil;ao</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -976,30 +744,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>DJ</string>
-		<key>country</key>
-		<string>Djibouti</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>DM</string>
-		<key>country</key>
-		<string>Dominica</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>DO</string>
-		<key>country</key>
-		<string>Dominican Republic</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>EC</string>
 		<key>country</key>
 		<string>Ecuador</string>
@@ -1011,70 +755,6 @@
 		<string>EG</string>
 		<key>country</key>
 		<string>Egypt</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SV</string>
-		<key>country</key>
-		<string>El Salvador</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>GQ</string>
-		<key>country</key>
-		<string>Equatorial Guinea</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>ER</string>
-		<key>country</key>
-		<string>Eritrea</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>EE</string>
-		<key>country</key>
-		<string>Estonia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>ET</string>
-		<key>country</key>
-		<string>Ethiopia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>FK</string>
-		<key>country</key>
-		<string>Falkland Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>FO</string>
-		<key>country</key>
-		<string>Faroe Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>FJ</string>
-		<key>country</key>
-		<string>Fiji</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -1755,14 +1435,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>IM</string>
-		<key>country</key>
-		<string>Isle of Man</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>IL</string>
 		<key>country</key>
 		<string>Israel</string>
@@ -1774,14 +1446,6 @@
 		<string>IT</string>
 		<key>country</key>
 		<string>Italy</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>CI</string>
-		<key>country</key>
-		<string>Ivory Coast</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -1803,57 +1467,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>JE</string>
-		<key>country</key>
-		<string>Jersey</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>JO</string>
-		<key>country</key>
-		<string>Jordan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>KZ</string>
-		<key>country</key>
-		<string>Kazakhstan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>KE</string>
-		<key>country</key>
-		<string>Kenya</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>KI</string>
-		<key>country</key>
-		<string>Kiribati</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>KW</string>
 		<key>country</key>
 		<string>Kuwait</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>KG</string>
-		<key>country</key>
-		<string>Kyrgyzstan</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -1870,22 +1486,6 @@
 		<string>LV</string>
 		<key>country</key>
 		<string>Latvia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>LB</string>
-		<key>country</key>
-		<string>Lebanon</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>LS</string>
-		<key>country</key>
-		<string>Lesotho</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2076,81 +1676,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>ML</string>
-		<key>country</key>
-		<string>Mali</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MT</string>
-		<key>country</key>
-		<string>Malta</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MH</string>
-		<key>country</key>
-		<string>Marshall Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MQ</string>
-		<key>country</key>
-		<string>Martinique</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MR</string>
-		<key>country</key>
-		<string>Mauritania</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MU</string>
-		<key>country</key>
-		<string>Mauritius</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>YT</string>
-		<key>country</key>
-		<string>Mayotte</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>MX</string>
 		<key>country</key>
 		<string>Mexico</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>FM</string>
-		<key>country</key>
-		<string>Micronesia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MD</string>
-		<key>country</key>
-		<string>Moldova</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2164,41 +1692,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>MN</string>
-		<key>country</key>
-		<string>Mongolia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>ME</string>
-		<key>country</key>
-		<string>Montenegro</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MS</string>
-		<key>country</key>
-		<string>Montserrat</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>MA</string>
 		<key>country</key>
 		<string>Morocco</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MZ</string>
-		<key>country</key>
-		<string>Mozambique</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2212,49 +1708,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>NA</string>
-		<key>country</key>
-		<string>Namibia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>NR</string>
-		<key>country</key>
-		<string>Nauru</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>NP</string>
-		<key>country</key>
-		<string>Nepal</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>NL</string>
 		<key>country</key>
 		<string>Netherlands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>AN</string>
-		<key>country</key>
-		<string>Netherlands Antilles</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>NC</string>
-		<key>country</key>
-		<string>New Caledonia</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2383,22 +1839,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>NU</string>
-		<key>country</key>
-		<string>Niue</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>NF</string>
-		<key>country</key>
-		<string>Norfolk Island</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>KP</string>
 		<key>country</key>
 		<string>North Korea</string>
@@ -2431,25 +1871,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>PS</string>
-		<key>country</key>
-		<string>Palestinian Territory</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>PA</string>
 		<key>country</key>
 		<string>Panama</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>PG</string>
-		<key>country</key>
-		<string>Papua New Guinea</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2474,14 +1898,6 @@
 		<string>PH</string>
 		<key>country</key>
 		<string>Philippines</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>PN</string>
-		<key>country</key>
-		<string>Pitcairn</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2519,14 +1935,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>RE</string>
-		<key>country</key>
-		<string>Reunion</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>RO</string>
 		<key>country</key>
 		<string>Romania</string>
@@ -2543,86 +1951,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>RW</string>
-		<key>country</key>
-		<string>Rwanda</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>ST</string>
-		<key>country</key>
-		<string>S&amp;atilde;o Tom&amp;eacute; and Pr&amp;iacute;ncipe</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>BL</string>
-		<key>country</key>
-		<string>Saint Barth&amp;eacute;lemy</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SH</string>
-		<key>country</key>
-		<string>Saint Helena</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>KN</string>
-		<key>country</key>
-		<string>Saint Kitts and Nevis</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>LC</string>
-		<key>country</key>
-		<string>Saint Lucia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SX</string>
-		<key>country</key>
-		<string>Saint Martin (Dutch part)</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>MF</string>
-		<key>country</key>
-		<string>Saint Martin (French part)</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>PM</string>
-		<key>country</key>
-		<string>Saint Pierre and Miquelon</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>VC</string>
-		<key>country</key>
-		<string>Saint Vincent and the Grenadines</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>SM</string>
 		<key>country</key>
 		<string>San Marino</string>
@@ -2634,38 +1962,6 @@
 		<string>SA</string>
 		<key>country</key>
 		<string>Saudi Arabia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SN</string>
-		<key>country</key>
-		<string>Senegal</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>RS</string>
-		<key>country</key>
-		<string>Serbia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SC</string>
-		<key>country</key>
-		<string>Seychelles</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SL</string>
-		<key>country</key>
-		<string>Sierra Leone</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2690,22 +1986,6 @@
 		<string>SI</string>
 		<key>country</key>
 		<string>Slovenia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SB</string>
-		<key>country</key>
-		<string>Solomon Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SO</string>
-		<key>country</key>
-		<string>Somalia</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -2771,14 +2051,6 @@
 				<string>WC</string>
 			</dict>
 		</array>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>GS</string>
-		<key>country</key>
-		<string>South Georgia/Sandwich Islands</string>
-		<key>states</key>
-		<array/>
 	</dict>
 	<dict>
 		<key>code</key>
@@ -3119,46 +2391,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>LK</string>
-		<key>country</key>
-		<string>Sri Lanka</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SD</string>
-		<key>country</key>
-		<string>Sudan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SR</string>
-		<key>country</key>
-		<string>Suriname</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SJ</string>
-		<key>country</key>
-		<string>Svalbard and Jan Mayen</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>SZ</string>
-		<key>country</key>
-		<string>Swaziland</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>SE</string>
 		<key>country</key>
 		<string>Sweden</string>
@@ -3175,33 +2407,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>SY</string>
-		<key>country</key>
-		<string>Syria</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>TW</string>
 		<key>country</key>
 		<string>Taiwan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TJ</string>
-		<key>country</key>
-		<string>Tajikistan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TZ</string>
-		<key>country</key>
-		<string>Tanzania</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -3678,46 +2886,6 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>TL</string>
-		<key>country</key>
-		<string>Timor-Leste</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TG</string>
-		<key>country</key>
-		<string>Togo</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TK</string>
-		<key>country</key>
-		<string>Tokelau</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TO</string>
-		<key>country</key>
-		<string>Tonga</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TT</string>
-		<key>country</key>
-		<string>Trinidad and Tobago</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>TN</string>
 		<key>country</key>
 		<string>Tunisia</string>
@@ -3729,46 +2897,6 @@
 		<string>TR</string>
 		<key>country</key>
 		<string>Turkey</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TM</string>
-		<key>country</key>
-		<string>Turkmenistan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TC</string>
-		<key>country</key>
-		<string>Turks and Caicos Islands</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>TV</string>
-		<key>country</key>
-		<string>Tuvalu</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>UG</string>
-		<key>country</key>
-		<string>Uganda</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>UA</string>
-		<key>country</key>
-		<string>Ukraine</string>
 		<key>states</key>
 		<array/>
 	</dict>
@@ -4159,97 +3287,9 @@
 	</dict>
 	<dict>
 		<key>code</key>
-		<string>UY</string>
-		<key>country</key>
-		<string>Uruguay</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>UZ</string>
-		<key>country</key>
-		<string>Uzbekistan</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>VU</string>
-		<key>country</key>
-		<string>Vanuatu</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>VA</string>
-		<key>country</key>
-		<string>Vatican</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>VE</string>
-		<key>country</key>
-		<string>Venezuela</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
 		<string>VN</string>
 		<key>country</key>
 		<string>Vietnam</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>WF</string>
-		<key>country</key>
-		<string>Wallis and Futuna</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>EH</string>
-		<key>country</key>
-		<string>Western Sahara</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>WS</string>
-		<key>country</key>
-		<string>Western Samoa</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>YE</string>
-		<key>country</key>
-		<string>Yemen</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>ZM</string>
-		<key>country</key>
-		<string>Zambia</string>
-		<key>states</key>
-		<array/>
-	</dict>
-	<dict>
-		<key>code</key>
-		<string>ZW</string>
-		<key>country</key>
-		<string>Zimbabwe</string>
 		<key>states</key>
 		<array/>
 	</dict>

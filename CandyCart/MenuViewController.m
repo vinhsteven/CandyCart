@@ -92,10 +92,13 @@
         name = NSLocalizedString(@"detail_product_type_normal", nil);
     else if ([name isEqualToString:@"lon"])
         name = NSLocalizedString(@"detail_product_type_large", nil);
+    else if ([name isEqualToString:@"nho"])
+        name = NSLocalizedString(@"detail_product_type_small", nil);
     else if ([name isEqualToString:@"da-nang"])
         name = NSLocalizedString(@"detail_product_place_da_nang", nil);
     else if ([name isEqualToString:@"ha-noi"])
         name = NSLocalizedString(@"detail_product_place_ha_noi", nil);
+
     // Configure the cell...
     cell.textLabel.text = name;
     
@@ -157,6 +160,8 @@
         name = NSLocalizedString(@"detail_product_type_normal", nil);
     else if ([name isEqualToString:@"lon"])
         name = NSLocalizedString(@"detail_product_type_large", nil);
+    else if ([name isEqualToString:@"nho"])
+        name = NSLocalizedString(@"detail_product_type_small", nil);
     else if ([name isEqualToString:@"da-nang"])
         name = NSLocalizedString(@"detail_product_place_da_nang", nil);
     else if ([name isEqualToString:@"ha-noi"])

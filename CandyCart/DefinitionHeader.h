@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Nhuan Quang. All rights reserved.
 //
 
-#define AT_SHOP //chi danh cho cac loai hinh cho phep dat ban tai cho nhu: cafe, nha hang...
+//#define AT_SHOP //chi danh cho cac loai hinh cho phep dat ban tai cho nhu: cafe, nha hang...
 
 //#define BG_WHITE
 //#define ishop
@@ -16,49 +16,12 @@
 //#define khobom
 //#define saigoncafe
 //#define highlandcafe
-#define mollycafe
+//#define mollycafe
+//#define ontheradio
+//#define mokacafe
+#define thefaceshop
 
 //Your Wordpress URL Should Be Here
-
-#ifdef ishop
-#define MAIN_URL @"http://nhuanquang.com/fit"
-#define ROOT_ACCOUNT @"steven" //root account for this database
-#endif
-
-#ifdef ibar
-#define MAIN_URL @"http://nhuanquang.com/i-bar"
-#define ROOT_ACCOUNT @"vinhsteven" //root account for this database
-#endif
-
-#ifdef ipub
-#define MAIN_URL @"http://nhuanquang.com/i-pub"
-#define ROOT_ACCOUNT @"steven.pub" //root account for this database
-#endif
-
-#ifdef tintincafe
-#define MAIN_URL @"http://customer.nhuanquang.com/tintincafe"
-#define ROOT_ACCOUNT @"tintin.cafe" //root account for this database
-#endif
-
-#ifdef khobom
-#define MAIN_URL @"http://customer.nhuanquang.com/khobom"
-#define ROOT_ACCOUNT @"khobom" //root account for this database
-#endif
-
-#ifdef saigoncafe
-#define MAIN_URL @"http://nhuanquang.com/saigoncafeda"
-#define ROOT_ACCOUNT @"saigon.cafeda" //root account for this database
-#endif
-
-#ifdef highlandcafe
-#define MAIN_URL @"http://customer.nhuanquang.com/highlandcafe"
-#define ROOT_ACCOUNT @"highland.cafe" //root account for this database
-#endif
-
-#ifdef mollycafe
-#define MAIN_URL @"http://customer.nhuanquang.com/mollycafe"
-#define ROOT_ACCOUNT @"molly.cafe" //root account for this database
-#endif
 
 //#define MAIN_URL @"http://nhuanquang.com/traphuson"
 //#define ROOT_ACCOUNT @"vinhsteven" //root account for this database

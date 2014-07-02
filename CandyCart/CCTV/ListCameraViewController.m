@@ -70,7 +70,7 @@
         request.password = decryptedPassword;
         [request setDefaultResponseEncoding:NSUTF8StringEncoding];
         
-        [request addPostValue:ROOT_ACCOUNT forKey:@"username"];
+        [request addPostValue:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"RootAccount"] forKey:@"username"];
         
         [request startSynchronous];
         

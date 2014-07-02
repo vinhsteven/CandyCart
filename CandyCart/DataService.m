@@ -27,13 +27,14 @@
     [self getCountries]; // load all countries start
     [self getHomePageApi];
     [self getRecentItems];
+    [self getBusinessInfo];
     
     dispatch_queue_t queue1 = dispatch_queue_create("com.nhuanquang.getProductCategories", NULL);
     dispatch_queue_t queue2 = dispatch_queue_create("com.nhuanquang.getProductCategoriesCustom", NULL);
     dispatch_queue_t queue3 = dispatch_queue_create("com.nhuanquang.getFeatureProducts", NULL);
     dispatch_queue_t queue4 = dispatch_queue_create("com.nhuanquang.getRandomProducts", NULL);
     dispatch_queue_t queue5 = dispatch_queue_create("com.nhuanquang.pushNotificationApi", NULL);
-    dispatch_queue_t queue6 = dispatch_queue_create("com.nhuanquang.getBusinessInfo", NULL);
+//    dispatch_queue_t queue6 = dispatch_queue_create("com.nhuanquang.getBusinessInfo", NULL);
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_async(group, queue1, ^{ [self getProductCategories]; });
     dispatch_group_async(group, queue2, ^{ [self getProductCategoriesCustom]; });
@@ -42,7 +43,7 @@
     dispatch_group_async(group, queue5, ^{ [self getProductCategoriesCustom]; });
     
     //get business info
-    dispatch_group_async(group, queue6, ^{ [self getBusinessInfo]; });
+//    dispatch_group_async(group, queue6, ^{ [self getBusinessInfo]; });
     
 #if !TARGET_IPHONE_SIMULATOR
     dispatch_queue_t queue = dispatch_queue_create("com.nhuanquang.deviceIDSend", NULL);
@@ -69,7 +70,8 @@
     request.password = decryptedPassword;
     [request setDefaultResponseEncoding:NSUTF8StringEncoding];
     
-    [request addPostValue:ROOT_ACCOUNT forKey:@"username"];
+//    [request addPostValue:ROOT_ACCOUNT forKey:@"username"];
+    [request addPostValue:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"RootAccount"] forKey:@"username"];
     
     [request startSynchronous];
     
@@ -79,6 +81,8 @@
     NSString *startTime = @"00:00";
     NSString *endTime   = @"00:00";
     
+    NSArray *promotionArray;
+    NSString *versionNumber = APP_VERSION;
     if (!error) {
         NSString *response = [request responseString];
         
@@ -90,10 +94,16 @@
         if (status) {
             startTime = [dict objectForKey:@"startTime"] == nil ? @"06:00" : [dict objectForKey:@"startTime"];
             endTime = [dict objectForKey:@"endTime"] == nil ? @"21:00" : [dict objectForKey:@"endTime"];
+            promotionArray = [dict objectForKey:@"promotion"];
         }
+        versionNumber = [dict objectForKey:@"version"];
     }
     [userDefautls setObject:startTime forKey:START_WORK_HOUR];
     [userDefautls setObject:endTime forKey:END_WORK_HOUR];
+    if (promotionArray != nil) {
+        [userDefautls setObject:promotionArray forKey:PROMOTION];
+    }
+    [userDefautls setObject:versionNumber forKey:NEW_VERSION];
 }
 //Check Connectivity
 
@@ -187,6 +197,10 @@
             [dict setObject:NSLocalizedString(@"exploreViewController.drinks_title", nil) forKey:@"title"];
         else if ([title isEqualToString:@"Foods"])
             [dict setObject:NSLocalizedString(@"exploreViewController.foods_title", nil) forKey:@"title"];
+        else if ([title isEqualToString:@"Services & Consultants"])
+            [dict setObject:NSLocalizedString(@"exploreViewController.services_n_consultants_title", nil) forKey:@"title"];
+        else if ([title isEqualToString:@"Cosmetics"])
+            [dict setObject:NSLocalizedString(@"exploreViewController.cosmetics_title", nil) forKey:@"title"];
     }
     
     home_page_api = value;
@@ -907,7 +921,7 @@
 
 -(NSDictionary*)billing_update:(NSString*)username password:(NSString*)password arg:(NSMutableDictionary*)arg{
     
-    NSLog(@"%@ %@",[arg objectForKey:@"billing_phone"],[arg objectForKey:@"billing_email"]);
+    NSLog(@"billing_update: %@ %@",[arg objectForKey:@"billing_phone"],[arg objectForKey:@"billing_email"]);
     NSString *post =[NSString stringWithFormat:@"username=%@&password=%@&billing_first_name=%@&billing_last_name=%@&billing_company=%@&billing_address_1=%@&billing_address_2=%@&billing_city=%@&billing_postcode=%@&billing_state=%@&billing_country=%@&billing_phone=%@&billing_email=%@",
                      username,
                      password,
@@ -1110,7 +1124,7 @@
     
     if([MAIN_URL_HTTPS isEqualToString:@""])
     {
-        [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?candycart=json-api&type=mobile-payment-redirect-authorize-dot-net-api&orderKey=%@&orderID=%@&paymentMethodID=%@",MAIN_URL,orderKey,orderNo,methodID]]];
+        [request setURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?candycart=json-api&type=mobile-payment-redirect-authorize-dot-net-api&orderKey=%@&orderID=%@&paymentMethodID=%@",[[AppDelegate instance] getUrl],orderKey,orderNo,methodID]]];
     }
     else
     {

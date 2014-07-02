@@ -250,6 +250,16 @@
                 NSDictionary *productInfo = [[incart objectAtIndex:i] objectAtIndex:3];
                 NSDictionary *parentInfo = [[incart objectAtIndex:i] objectAtIndex:5];
                 
+                //kiem tra co phai la item co' attribute hay ko? Neu phai, thi hien thi them ten attribute trong title
+                NSArray *attributeInfo = [productInfo objectForKey:@"product_attribute"];
+                NSString *attributeValue = @"";
+                if (attributeInfo != nil) {
+                    for (int i=0;i < [attributeInfo count];i++) {
+                        NSDictionary *attributeDict = [attributeInfo objectAtIndex:i];
+                        attributeValue = [attributeValue stringByAppendingFormat:@"%@,",[attributeDict objectForKey:@"value"]];
+                    }
+                    attributeValue = [attributeValue substringToIndex:attributeValue.length-1];
+                }
                 //Check Variable Featured Image. If not available use parent featured image
                 NSString *featuredImage;
                 if([[productInfo objectForKey:@"featured_images"] isEqualToString:@"0"])
@@ -267,7 +277,7 @@
                 {
                     [self
                      cartItem:featuredImage
-                     productTitle:[[parentInfo objectForKey:@"general"] objectForKey:@"title"]
+                     productTitle:[NSString stringWithFormat:@"(%@) %@",attributeValue,[[parentInfo objectForKey:@"general"] objectForKey:@"title"]]
                      currency: [[SettingDataClass instance] getCurrencySymbol]
                      price:[[productInfo objectForKey:@"pricing"] objectForKey:@"regular_price"]
                      quantity:[[incart objectAtIndex:i] objectAtIndex:2]
@@ -280,7 +290,7 @@
                 {
                     [self
                      cartItem:featuredImage
-                     productTitle:[[parentInfo objectForKey:@"general"] objectForKey:@"title"]
+                     productTitle:[NSString stringWithFormat:@"(%@) %@",attributeValue,[[parentInfo objectForKey:@"general"] objectForKey:@"title"]]
                      currency: [[SettingDataClass instance] getCurrencySymbol]
                      price:[[productInfo  objectForKey:@"pricing"] objectForKey:@"sale_price"]
                      quantity:[[incart objectAtIndex:i] objectAtIndex:2]
@@ -435,7 +445,8 @@
             [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
             dispatch_queue_t queue = dispatch_queue_create("com.nhuanquang.autoLoginExe", NULL);
             dispatch_async(queue, ^(void) {
-                NSDictionary * user_data = [[DataService instance] user_login:GUEST_USER password:GUEST_PASS];
+                
+                NSDictionary *user_data = [[DataService instance] user_login:GUEST_USER password:GUEST_PASS];
                 
                 dispatch_async(dispatch_get_main_queue(), ^(void) {
                     if([[user_data objectForKey:@"status"] intValue] == 0)
@@ -463,6 +474,29 @@
             {
                 if([[UserAuth instance] checkUserIfAlreadyLoggedInMobile] == YES)
                 {
+                    /*
+                    [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+                    dispatch_queue_t queue = dispatch_queue_create("com.nhuanquang.autoLoginExe", NULL);
+                    dispatch_async(queue, ^(void) {
+                        NSDictionary *user_data = [[DataService instance] user_login:[UserAuth instance].username password:[UserAuth instance].password];
+                        
+                        dispatch_async(dispatch_get_main_queue(), ^(void) {
+                            if([[user_data objectForKey:@"status"] intValue] == 0)
+                            {
+                                //Successful Logged
+                                [[UserAuth instance] setUserDatas:user_data];
+                                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+                                dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                                    BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
+                                    [self.navigationController pushViewController:billing animated:YES];
+                                });
+                            }
+                            
+                            [MBProgressHUD hideAllHUDsForView:self.navigationController.view animated:YES];
+                            popover.view.hidden = YES;
+                        });
+                    });
+                     */
                     BillingCheckOutViewController *billing = [[BillingCheckOutViewController alloc] init];
                     [self.navigationController pushViewController:billing animated:YES];
                 }

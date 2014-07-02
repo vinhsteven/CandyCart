@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>dnb.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>highlandcafe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -19,10 +24,20 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>mokacoffee.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>mollycafe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+		<key>ontheradio.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>pub.xcscheme</key>
 		<dict>
@@ -39,6 +54,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>thefaceshop.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>tintincafe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +68,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0E62327D1781BEF90053EC31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C21D23721923C49D00CA264D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C21F7E69192B51540098BF03</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -78,6 +108,16 @@
 			<true/>
 		</dict>
 		<key>C2A9C211191A78F000032CB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2B381C61928611B00F7EFF8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C2B7B63F19222CE7005C9F45</key>
 		<dict>
 			<key>primary</key>
 			<true/>

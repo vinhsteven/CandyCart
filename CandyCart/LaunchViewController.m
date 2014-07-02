@@ -43,7 +43,7 @@
     //    myProgressView.frame = CGRectMake(85, 301, 150, 2);
     myProgressView.frame = CGRectMake(85, 371, 150, 2); //cafeda
     
-    UILabel *lbPoweredBy = [[UILabel alloc] initWithFrame:CGRectMake(0, 443, 320, 29)];
+    UILabel *lbPoweredBy = [[UILabel alloc] initWithFrame:CGRectMake(0, 448, 320, 29)];
     
     if ([[UIScreen mainScreen] respondsToSelector: @selector(scale)]) {
         CGSize result = [[UIScreen mainScreen] bounds].size;
@@ -52,7 +52,7 @@
         
         UIImageView *bgImgView;
         if(result.height == 1136) {
-            lbPoweredBy.frame = CGRectMake(lbPoweredBy.frame.origin.x, lbPoweredBy.frame.origin.y+75,lbPoweredBy.frame.size.width,lbPoweredBy.frame.size.height);
+            lbPoweredBy.frame = CGRectMake(lbPoweredBy.frame.origin.x, lbPoweredBy.frame.origin.y+85,lbPoweredBy.frame.size.width,lbPoweredBy.frame.size.height);
             
             bgImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg-568.png"]];
             bgImgView.frame = CGRectMake(0, 0, 320, 568);
@@ -141,6 +141,32 @@
             myActivity.frame = CGRectMake(150, 379-150, 20, 20);
             
             myProgressView.frame = CGRectMake(85, 351-150, 150, 2);
+        }
+#endif
+        
+#ifdef ontheradio
+        if(result.height == 1136) {
+            myActivity.frame = CGRectMake(150, 379-120, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-120, 150, 2);
+        }
+        else {
+            myActivity.frame = CGRectMake(150, 379-150, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-150, 150, 2);
+        }
+#endif
+        
+#ifdef mokacafe
+        if(result.height == 1136) {
+            myActivity.frame = CGRectMake(150, 379-70, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-70, 150, 2);
+        }
+        else {
+            myActivity.frame = CGRectMake(150, 379-110, 20, 20);
+            
+            myProgressView.frame = CGRectMake(85, 351-110, 150, 2);
         }
 #endif
         [self.view addSubview:bgImgView];
