@@ -10,31 +10,31 @@
 	<string>CandyCart</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D6A021B4-D240-4244-9142-62F092D21DD1</key>
-		<string>https://github.com/vinhsteven/i-cafe.git</string>
+		<key>8DED9B6F73AD46B008C9AECA5053FB6405B27F7E</key>
+		<string>https://github.com/vinhsteven/CandyCart.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CandyCart/CandyCart.xcodeproj/project.xcworkspace</string>
+	<string>CandyCart.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D6A021B4-D240-4244-9142-62F092D21DD1</key>
-		<string>../../..</string>
+		<key>8DED9B6F73AD46B008C9AECA5053FB6405B27F7E</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/vinhsteven/i-cafe.git</string>
+	<string>https://github.com/vinhsteven/CandyCart.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D6A021B4-D240-4244-9142-62F092D21DD1</string>
+	<string>8DED9B6F73AD46B008C9AECA5053FB6405B27F7E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D6A021B4-D240-4244-9142-62F092D21DD1</string>
+			<string>8DED9B6F73AD46B008C9AECA5053FB6405B27F7E</string>
 			<key>IDESourceControlWCCName</key>
-			<string>i-shop</string>
+			<string>CandyCart</string>
 		</dict>
 	</array>
 </dict>
